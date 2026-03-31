@@ -42,8 +42,8 @@ function notablesForSvgPositions(): [Notable | null, Notable | null, Notable | n
     const filled = slots.filter((n): n is Notable => n !== null).sort((a, b) => a.id - b.id);
     if (filled.length === 0) return [null, null, null];
     if (filled.length === 1) return [filled[0], null, null];
-    if (filled.length === 2) return [null, filled[0], filled[1]];
-    return [filled[1], filled[0], filled[2]];
+    if (filled.length === 2) return [filled[0], filled[1], null];
+    return [filled[1], filled[2], filled[0]];
 }
 
 function kindCount(kind: 'prefix' | 'suffix', exclude?: number): number {
@@ -167,6 +167,9 @@ function renderNotablePane(kind: 'prefix' | 'suffix'): void {
     const loId = placedIds.length >= 2 ? placedIds[0] : null;
     const hiId = placedIds.length >= 2 ? placedIds[placedIds.length - 1] : null;
     const isInWindow = (n: Notable) => loId !== null && hiId !== null && n.id > loId && n.id < hiId;
+    const firstId = slots[0]?.id ?? null;
+    const belowFirst = (n: Notable) =>
+        activeSlot === 1 && slots[1] === null && firstId !== null && n.kind === 'prefix' && n.id < firstId;
 
     const currentKind   = slots[activeSlot]?.kind;
     const suffixBlocked = (n: Notable) => n.kind === 'suffix' && kindCount('suffix', activeSlot) >= 1 && currentKind !== 'suffix';
@@ -183,6 +186,7 @@ function renderNotablePane(kind: 'prefix' | 'suffix'): void {
         const impossible  = !isThisSlot && !isOtherSlot && outOfWindow(n);
         const isBlocked   = !isThisSlot && (suffixBlocked(n) || prefixBlocked(n) || impossible);
         const inWindow    = isInWindow(n) && n.kind === 'prefix';
+        const isVariant   = !inWindow && belowFirst(n);
         const clickable   = !isOtherSlot && !isBlocked;
         const usedInSlot  = slots.findIndex(s => s?.id === n.id);
 
@@ -195,6 +199,7 @@ function renderNotablePane(kind: 'prefix' | 'suffix'): void {
         else if (isBlocked)   cls += ' is-blocked';
         else if (inWindow)    cls += ' in-window';
         if (clickable)        cls += ' clickable';
+        if (isVariant)        cls += ' is-variant';
 
         return `<div class="${cls}" ${clickable ? `onclick="handleNotableClick('${clusterKey}',${n.id})"` : ''}>
   <div class="ni-left">
@@ -205,7 +210,7 @@ function renderNotablePane(kind: 'prefix' | 'suffix'): void {
     <span class="ni-name">${n.name}</span>
   </div>
   <div class="ni-right">
-    ${inWindow ? '<span class="fits-tag">fits</span>' : ''}
+    ${inWindow ? '<span class="fits-tag">fits</span>' : isVariant ? '<span class="variant-tag">2-notable variant</span>' : ''}
     ${impossible ? '<span class="blocked-tag">impossible</span>' : isBlocked ? `<span class="blocked-tag">${n.kind === 'suffix' ? 'suffix taken' : 'prefix limit'}</span>` : ''}
     ${isOtherSlot ? `<span class="used-tag">slot ${usedInSlot + 1}</span>` : ''}
     <span class="ni-id">${n.id}</span>
@@ -223,9 +228,15 @@ function renderWindowInfo(): void {
     const isInWindow = (n: Notable) => loId !== null && hiId !== null && n.id > loId && n.id < hiId;
     const windowCount = all.filter(n => isInWindow(n) && n.kind === 'prefix').length;
     const windowInfo = document.getElementById('windowInfo') as HTMLElement;
+    const firstPlaced = slots[0];
+    const belowCount = firstPlaced && !slots[1]
+        ? all.filter(n => n.kind === 'prefix' && n.id < firstPlaced.id).length
+        : null;
     windowInfo.textContent = loId !== null && hiId !== null
         ? `${windowCount} prefix notable${windowCount !== 1 ? 's' : ''} land between IDs ${loId}–${hiId}`
-        : 'Select 2 notables to calculate the valid window';
+        : belowCount !== null
+            ? `${belowCount} prefix notable${belowCount !== 1 ? 's' : ''} can be the 2nd selection`
+            : 'Select 2 notables to calculate the valid window';
 }
 
 function render(): void {
