@@ -141,7 +141,7 @@ function renderSlotHeaders(): void {
   <div class="slot-num ${isActive ? 'active' : ''}">${i + 1}</div>
   <div class="slot-content">
     ${!available
-            ? `<span class="slot-locked">select slot ${i} first</span>`
+            ? `<span class="slot-locked">select ${i === 1 ? 'first' : 'second'} notable first</span>`
             : n
                 ? `<div class="slot-icon-wrap">
            <img class="slot-icon" src="${imgUrl(n.icon)}" alt="" />
@@ -164,8 +164,9 @@ function renderNotablePane(kind: 'prefix' | 'suffix'): void {
     const all = getAllNotablesForCluster(clusterKey).filter(n => n.kind === kind);
 
     const placedIds = slots.filter((n): n is Notable => n !== null).map(n => n.id).sort((a, b) => a - b);
-    const loId = placedIds.length >= 2 ? placedIds[0] : null;
-    const hiId = placedIds.length >= 2 ? placedIds[placedIds.length - 1] : null;
+    const windowIds = [slots[0], slots[1]].filter((n): n is Notable => n !== null).map(n => n.id).sort((a, b) => a - b);
+    const loId = windowIds.length >= 2 ? windowIds[0] : null;
+    const hiId = windowIds.length >= 2 ? windowIds[1] : null;
     const isInWindow = (n: Notable) => loId !== null && hiId !== null && n.id > loId && n.id < hiId;
     const firstId = slots[0]?.id ?? null;
     const belowFirst = (n: Notable) =>
@@ -175,18 +176,19 @@ function renderNotablePane(kind: 'prefix' | 'suffix'): void {
     const suffixBlocked = (n: Notable) => n.kind === 'suffix' && kindCount('suffix', activeSlot) >= 1 && currentKind !== 'suffix';
     const prefixBlocked = (n: Notable) => n.kind === 'prefix' && kindCount('prefix', activeSlot) >= 2 && currentKind !== 'prefix';
 
-    const isSlot3 = activeSlot === 2;
-    const outOfWindow = (n: Notable) =>
-        isSlot3 && loId !== null && hiId !== null && (n.id <= loId || n.id >= hiId);
+    const isUndesired = (n: Notable): boolean => {
+        if (placedIds.length < 2 || loId === null || hiId === null) return false;
+        return n.id <= loId || n.id >= hiId;
+    };
 
     const listEl = document.getElementById(`${kind}List`) as HTMLElement;
     listEl.innerHTML = all.map(n => {
         const isThisSlot  = slots[activeSlot]?.id === n.id;
         const isOtherSlot = !isThisSlot && slots.some(s => s?.id === n.id);
-        const impossible  = !isThisSlot && !isOtherSlot && outOfWindow(n);
-        const isBlocked   = !isThisSlot && (suffixBlocked(n) || prefixBlocked(n) || impossible);
-        const inWindow    = isInWindow(n) && n.kind === 'prefix';
-        const isVariant   = !inWindow && belowFirst(n);
+        const isBlocked   = !isThisSlot && (suffixBlocked(n) || prefixBlocked(n));
+        const undesired   = !isBlocked && isUndesired(n);
+        const inWindow    = !isBlocked && isInWindow(n) && n.kind === 'prefix';
+        const isVariant   = !isBlocked && !inWindow && belowFirst(n);
         const clickable   = !isOtherSlot && !isBlocked;
         const usedInSlot  = slots.findIndex(s => s?.id === n.id);
 
@@ -198,6 +200,7 @@ function renderNotablePane(kind: 'prefix' | 'suffix'): void {
         else if (isOtherSlot) cls += ' is-used';
         else if (isBlocked)   cls += ' is-blocked';
         else if (inWindow)    cls += ' in-window';
+        if (undesired)        cls += ' is-undesired';
         if (clickable)        cls += ' clickable';
         if (isVariant)        cls += ' is-variant';
 
@@ -210,8 +213,8 @@ function renderNotablePane(kind: 'prefix' | 'suffix'): void {
     <span class="ni-name">${n.name}</span>
   </div>
   <div class="ni-right">
-    ${inWindow ? '<span class="fits-tag">fits</span>' : isVariant ? '<span class="variant-tag">2-notable variant</span>' : ''}
-    ${impossible ? '<span class="blocked-tag">impossible</span>' : isBlocked ? `<span class="blocked-tag">${n.kind === 'suffix' ? 'suffix taken' : 'prefix limit'}</span>` : ''}
+    ${inWindow ? '<span class="fits-tag">fits</span>' : isVariant ? '<span class="variant-tag">2-notable variant</span>' : undesired ? '<span class="undesired-tag">undesired</span>' : ''}
+    ${isBlocked ? `<span class="blocked-tag">${n.kind === 'suffix' ? 'suffix taken' : 'prefix limit'}</span>` : ''}
     ${isOtherSlot ? `<span class="used-tag">slot ${usedInSlot + 1}</span>` : ''}
     <span class="ni-id">${n.id}</span>
   </div>

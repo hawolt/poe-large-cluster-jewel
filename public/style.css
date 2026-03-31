@@ -144,8 +144,8 @@ select:focus { outline: none; border-color: var(--border-hi); }
 .slot-card:hover { border-color: var(--border-mid); }
 
 .slot-card.active {
-    border-color: var(--accent);
-    background: var(--accent-dim);
+    border-color: rgba(255,255,255,0.28);
+    background: rgba(255,255,255,0.05);
 }
 
 .slot-num {
@@ -285,8 +285,12 @@ select:focus { outline: none; border-color: var(--border-hi); }
 .notable-item.in-window:hover { background: rgba(60,140,90,0.2); }
 
 .notable-item.is-selected {
-    background: var(--accent-dim);
-    border-left: 2px solid var(--accent);
+    background: rgba(255,255,255,0.06);
+    border-left: 2px solid rgba(255,255,255,0.25);
+}
+
+.notable-item.is-selected.is-undesired {
+    border-left: 2px solid rgba(140,60,180,0.6);
 }
 
 .notable-item.is-used { opacity: 0.4; }
@@ -339,6 +343,20 @@ select:focus { outline: none; border-color: var(--border-hi); }
     align-items: center;
     gap: 6px;
     flex-shrink: 0;
+}
+
+.undesired-tag {
+    font-size: 10px;
+    padding: 2px 6px;
+    border-radius: 3px;
+    background: rgba(140,60,180,0.12);
+    color: #c07af0;
+    border: 0.5px solid rgba(140,60,180,0.3);
+    white-space: nowrap;
+}
+
+.notable-item.is-undesired {
+    opacity: 0.7;
 }
 
 .variant-tag {
@@ -518,6 +536,20 @@ select:disabled {
 
     .ni-id {
         display: none;
+    }
+
+    .undesired-tag {
+        font-size: 10px;
+        padding: 2px 6px;
+        border-radius: 3px;
+        background: rgba(140,60,180,0.12);
+        color: #c07af0;
+        border: 0.5px solid rgba(140,60,180,0.3);
+        white-space: nowrap;
+    }
+
+    .notable-item.is-undesired {
+        opacity: 0.7;
     }
 
     .variant-tag {
