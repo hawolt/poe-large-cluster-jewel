@@ -227,6 +227,16 @@ select:focus { outline: none; border-color: var(--border-hi); }
 
 .slot-clear:hover { color: var(--text); background: var(--surface-3); }
 
+.picker-top-bar {
+    padding: 8px 2px;
+}
+
+.picker-panes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
 .picker-card {
     background: var(--surface);
     border: 0.5px solid var(--border);
@@ -234,21 +244,13 @@ select:focus { outline: none; border-color: var(--border-hi); }
     overflow: hidden;
 }
 
-.picker-top {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 14px;
-    border-bottom: 0.5px solid var(--border);
-    gap: 8px;
-    flex-wrap: wrap;
-}
-
-.picker-title {
-    font-size: 11px;
-    color: var(--text-muted);
+.pane-header {
+    padding: 8px 14px;
+    font-size: 10px;
     text-transform: uppercase;
-    letter-spacing: 0.07em;
+    letter-spacing: 0.08em;
+    color: var(--text-muted);
+    border-bottom: 0.5px solid var(--border);
 }
 
 .window-info {
@@ -460,6 +462,55 @@ select:focus { outline: none; border-color: var(--border-hi); }
     }
 
     .blocked-tag {
+        display: none;
+    }
+}
+
+.slot-card.fractured {
+    border-color: #b8965a;
+    background: rgba(184,150,90,0.08);
+}
+
+.slot-card.fractured.active {
+    border-color: #c8a86a;
+    background: rgba(184,150,90,0.14);
+}
+
+.fractured-tag {
+    display: inline-block;
+    font-size: 9px;
+    padding: 1px 5px;
+    border-radius: 3px;
+    background: rgba(184,150,90,0.18);
+    color: #c8a86a;
+    border: 0.5px solid rgba(184,150,90,0.4);
+    font-style: normal;
+    vertical-align: middle;
+    margin-left: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+select:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+}
+
+@media (max-width: 620px) {
+    .picker-panes {
+        grid-template-columns: 1fr 1fr;
+        gap: 6px;
+    }
+
+    .notable-list {
+        max-height: 220px;
+    }
+
+    .ni-id {
+        display: none;
+    }
+
+    .fits-tag {
         display: none;
     }
 }

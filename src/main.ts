@@ -85,6 +85,17 @@ function setActiveSlot(i: 0 | 1 | 2): void {
     render();
 }
 
+function isFractured(i: 0 | 1 | 2): boolean {
+    const n = slots[i];
+    if (!n) return false;
+    return n.clusterKey !== currentClusterKey();
+}
+
+function updateClusterSelectLock(): void {
+    const sel = document.getElementById('clusterSelect') as HTMLSelectElement;
+    sel.disabled = slots[1] !== null;
+}
+
 const SLOT_FILTER = ['url(#outline-red)', 'url(#outline-green)', 'url(#outline-blue)'] as const;
 
 function setSvgNotable(svgIndex: 1 | 2 | 3, n: Notable | null): void {
@@ -121,9 +132,11 @@ function renderSlotHeaders(): void {
         const isActive = i === activeSlot;
         const available = slotAvailable(i);
         const dotColor = n ? SLOT_COLOR[i] : null;
+        const fractured = isFractured(i);
         let cls = 'slot-card';
         if (isActive) cls += ' active';
         if (!available) cls += ' locked';
+        if (fractured) cls += ' fractured';
         return `<div class="${cls}" onclick="handleSlotClick(${i})">
   <div class="slot-num ${isActive ? 'active' : ''}">${i + 1}</div>
   <div class="slot-content">
@@ -136,7 +149,7 @@ function renderSlotHeaders(): void {
          </div>
          <div class="slot-text">
            <div class="slot-name">${n.name}</div>
-           <div class="slot-meta">${n.kind} &middot; ${n.id} &middot; ${prettyKey(n.clusterKey)}</div>
+           <div class="slot-meta">${n.kind} &middot; ${n.id} &middot; ${prettyKey(n.clusterKey)}${fractured ? ' <span class="fractured-tag">fractured</span>' : ''}</div>
          </div>
          <button class="slot-clear" onclick="event.stopPropagation();handleClearSlot(${i})">✕</button>`
                 : `<span class="slot-empty">empty — click to select</span>`
@@ -146,9 +159,9 @@ function renderSlotHeaders(): void {
     }).join('');
 }
 
-function renderNotableList(): void {
+function renderNotablePane(kind: 'prefix' | 'suffix'): void {
     const clusterKey = currentClusterKey();
-    const all = getAllNotablesForCluster(clusterKey);
+    const all = getAllNotablesForCluster(clusterKey).filter(n => n.kind === kind);
 
     const placedIds = slots.filter((n): n is Notable => n !== null).map(n => n.id).sort((a, b) => a - b);
     const loId = placedIds.length >= 2 ? placedIds[0] : null;
@@ -159,18 +172,12 @@ function renderNotableList(): void {
     const suffixBlocked = (n: Notable) => n.kind === 'suffix' && kindCount('suffix', activeSlot) >= 1 && currentKind !== 'suffix';
     const prefixBlocked = (n: Notable) => n.kind === 'prefix' && kindCount('prefix', activeSlot) >= 2 && currentKind !== 'prefix';
 
-    const windowInfo = document.getElementById('windowInfo') as HTMLElement;
-    const windowCount = all.filter(n => isInWindow(n) && n.kind === 'prefix').length;
-    windowInfo.textContent = loId !== null && hiId !== null
-        ? `${windowCount} prefix notable${windowCount !== 1 ? 's' : ''} land between IDs ${loId}–${hiId}`
-        : 'Select 2 notables to calculate the valid window';
-
     const isSlot3 = activeSlot === 2;
     const outOfWindow = (n: Notable) =>
         isSlot3 && loId !== null && hiId !== null && (n.id <= loId || n.id >= hiId);
 
-    const list = document.getElementById('notableList') as HTMLElement;
-    list.innerHTML = all.map(n => {
+    const listEl = document.getElementById(`${kind}List`) as HTMLElement;
+    listEl.innerHTML = all.map(n => {
         const isThisSlot  = slots[activeSlot]?.id === n.id;
         const isOtherSlot = !isThisSlot && slots.some(s => s?.id === n.id);
         const impossible  = !isThisSlot && !isOtherSlot && outOfWindow(n);
@@ -196,7 +203,6 @@ function renderNotableList(): void {
   </div>
   <div class="ni-body">
     <span class="ni-name">${n.name}</span>
-    <span class="ni-kind ${n.kind}">${n.kind}</span>
   </div>
   <div class="ni-right">
     ${inWindow ? '<span class="fits-tag">fits</span>' : ''}
@@ -208,10 +214,27 @@ function renderNotableList(): void {
     }).join('');
 }
 
+function renderWindowInfo(): void {
+    const clusterKey = currentClusterKey();
+    const all = getAllNotablesForCluster(clusterKey);
+    const placedIds = slots.filter((n): n is Notable => n !== null).map(n => n.id).sort((a, b) => a - b);
+    const loId = placedIds.length >= 2 ? placedIds[0] : null;
+    const hiId = placedIds.length >= 2 ? placedIds[placedIds.length - 1] : null;
+    const isInWindow = (n: Notable) => loId !== null && hiId !== null && n.id > loId && n.id < hiId;
+    const windowCount = all.filter(n => isInWindow(n) && n.kind === 'prefix').length;
+    const windowInfo = document.getElementById('windowInfo') as HTMLElement;
+    windowInfo.textContent = loId !== null && hiId !== null
+        ? `${windowCount} prefix notable${windowCount !== 1 ? 's' : ''} land between IDs ${loId}–${hiId}`
+        : 'Select 2 notables to calculate the valid window';
+}
+
 function render(): void {
     renderSvg();
     renderSlotHeaders();
-    renderNotableList();
+    renderWindowInfo();
+    renderNotablePane('prefix');
+    renderNotablePane('suffix');
+    updateClusterSelectLock();
 }
 
 type G = Window & typeof globalThis & Record<string, unknown>;

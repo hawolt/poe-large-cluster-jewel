@@ -91,12 +91,18 @@
 
         <div class="right">
             <div class="slot-headers" id="slotHeaders"></div>
-            <div class="picker-card">
-                <div class="picker-top">
-                    <span class="picker-title">notables in selected cluster</span>
-                    <span class="window-info" id="windowInfo"></span>
+            <div class="picker-top-bar">
+                <span class="window-info" id="windowInfo"></span>
+            </div>
+            <div class="picker-panes">
+                <div class="picker-card">
+                    <div class="pane-header">prefix</div>
+                    <div class="notable-list" id="prefixList"></div>
                 </div>
-                <div class="notable-list" id="notableList"></div>
+                <div class="picker-card">
+                    <div class="pane-header">suffix</div>
+                    <div class="notable-list" id="suffixList"></div>
+                </div>
             </div>
         </div>
 
