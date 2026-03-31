@@ -152,7 +152,7 @@ function renderSlotHeaders(): void {
          </div>
          <div class="slot-text">
            <div class="slot-name">${n.name}</div>
-           <div class="slot-meta">${n.kind} &middot; ${prettyKey(n.clusterKey)}${fractured ? ' <span class="fractured-tag">fractured</span>' : ''}</div>
+           <div class="slot-meta"><span class="slot-meta-text">${n.kind} &middot; ${prettyKey(n.clusterKey)}</span>${fractured ? '<span class="fractured-tag">fractured</span>' : ''}</div>
          </div>
          <button class="slot-clear" onclick="event.stopPropagation();handleClearSlot(${i})">✕</button>`
                 : `<span class="slot-empty">empty — click to select</span>`

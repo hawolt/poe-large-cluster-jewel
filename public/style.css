@@ -94,6 +94,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 12px;
+    min-width: 0;
 }
 
 .jewel-svg {
@@ -139,6 +140,8 @@ select:focus { outline: none; border-color: var(--border-hi); }
     cursor: pointer;
     transition: border-color 0.12s, background 0.12s;
     user-select: none;
+    min-width: 0;
+    overflow: hidden;
 }
 
 .slot-card:hover { border-color: var(--border-mid); }
@@ -202,9 +205,20 @@ select:focus { outline: none; border-color: var(--border-hi); }
 .slot-meta {
     font-size: 15px;
     color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    min-width: 0;
+    overflow: hidden;
+}
+
+.slot-meta-text {
+    display: block;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    flex: 1;
+    min-width: 0;
 }
 
 .slot-empty {
@@ -488,8 +502,9 @@ select:focus { outline: none; border-color: var(--border-hi); }
     }
 
     .jewel-svg {
-        width: 160px;
-        height: 160px;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1;
     }
 
     .notable-list {
@@ -518,15 +533,13 @@ select:focus { outline: none; border-color: var(--border-hi); }
 
 .fractured-tag {
     display: inline-block;
+    flex-shrink: 0;
     font-size: 9px;
     padding: 1px 5px;
     border-radius: 3px;
     background: rgba(184,150,90,0.18);
     color: #c8a86a;
     border: 0.5px solid rgba(184,150,90,0.4);
-    font-style: normal;
-    vertical-align: middle;
-    margin-left: 3px;
     text-transform: uppercase;
     letter-spacing: 0.05em;
 }
