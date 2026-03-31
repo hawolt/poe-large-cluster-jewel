@@ -34,27 +34,27 @@ body {
     background: var(--bg);
     color: var(--text);
     min-height: 100vh;
-    font-size: 15px;
+    font-size: 17px;
     line-height: 1.5;
 }
 
 .app {
-    max-width: 980px;
+    max-width: 1300px;
     margin: 0 auto;
-    padding: 1.75rem;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 21px;
 }
 
 .top-bar {
     display: flex;
     align-items: center;
-    gap: 14px;
+    gap: 16px;
 }
 
 .top-label {
-    font-size: 12px;
+    font-size: 15px;
     color: var(--text-muted);
     text-transform: uppercase;
     letter-spacing: 0.07em;
@@ -63,7 +63,7 @@ body {
 
 .top-bar select {
     flex: 1;
-    max-width: 360px;
+    max-width: 425px;
 }
 
 .gh-link {
@@ -72,7 +72,7 @@ body {
     align-items: center;
     color: var(--text-muted);
     text-decoration: none;
-    padding: 6px;
+    padding: 8px;
     border-radius: var(--radius);
     transition: color 0.15s, background 0.15s;
     flex-shrink: 0;
@@ -85,8 +85,8 @@ body {
 
 .main {
     display: grid;
-    grid-template-columns: 260px 1fr;
-    gap: 24px;
+    grid-template-columns: 293px 1fr;
+    gap: 27px;
     align-items: start;
 }
 
@@ -97,8 +97,8 @@ body {
 }
 
 .jewel-svg {
-    width: 260px;
-    height: 260px;
+    width: 293px;
+    height: 293px;
     background: #0e0e0e;
     border: 0.5px solid var(--border-mid);
     border-radius: var(--radius-lg);
@@ -106,12 +106,12 @@ body {
 }
 
 select {
-    padding: 8px 32px 8px 12px;
+    padding: 9px 37px 9px 13px;
     background: var(--surface-2);
     border: 0.5px solid var(--border-mid);
     border-radius: var(--radius);
     color: var(--text);
-    font-size: 14px;
+    font-size: 17px;
     font-family: var(--font);
     appearance: none;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 10 10'%3E%3Cpath fill='%23666' d='M5 7L0 2h10z'/%3E%3C/svg%3E");
@@ -131,8 +131,8 @@ select:focus { outline: none; border-color: var(--border-hi); }
 .slot-card {
     display: flex;
     align-items: center;
-    gap: 12px;
-    padding: 11px 14px;
+    gap: 13px;
+    padding: 12px 16px;
     background: var(--surface);
     border: 0.5px solid var(--border);
     border-radius: var(--radius);
@@ -149,13 +149,13 @@ select:focus { outline: none; border-color: var(--border-hi); }
 }
 
 .slot-num {
-    width: 26px;
-    height: 26px;
+    width: 29px;
+    height: 29px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 500;
     flex-shrink: 0;
     background: var(--surface-3);
@@ -178,11 +178,11 @@ select:focus { outline: none; border-color: var(--border-hi); }
 }
 
 .slot-icon {
-    width: 32px;
-    height: 32px;
+    width: 37px;
+    height: 37px;
     object-fit: contain;
     flex-shrink: 0;
-    border-radius: 4px;
+    border-radius: 5px;
     background: var(--surface-3);
 }
 
@@ -192,7 +192,7 @@ select:focus { outline: none; border-color: var(--border-hi); }
 }
 
 .slot-name {
-    font-size: 14px;
+    font-size: 17px;
     font-weight: 500;
     white-space: nowrap;
     overflow: hidden;
@@ -200,7 +200,7 @@ select:focus { outline: none; border-color: var(--border-hi); }
 }
 
 .slot-meta {
-    font-size: 12px;
+    font-size: 15px;
     color: var(--text-muted);
     white-space: nowrap;
     overflow: hidden;
@@ -208,7 +208,7 @@ select:focus { outline: none; border-color: var(--border-hi); }
 }
 
 .slot-empty {
-    font-size: 13px;
+    font-size: 16px;
     color: var(--text-faint);
     font-style: italic;
 }
@@ -218,7 +218,7 @@ select:focus { outline: none; border-color: var(--border-hi); }
     border: none;
     color: var(--text-faint);
     cursor: pointer;
-    font-size: 13px;
+    font-size: 16px;
     padding: 3px 5px;
     border-radius: 4px;
     flex-shrink: 0;
@@ -228,13 +228,13 @@ select:focus { outline: none; border-color: var(--border-hi); }
 .slot-clear:hover { color: var(--text); background: var(--surface-3); }
 
 .picker-top-bar {
-    padding: 8px 2px;
+    padding: 11px 3px;
 }
 
 .picker-panes {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    gap: 13px;
 }
 
 .picker-card {
@@ -245,8 +245,8 @@ select:focus { outline: none; border-color: var(--border-hi); }
 }
 
 .pane-header {
-    padding: 10px 16px;
-    font-size: 11px;
+    padding: 11px 19px;
+    font-size: 13px;
     text-transform: uppercase;
     letter-spacing: 0.08em;
     color: var(--text-muted);
@@ -254,14 +254,14 @@ select:focus { outline: none; border-color: var(--border-hi); }
 }
 
 .window-info {
-    font-size: 12px;
+    font-size: 15px;
     color: var(--green-text);
 }
 
 .notable-list {
     display: flex;
     flex-direction: column;
-    max-height: 400px;
+    max-height: 453px;
     overflow-y: auto;
     scrollbar-width: thin;
     scrollbar-color: var(--surface-3) transparent;
@@ -270,8 +270,8 @@ select:focus { outline: none; border-color: var(--border-hi); }
 .notable-item {
     display: flex;
     align-items: center;
-    gap: 12px;
-    padding: 10px 16px;
+    gap: 13px;
+    padding: 11px 19px;
     border-bottom: 0.5px solid var(--border);
     transition: background 0.1s;
 }
@@ -300,17 +300,17 @@ select:focus { outline: none; border-color: var(--border-hi); }
     display: flex;
     align-items: center;
     flex: 1;
-    gap: 10px;
+    gap: 13px;
     min-width: 0;
 }
 
 .ni-icon {
-    width: 32px;
-    height: 32px;
+    width: 100%;
+    height: 100%;
     object-fit: contain;
-    flex-shrink: 0;
-    border-radius: 4px;
+    border-radius: 5px;
     background: var(--surface-3);
+    display: block;
 }
 
 .ni-body {
@@ -322,7 +322,7 @@ select:focus { outline: none; border-color: var(--border-hi); }
 }
 
 .ni-name {
-    font-size: 14px;
+    font-size: 17px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -354,9 +354,9 @@ select:focus { outline: none; border-color: var(--border-hi); }
 }
 
 .undesired-tag {
-    font-size: 11px;
-    padding: 2px 7px;
-    border-radius: 3px;
+    font-size: 13px;
+    padding: 3px 8px;
+    border-radius: 4px;
     background: rgba(140,60,180,0.12);
     color: #c07af0;
     border: 0.5px solid rgba(140,60,180,0.3);
@@ -368,80 +368,83 @@ select:focus { outline: none; border-color: var(--border-hi); }
 }
 
 .variant-tag {
-    font-size: 11px;
-    padding: 2px 7px;
-    border-radius: 3px;
+    font-size: 13px;
+    padding: 3px 8px;
+    border-radius: 4px;
     background: rgba(60,100,180,0.12);
     color: #7aacf0;
     border: 0.5px solid rgba(100,140,220,0.3);
     white-space: nowrap;
 }
 
-.fits-tag {
-    font-size: 11px;
-    padding: 2px 6px;
-    border-radius: 3px;
+.desired-tag {
+    font-size: 13px;
+    padding: 3px 8px;
+    border-radius: 4px;
     background: var(--green-bg);
     color: var(--green-text);
     border: 0.5px solid var(--green);
 }
 
 .blocked-tag {
-    font-size: 11px;
-    padding: 2px 7px;
-    border-radius: 3px;
+    font-size: 13px;
+    padding: 3px 8px;
+    border-radius: 4px;
     background: var(--red-bg);
     color: var(--red-text);
 }
 
 .used-tag {
-    font-size: 11px;
-    padding: 2px 7px;
-    border-radius: 3px;
+    font-size: 13px;
+    padding: 3px 8px;
+    border-radius: 4px;
     background: var(--surface-3);
     color: var(--text-muted);
 }
 
 .ni-id {
-    font-size: 12px;
+    font-size: 15px;
     font-family: var(--mono);
     color: var(--text-faint);
-    min-width: 44px;
+    min-width: 53px;
     text-align: right;
 }
 
 .ni-left {
-    display: flex;
-    align-items: center;
-    gap: 6px;
+    position: relative;
     flex-shrink: 0;
+    width: 37px;
+    height: 37px;
 }
 
 .ni-pos-dot {
-    width: 10px;
-    height: 10px;
+    position: absolute;
+    bottom: -2px;
+    right: -2px;
+    width: 11px;
+    height: 11px;
     border-radius: 50%;
-    flex-shrink: 0;
+    border: 1.5px solid var(--surface);
 }
 
 .ni-pos-dot.empty {
-    background: transparent;
-    box-shadow: none;
+    display: none;
 }
 
 .slot-icon-wrap {
     position: relative;
-    width: 28px;
-    height: 28px;
+    width: 37px;
+    height: 37px;
     flex-shrink: 0;
+    align-self: center;
 }
 
 .pos-dot {
     position: absolute;
     bottom: -2px;
     right: -2px;
-    width: 10px;
-    height: 10px;
+    width: 11px;
+    height: 11px;
     border-radius: 50%;
     border: 1.5px solid var(--surface);
 }
@@ -453,7 +456,7 @@ select:focus { outline: none; border-color: var(--border-hi); }
 }
 
 .slot-locked {
-    font-size: 13px;
+    font-size: 16px;
     color: var(--text-faint);
     font-style: italic;
 }
@@ -490,7 +493,8 @@ select:focus { outline: none; border-color: var(--border-hi); }
     }
 
     .notable-list {
-        max-height: 280px;
+        max-height: none;
+        overflow-y: visible;
     }
 
     .ni-kind {
@@ -549,7 +553,8 @@ select:disabled {
     }
 
     .notable-list {
-        max-height: 220px;
+        max-height: none;
+        overflow-y: visible;
     }
 
     .ni-id {
@@ -580,7 +585,7 @@ select:disabled {
         white-space: nowrap;
     }
 
-    .fits-tag {
+    .desired-tag {
         display: none;
     }
 }
