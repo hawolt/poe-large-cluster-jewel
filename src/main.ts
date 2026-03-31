@@ -81,6 +81,9 @@ function slotAvailable(i: 0 | 1 | 2): boolean {
 
 function setActiveSlot(i: 0 | 1 | 2): void {
     if (!slotAvailable(i)) return;
+    slots[i] = null;
+    if (i === 0) { slots[1] = null; slots[2] = null; }
+    if (i === 1) { slots[2] = null; }
     activeSlot = i;
     render();
 }
