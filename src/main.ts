@@ -164,6 +164,7 @@ function renderNotablePane(kind: 'prefix' | 'suffix'): void {
     const all = getAllNotablesForCluster(clusterKey).filter(n => n.kind === kind);
 
     const placedIds = slots.filter((n): n is Notable => n !== null).map(n => n.id).sort((a, b) => a - b);
+    // Window is always defined by the first two selections only — slot[2] must never shift these bounds
     const windowIds = [slots[0], slots[1]].filter((n): n is Notable => n !== null).map(n => n.id).sort((a, b) => a - b);
     const loId = windowIds.length >= 2 ? windowIds[0] : null;
     const hiId = windowIds.length >= 2 ? windowIds[1] : null;
@@ -176,6 +177,11 @@ function renderNotablePane(kind: 'prefix' | 'suffix'): void {
     const suffixBlocked = (n: Notable) => n.kind === 'suffix' && kindCount('suffix', activeSlot) >= 1 && currentKind !== 'suffix';
     const prefixBlocked = (n: Notable) => n.kind === 'prefix' && kindCount('prefix', activeSlot) >= 2 && currentKind !== 'prefix';
 
+    // A suffix (or any notable) selected as slot 3 is "undesired" if its ID,
+    // when sorted among all three, would not land in the middle position —
+    // meaning it would displace one of the two prefixes from their intended spots.
+    // We simulate: insert candidate into the sorted placed IDs and check if
+    // the middle id is still one of the two already-placed prefixes.
     const isUndesired = (n: Notable): boolean => {
         if (placedIds.length < 2 || loId === null || hiId === null) return false;
         return n.id <= loId || n.id >= hiId;
@@ -215,7 +221,7 @@ function renderNotablePane(kind: 'prefix' | 'suffix'): void {
   <div class="ni-right">
     ${inWindow ? '<span class="fits-tag">fits</span>' : isVariant ? '<span class="variant-tag">2-notable variant</span>' : undesired ? '<span class="undesired-tag">undesired</span>' : ''}
     ${isBlocked ? `<span class="blocked-tag">${n.kind === 'suffix' ? 'suffix taken' : 'prefix limit'}</span>` : ''}
-    ${isOtherSlot ? `<span class="used-tag">slot ${usedInSlot + 1}</span>` : ''}
+    ${isOtherSlot ? `<span class="used-tag">selection ${usedInSlot + 1}</span>` : ''}
     <span class="ni-id">${n.id}</span>
   </div>
 </div>`;
