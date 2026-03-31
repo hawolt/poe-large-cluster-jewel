@@ -15,7 +15,7 @@
     --text:         #e2e0dc;
     --text-muted:   #777;
     --text-faint:   #444;
-    --accent:       #c89a3c;          /* PoE gold */
+    --accent:       #c89a3c;
     --accent-dim:   rgba(200,154,60,0.15);
     --green:        #3c8c5a;
     --green-bg:     rgba(60,140,90,0.12);
@@ -38,8 +38,6 @@ body {
     line-height: 1.5;
 }
 
-/* ── App shell ─────────────────────────────────────────── */
-
 .app {
     max-width: 980px;
     margin: 0 auto;
@@ -48,8 +46,6 @@ body {
     flex-direction: column;
     gap: 16px;
 }
-
-/* ── Top bar ───────────────────────────────────────────── */
 
 .top-bar {
     display: flex;
@@ -70,7 +66,22 @@ body {
     max-width: 320px;
 }
 
-/* ── Main layout ───────────────────────────────────────── */
+.gh-link {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    color: var(--text-muted);
+    text-decoration: none;
+    padding: 6px;
+    border-radius: var(--radius);
+    transition: color 0.15s, background 0.15s;
+    flex-shrink: 0;
+}
+
+.gh-link:hover {
+    color: var(--text);
+    background: var(--surface-2);
+}
 
 .main {
     display: grid;
@@ -79,18 +90,11 @@ body {
     align-items: start;
 }
 
-@media (max-width: 620px) {
-    .main { grid-template-columns: 1fr; }
-    .jewel-aside { display: flex; justify-content: center; }
-}
-
 .right {
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
-
-/* ── Jewel SVG ─────────────────────────────────────────── */
 
 .jewel-svg {
     width: 220px;
@@ -100,8 +104,6 @@ body {
     border-radius: var(--radius-lg);
     display: block;
 }
-
-/* ── Form elements ─────────────────────────────────────── */
 
 select {
     padding: 7px 28px 7px 10px;
@@ -119,8 +121,6 @@ select {
 }
 
 select:focus { outline: none; border-color: var(--border-hi); }
-
-/* ── Slot header cards ─────────────────────────────────── */
 
 .slot-headers {
     display: flex;
@@ -142,6 +142,7 @@ select:focus { outline: none; border-color: var(--border-hi); }
 }
 
 .slot-card:hover { border-color: var(--border-mid); }
+
 .slot-card.active {
     border-color: var(--accent);
     background: var(--accent-dim);
@@ -226,8 +227,6 @@ select:focus { outline: none; border-color: var(--border-hi); }
 
 .slot-clear:hover { color: var(--text); background: var(--surface-3); }
 
-/* ── Picker card ───────────────────────────────────────── */
-
 .picker-card {
     background: var(--surface);
     border: 0.5px solid var(--border);
@@ -242,6 +241,7 @@ select:focus { outline: none; border-color: var(--border-hi); }
     padding: 10px 14px;
     border-bottom: 0.5px solid var(--border);
     gap: 8px;
+    flex-wrap: wrap;
 }
 
 .picker-title {
@@ -265,8 +265,6 @@ select:focus { outline: none; border-color: var(--border-hi); }
     scrollbar-color: var(--surface-3) transparent;
 }
 
-/* ── Notable items ─────────────────────────────────────── */
-
 .notable-item {
     display: flex;
     align-items: center;
@@ -281,9 +279,7 @@ select:focus { outline: none; border-color: var(--border-hi); }
 .notable-item.clickable { cursor: pointer; }
 .notable-item.clickable:hover { background: var(--surface-2); }
 
-.notable-item.in-window {
-    background: var(--green-bg);
-}
+.notable-item.in-window { background: var(--green-bg); }
 .notable-item.in-window:hover { background: rgba(60,140,90,0.2); }
 
 .notable-item.is-selected {
@@ -376,8 +372,6 @@ select:focus { outline: none; border-color: var(--border-hi); }
     text-align: right;
 }
 
-/* ── Position dot (teal/gold/purple per SVG slot) ─────── */
-
 .ni-left {
     display: flex;
     align-items: center;
@@ -414,8 +408,6 @@ select:focus { outline: none; border-color: var(--border-hi); }
     border: 1.5px solid var(--surface);
 }
 
-/* ── Locked slot ───────────────────────────────────────── */
-
 .slot-card.locked {
     opacity: 0.4;
     cursor: not-allowed;
@@ -426,4 +418,48 @@ select:focus { outline: none; border-color: var(--border-hi); }
     font-size: 12px;
     color: var(--text-faint);
     font-style: italic;
+}
+
+@media (max-width: 620px) {
+    .app {
+        padding: 1rem;
+        gap: 12px;
+    }
+
+    .top-bar select {
+        max-width: none;
+        flex: 1;
+        min-width: 0;
+    }
+
+    .top-label {
+        display: none;
+    }
+
+    .main {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .jewel-aside {
+        display: flex;
+        justify-content: center;
+    }
+
+    .jewel-svg {
+        width: 160px;
+        height: 160px;
+    }
+
+    .notable-list {
+        max-height: 280px;
+    }
+
+    .ni-kind {
+        display: none;
+    }
+
+    .blocked-tag {
+        display: none;
+    }
 }

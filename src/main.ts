@@ -1,8 +1,6 @@
 const IMAGE_BASE = 'https://image.ggpk.exposed/poe1/';
 
-// Per SVG-position color (bottom=teal, left=gold, right=purple)
-// These match the feColorMatrix tints in index.html
-const SLOT_COLOR = ['#ff0000', '#00ff00', '#ffff00'] as const; // [slot0, slot1, slot2]
+const SLOT_COLOR = ['#ff0000', '#00ff00', '#ffff00'] as const;
 
 interface Notable {
     name: string;
@@ -20,8 +18,6 @@ interface ClusterType {
 }
 
 let data: Record<string, ClusterType> = {};
-
-// slots[0..2] = user selection slots (no inherent display position)
 let slots: [Notable | null, Notable | null, Notable | null] = [null, null, null];
 let activeSlot: 0 | 1 | 2 = 0;
 
@@ -42,25 +38,12 @@ function currentClusterKey(): string {
     return (document.getElementById('clusterSelect') as HTMLSelectElement).value;
 }
 
-// SVG display positions by ID order:
-//   svgPos 1 (bottom,     teal)   = middle id  (or only id if 1 notable)
-//   svgPos 2 (top-left,   gold)   = lowest id
-//   svgPos 3 (top-right,  purple) = highest id
-//
-// Returns [svgPos1, svgPos2, svgPos3]
 function notablesForSvgPositions(): [Notable | null, Notable | null, Notable | null] {
     const filled = slots.filter((n): n is Notable => n !== null).sort((a, b) => a.id - b.id);
     if (filled.length === 0) return [null, null, null];
     if (filled.length === 1) return [filled[0], null, null];
     if (filled.length === 2) return [null, filled[0], filled[1]];
-    return [filled[1], filled[0], filled[2]]; // middle→bottom, lowest→left, highest→right
-}
-
-// Returns which SVG position (0-indexed) a notable is assigned to, or null
-function svgPositionOf(notable: Notable): number | null {
-    const positions = notablesForSvgPositions();
-    const idx = positions.findIndex(n => n?.id === notable.id);
-    return idx === -1 ? null : idx;
+    return [filled[1], filled[0], filled[2]];
 }
 
 function kindCount(kind: 'prefix' | 'suffix', exclude?: number): number {
@@ -77,7 +60,6 @@ function selectNotable(notable: Notable): void {
     if (notable.kind === 'prefix' && kindCount('prefix', activeSlot) >= 2) return;
     if (slots.some((n, i) => i !== activeSlot && n?.id === notable.id)) return;
     slots[activeSlot] = notable;
-    // Auto-advance to next unfilled slot
     const next = ([0, 1, 2] as const).find(i => i > activeSlot && slots[i] === null && slotAvailable(i));
     if (next !== undefined) activeSlot = next;
     render();
@@ -85,18 +67,12 @@ function selectNotable(notable: Notable): void {
 
 function clearSlot(i: 0 | 1 | 2): void {
     slots[i] = null;
-    // Cascade: clear dependent slots so the chain stays valid
     if (i === 0) { slots[1] = null; slots[2] = null; }
     if (i === 1) { slots[2] = null; }
     activeSlot = i;
     render();
 }
 
-function filledCount(): number {
-    return slots.filter((n): n is Notable => n !== null).length;
-}
-
-// Slot i is available to click/select if all prior slots are filled
 function slotAvailable(i: 0 | 1 | 2): boolean {
     if (i === 0) return true;
     if (i === 1) return slots[0] !== null;
@@ -109,9 +85,6 @@ function setActiveSlot(i: 0 | 1 | 2): void {
     render();
 }
 
-// ── SVG ───────────────────────────────────────────────────────────
-
-// Filter IDs per selection slot color
 const SLOT_FILTER = ['url(#outline-red)', 'url(#outline-green)', 'url(#outline-blue)'] as const;
 
 function setSvgNotable(svgIndex: 1 | 2 | 3, n: Notable | null): void {
@@ -140,8 +113,6 @@ function renderSvg(): void {
     setSvgNotable(2, s2);
     setSvgNotable(3, s3);
 }
-
-// ── Slot header cards ──────────────────────────────────────────────
 
 function renderSlotHeaders(): void {
     const container = document.getElementById('slotHeaders') as HTMLElement;
@@ -175,8 +146,6 @@ function renderSlotHeaders(): void {
     }).join('');
 }
 
-// ── Notable picker ─────────────────────────────────────────────────
-
 function renderNotableList(): void {
     const clusterKey = currentClusterKey();
     const all = getAllNotablesForCluster(clusterKey);
@@ -196,7 +165,6 @@ function renderNotableList(): void {
         ? `${windowCount} prefix notable${windowCount !== 1 ? 's' : ''} land between IDs ${loId}–${hiId}`
         : 'Select 2 notables to calculate the valid window';
 
-    // For slot 3: anything outside the window is impossible
     const isSlot3 = activeSlot === 2;
     const outOfWindow = (n: Notable) =>
         isSlot3 && loId !== null && hiId !== null && (n.id <= loId || n.id >= hiId);
@@ -209,9 +177,8 @@ function renderNotableList(): void {
         const isBlocked   = !isThisSlot && (suffixBlocked(n) || prefixBlocked(n) || impossible);
         const inWindow    = isInWindow(n) && n.kind === 'prefix';
         const clickable   = !isOtherSlot && !isBlocked;
-        const usedInSlot  = slots.findIndex(s => s?.id === n.id); // -1 if not placed
+        const usedInSlot  = slots.findIndex(s => s?.id === n.id);
 
-        // Color by selection slot
         const placedSlot = slots.findIndex(s => s?.id === n.id);
         const dotColor = placedSlot !== -1 ? SLOT_COLOR[placedSlot] : null;
 

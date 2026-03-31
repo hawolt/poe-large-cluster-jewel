@@ -13,6 +13,11 @@
     <header class="top-bar">
         <span class="top-label">cluster type</span>
         <select id="clusterSelect"></select>
+        <a class="gh-link" href="#" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+            </svg>
+        </a>
     </header>
 
     <div class="main">
@@ -24,7 +29,6 @@
                  class="jewel-svg">
 
                 <defs>
-                    <!-- Outline filter: expands alpha by 2px, fills with color, composites under original -->
                     <filter id="outline-red" x="-10%" y="-10%" width="120%" height="120%" color-interpolation-filters="sRGB">
                         <feMorphology in="SourceAlpha" operator="dilate" radius="2" result="expanded"/>
                         <feFlood flood-color="#ff0000" result="color"/>
@@ -45,7 +49,6 @@
                     </filter>
                 </defs>
 
-                <!-- Ring connections -->
                 <g fill="none" stroke-width="6" stroke="#444">
                     <line x1="0" y1="-150" x2="0" y2="-100"/>
                     <path d="M 0 -100 A 100 100 0 0 1 87 -50"/>
@@ -58,32 +61,27 @@
                     <path d="M -87 -50 A 100 100 0 0 1 0 -100"/>
                 </g>
 
-                <!-- Small passive nodes -->
                 <g stroke="#333" fill="#2a2a2a">
                     <circle cx="0" cy="-100" r="14"/>
                     <circle cx="-50" cy="87" r="14"/>
                     <circle cx="50" cy="87" r="14"/>
                 </g>
 
-                <!-- Jewel socket decorations -->
                 <image id="svg-img2" x="-113" y="24" width="52" height="52"
-                       href="https://cdn.poedb.tw/image/Art/2DArt/UIImages/InGame/PassiveSkillScreenJewelSocketAltCanAllocate.webp"
-                       opacity="0.25"/>
+                       href="socket.png"
+                       opacity="1.0"/>
                 <image id="svg-img3" x="61" y="24" width="52" height="52"
-                       href="https://cdn.poedb.tw/image/Art/2DArt/UIImages/InGame/PassiveSkillScreenJewelSocketAltCanAllocate.webp"
-                       opacity="0.25"/>
+                       href="socket.png"
+                       opacity="1.0"/>
 
-                <!-- Notable SVG position 1: bottom (0, 100) -->
                 <image id="svg-notable-icon1" x="-28" y="72" width="56" height="56" href="" opacity="0"/>
                 <image id="svg-notable-overlay1" x="-28" y="72" width="56" height="56" href="./overlay.png" opacity="0" filter="url(#outline-red)"/>
                 <text id="svg-notable-label1" x="0" y="148" font-size="9" text-anchor="middle" fill="#bbb" opacity="0"></text>
 
-                <!-- Notable SVG position 2: top-left (-87, -50) -->
                 <image id="svg-notable-icon2" x="-115" y="-78" width="56" height="56" href="" opacity="0"/>
                 <image id="svg-notable-overlay2" x="-115" y="-78" width="56" height="56" href="./overlay.png" opacity="0" filter="url(#outline-green)"/>
                 <text id="svg-notable-label2" x="-87" y="-95" font-size="9" text-anchor="middle" fill="#bbb" opacity="0"></text>
 
-                <!-- Notable SVG position 3: top-right (87, -50) -->
                 <image id="svg-notable-icon3" x="59" y="-78" width="56" height="56" href="" opacity="0"/>
                 <image id="svg-notable-overlay3" x="59" y="-78" width="56" height="56" href="./overlay.png" opacity="0" filter="url(#outline-blue)"/>
                 <text id="svg-notable-label3" x="87" y="-95" font-size="9" text-anchor="middle" fill="#bbb" opacity="0"></text>
