@@ -1,16 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Large Cluster Jewel</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="./style.css">
 </head>
-
 <body>
+
+<div class="app">
+
+    <header class="top-bar">
+        <span class="top-label">cluster type</span>
+        <select id="clusterSelect"></select>
+    </header>
+
+    <div class="main">
+
+        <aside class="jewel-aside">
+            <svg viewBox="-150 -150 300 300"
+                 xmlns="http://www.w3.org/2000/svg"
+                 xmlns:xlink="http://www.w3.org/1999/xlink"
+                 class="jewel-svg">
+
+                <defs>
+                    <!-- Outline filter: expands alpha by 2px, fills with color, composites under original -->
+                    <filter id="outline-red" x="-10%" y="-10%" width="120%" height="120%" color-interpolation-filters="sRGB">
+                        <feMorphology in="SourceAlpha" operator="dilate" radius="2" result="expanded"/>
+                        <feFlood flood-color="#ff0000" result="color"/>
+                        <feComposite in="color" in2="expanded" operator="in" result="coloredOutline"/>
+                        <feComposite in="SourceGraphic" in2="coloredOutline" operator="over"/>
+                    </filter>
+                    <filter id="outline-green" x="-10%" y="-10%" width="120%" height="120%" color-interpolation-filters="sRGB">
+                        <feMorphology in="SourceAlpha" operator="dilate" radius="2" result="expanded"/>
+                        <feFlood flood-color="#00ff00" result="color"/>
+                        <feComposite in="color" in2="expanded" operator="in" result="coloredOutline"/>
+                        <feComposite in="SourceGraphic" in2="coloredOutline" operator="over"/>
+                    </filter>
+                    <filter id="outline-blue" x="-10%" y="-10%" width="120%" height="120%" color-interpolation-filters="sRGB">
+                        <feMorphology in="SourceAlpha" operator="dilate" radius="2" result="expanded"/>
+                        <feFlood flood-color="#ffff00" result="color"/>
+                        <feComposite in="color" in2="expanded" operator="in" result="coloredOutline"/>
+                        <feComposite in="SourceGraphic" in2="coloredOutline" operator="over"/>
+                    </filter>
+                </defs>
+
+                <!-- Ring connections -->
+                <g fill="none" stroke-width="6" stroke="#444">
+                    <line x1="0" y1="-150" x2="0" y2="-100"/>
+                    <path d="M 0 -100 A 100 100 0 0 1 87 -50"/>
+                    <path d="M 87 -50 A 100 100 0 0 1 87 50"/>
+                    <path d="M 87 50 A 100 100 0 0 1 50 87"/>
+                    <path d="M 50 87 A 100 100 0 0 1 0 100"/>
+                    <path d="M 0 100 A 100 100 0 0 1 -50 87"/>
+                    <path d="M -50 87 A 100 100 0 0 1 -87 50"/>
+                    <path d="M -87 50 A 100 100 0 0 1 -87 -50"/>
+                    <path d="M -87 -50 A 100 100 0 0 1 0 -100"/>
+                </g>
+
+                <!-- Small passive nodes -->
+                <g stroke="#333" fill="#2a2a2a">
+                    <circle cx="0" cy="-100" r="14"/>
+                    <circle cx="-50" cy="87" r="14"/>
+                    <circle cx="50" cy="87" r="14"/>
+                </g>
+
+                <!-- Jewel socket decorations -->
+                <image id="svg-img2" x="-113" y="24" width="52" height="52"
+                       href="https://cdn.poedb.tw/image/Art/2DArt/UIImages/InGame/PassiveSkillScreenJewelSocketAltCanAllocate.webp"
+                       opacity="0.25"/>
+                <image id="svg-img3" x="61" y="24" width="52" height="52"
+                       href="https://cdn.poedb.tw/image/Art/2DArt/UIImages/InGame/PassiveSkillScreenJewelSocketAltCanAllocate.webp"
+                       opacity="0.25"/>
+
+                <!-- Notable SVG position 1: bottom (0, 100) -->
+                <image id="svg-notable-icon1" x="-28" y="72" width="56" height="56" href="" opacity="0"/>
+                <image id="svg-notable-overlay1" x="-28" y="72" width="56" height="56" href="./overlay.png" opacity="0" filter="url(#outline-red)"/>
+                <text id="svg-notable-label1" x="0" y="148" font-size="9" text-anchor="middle" fill="#bbb" opacity="0"></text>
+
+                <!-- Notable SVG position 2: top-left (-87, -50) -->
+                <image id="svg-notable-icon2" x="-115" y="-78" width="56" height="56" href="" opacity="0"/>
+                <image id="svg-notable-overlay2" x="-115" y="-78" width="56" height="56" href="./overlay.png" opacity="0" filter="url(#outline-green)"/>
+                <text id="svg-notable-label2" x="-87" y="-95" font-size="9" text-anchor="middle" fill="#bbb" opacity="0"></text>
+
+                <!-- Notable SVG position 3: top-right (87, -50) -->
+                <image id="svg-notable-icon3" x="59" y="-78" width="56" height="56" href="" opacity="0"/>
+                <image id="svg-notable-overlay3" x="59" y="-78" width="56" height="56" href="./overlay.png" opacity="0" filter="url(#outline-blue)"/>
+                <text id="svg-notable-label3" x="87" y="-95" font-size="9" text-anchor="middle" fill="#bbb" opacity="0"></text>
+
+            </svg>
+        </aside>
+
+        <div class="right">
+            <div class="slot-headers" id="slotHeaders"></div>
+            <div class="picker-card">
+                <div class="picker-top">
+                    <span class="picker-title">notables in selected cluster</span>
+                    <span class="window-info" id="windowInfo"></span>
+                </div>
+                <div class="notable-list" id="notableList"></div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
 <script src="./bundle.js"></script>
 </body>
-
 </html>
