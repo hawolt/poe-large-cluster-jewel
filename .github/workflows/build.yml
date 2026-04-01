@@ -43,7 +43,9 @@ jobs:
 
       - name: Run Exporter
         working-directory: ${{ github.workspace }}
-        run: java -cp java/out:org.json.jar Exporter
+        run: |
+          cp java/ClusterJewels.lua .
+          java -cp java/out:org.json.jar Exporter
 
       - name: Move output files
         working-directory: ${{ github.workspace }}
