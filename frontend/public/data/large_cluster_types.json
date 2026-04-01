@@ -1,0 +1,942 @@
+{
+  "affliction_chaos_damage": {
+    "suffix_notables": [
+      {
+        "name": "Grim Oath",
+        "id": 11271
+      },
+      {
+        "name": "Unspeakable Gifts",
+        "id": 11386
+      },
+      {
+        "name": "Unholy Grace",
+        "id": 11388
+      }
+    ],
+    "prefix_notables": [
+      {
+        "name": "Overwhelming Malice",
+        "id": 11283
+      },
+      {
+        "name": "Touch of Cruelty",
+        "id": 11384
+      },
+      {
+        "name": "Unwaveringly Evil",
+        "id": 11385
+      },
+      {
+        "name": "Dark Ideation",
+        "id": 11387
+      },
+      {
+        "name": "Wicked Pall",
+        "id": 11389
+      }
+    ],
+    "icon": "Art/2DArt/SkillIcons/passives/ChaosDamagenode.png",
+    "small_passive_stats": ["12% increased Chaos Damage"]
+  },
+  "affliction_bow_damage": {
+    "suffix_notables": [
+      {
+        "name": "Smite the Weak",
+        "id": 11352
+      },
+      {
+        "name": "Heavy Hitter",
+        "id": 11353
+      },
+      {
+        "name": "Martial Prowess",
+        "id": 11354
+      }
+    ],
+    "prefix_notables": [
+      {
+        "name": "Vicious Skewering",
+        "id": 11270
+      },
+      {
+        "name": "Arcing Shot",
+        "id": 11333
+      },
+      {
+        "name": "Tempered Arrowheads",
+        "id": 11334
+      },
+      {
+        "name": "Broadside",
+        "id": 11335
+      },
+      {
+        "name": "Calamitous",
+        "id": 11355
+      },
+      {
+        "name": "Devastator",
+        "id": 11356
+      },
+      {
+        "name": "Fuel the Fight",
+        "id": 11357
+      },
+      {
+        "name": "Drive the Destruction",
+        "id": 11358
+      },
+      {
+        "name": "Feed the Fury",
+        "id": 11359
+      }
+    ],
+    "icon": "Art/2DArt/SkillIcons/passives/NodeBowDamage.png",
+    "small_passive_stats": [
+      "12% increased Damage with Bows",
+      "12% increased Damage Over Time with Bow Skills"
+    ]
+  },
+  "affliction_lightning_damage": {
+    "suffix_notables": [
+      {
+        "name": "Doryani's Lesson",
+        "id": 11370
+      },
+      {
+        "name": "Disorienting Display",
+        "id": 11371
+      },
+      {
+        "name": "Widespread Destruction",
+        "id": 11373
+      }
+    ],
+    "prefix_notables": [
+      {
+        "name": "Sadist",
+        "id": 11368
+      },
+      {
+        "name": "Corrosive Elements",
+        "id": 11369
+      },
+      {
+        "name": "Prismatic Heart",
+        "id": 11372
+      },
+      {
+        "name": "Snowstorm",
+        "id": 11377
+      },
+      {
+        "name": "Storm Drinker",
+        "id": 11378
+      },
+      {
+        "name": "Paralysis",
+        "id": 11379
+      },
+      {
+        "name": "Inspired Oppression",
+        "id": 11421
+      },
+      {
+        "name": "Thunderstruck",
+        "id": 11425
+      },
+      {
+        "name": "Stormrider",
+        "id": 11426
+      },
+      {
+        "name": "Overshock",
+        "id": 11427
+      },
+      {
+        "name": "Scintillating Idea",
+        "id": 11483
+      }
+    ],
+    "icon": "Art/2DArt/SkillIcons/passives/LightningDamagenode.png",
+    "small_passive_stats": ["12% increased Lightning Damage"]
+  },
+  "affliction_attack_damage_while_holding_a_shield": {
+    "suffix_notables": [
+      {
+        "name": "Smite the Weak",
+        "id": 11352
+      },
+      {
+        "name": "Heavy Hitter",
+        "id": 11353
+      },
+      {
+        "name": "Martial Prowess",
+        "id": 11354
+      }
+    ],
+    "prefix_notables": [
+      {
+        "name": "Prodigious Defence",
+        "id": 11256
+      },
+      {
+        "name": "Advance Guard",
+        "id": 11257
+      },
+      {
+        "name": "Strike Leader",
+        "id": 11259
+      },
+      {
+        "name": "Gladiator's Fortitude",
+        "id": 11262
+      },
+      {
+        "name": "Precise Retaliation",
+        "id": 11263
+      },
+      {
+        "name": "Veteran Defender",
+        "id": 11264
+      },
+      {
+        "name": "Vicious Skewering",
+        "id": 11270
+      },
+      {
+        "name": "Calamitous",
+        "id": 11355
+      },
+      {
+        "name": "Devastator",
+        "id": 11356
+      },
+      {
+        "name": "Fuel the Fight",
+        "id": 11357
+      },
+      {
+        "name": "Drive the Destruction",
+        "id": 11358
+      },
+      {
+        "name": "Feed the Fury",
+        "id": 11359
+      },
+      {
+        "name": "Riot Queller",
+        "id": 11510
+      }
+    ],
+    "icon": "Art/2DArt/SkillIcons/passives/NodeHoldingShieldDamage.png",
+    "small_passive_stats": ["12% increased Attack Damage while holding a Shield"]
+  },
+  "affliction_attack_damage_": {
+    "suffix_notables": [
+      {
+        "name": "Smite the Weak",
+        "id": 11352
+      },
+      {
+        "name": "Heavy Hitter",
+        "id": 11353
+      },
+      {
+        "name": "Martial Prowess",
+        "id": 11354
+      }
+    ],
+    "prefix_notables": [
+      {
+        "name": "Vicious Skewering",
+        "id": 11270
+      },
+      {
+        "name": "Calamitous",
+        "id": 11355
+      },
+      {
+        "name": "Devastator",
+        "id": 11356
+      },
+      {
+        "name": "Fuel the Fight",
+        "id": 11357
+      },
+      {
+        "name": "Drive the Destruction",
+        "id": 11358
+      },
+      {
+        "name": "Feed the Fury",
+        "id": 11359
+      }
+    ],
+    "icon": "Art/2DArt/SkillIcons/passives/IncreasedAttackDamageNode.png",
+    "small_passive_stats": ["10% increased Attack Damage"]
+  },
+  "affliction_mace_and_staff_damage": {
+    "suffix_notables": [
+      {
+        "name": "Smite the Weak",
+        "id": 11352
+      },
+      {
+        "name": "Heavy Hitter",
+        "id": 11353
+      },
+      {
+        "name": "Martial Prowess",
+        "id": 11354
+      }
+    ],
+    "prefix_notables": [
+      {
+        "name": "Vicious Skewering",
+        "id": 11270
+      },
+      {
+        "name": "Overlord",
+        "id": 11327
+      },
+      {
+        "name": "Expansive Might",
+        "id": 11328
+      },
+      {
+        "name": "Weight Advantage",
+        "id": 11329
+      },
+      {
+        "name": "Calamitous",
+        "id": 11355
+      },
+      {
+        "name": "Devastator",
+        "id": 11356
+      },
+      {
+        "name": "Fuel the Fight",
+        "id": 11357
+      },
+      {
+        "name": "Drive the Destruction",
+        "id": 11358
+      },
+      {
+        "name": "Feed the Fury",
+        "id": 11359
+      },
+      {
+        "name": "Aggressive Defence",
+        "id": 15563
+      }
+    ],
+    "icon": "Art/2DArt/SkillIcons/passives/NodeMaceandStaffDamage.png",
+    "small_passive_stats": [
+      "Staff Attacks deal 12% increased Damage with Hits and Ailments",
+      "Mace or Sceptre Attacks deal 12% increased Damage with Hits and Ailments"
+    ]
+  },
+  "affliction_spell_damage": {
+    "suffix_notables": [
+      {
+        "name": "Thaumophage",
+        "id": 11365
+      },
+      {
+        "name": "Essence Rush",
+        "id": 11366
+      },
+      {
+        "name": "Sap Psyche",
+        "id": 11367
+      }
+    ],
+    "prefix_notables": [
+      {
+        "name": "Ancestral Inspiration",
+        "id": 11302
+      },
+      {
+        "name": "Arcane Adept",
+        "id": 11310
+      },
+      {
+        "name": "Seal Mender",
+        "id": 11360
+      },
+      {
+        "name": "Conjured Wall",
+        "id": 11361
+      },
+      {
+        "name": "Arcane Heroism",
+        "id": 11362
+      },
+      {
+        "name": "Practiced Caster",
+        "id": 11363
+      },
+      {
+        "name": "Burden Projection",
+        "id": 11364
+      },
+      {
+        "name": "Mage Hunter",
+        "id": 11509
+      }
+    ],
+    "icon": "Art/2DArt/SkillIcons/passives/IncreasedSpellDamageNode.png",
+    "small_passive_stats": ["10% increased Spell Damage"]
+  },
+  "affliction_damage_with_two_handed_melee_weapons": {
+    "suffix_notables": [
+      {
+        "name": "Smite the Weak",
+        "id": 11352
+      },
+      {
+        "name": "Heavy Hitter",
+        "id": 11353
+      },
+      {
+        "name": "Martial Prowess",
+        "id": 11354
+      }
+    ],
+    "prefix_notables": [
+      {
+        "name": "Vicious Skewering",
+        "id": 11270
+      },
+      {
+        "name": "Titanic Swings",
+        "id": 11293
+      },
+      {
+        "name": "Battlefield Dominator",
+        "id": 11339
+      },
+      {
+        "name": "Martial Mastery",
+        "id": 11340
+      },
+      {
+        "name": "Surefooted Striker",
+        "id": 11341
+      },
+      {
+        "name": "Graceful Execution",
+        "id": 11342
+      },
+      {
+        "name": "Brutal Infamy",
+        "id": 11343
+      },
+      {
+        "name": "Fearsome Warrior",
+        "id": 11344
+      },
+      {
+        "name": "Calamitous",
+        "id": 11355
+      },
+      {
+        "name": "Devastator",
+        "id": 11356
+      },
+      {
+        "name": "Fuel the Fight",
+        "id": 11357
+      },
+      {
+        "name": "Drive the Destruction",
+        "id": 11358
+      },
+      {
+        "name": "Feed the Fury",
+        "id": 11359
+      }
+    ],
+    "icon": "Art/2DArt/SkillIcons/passives/NodeTwoHandedMeleeDamage.png",
+    "small_passive_stats": ["12% increased Damage with Two Handed Weapons"]
+  },
+  "affliction_elemental_damage": {
+    "suffix_notables": [
+      {
+        "name": "Doryani's Lesson",
+        "id": 11370
+      },
+      {
+        "name": "Disorienting Display",
+        "id": 11371
+      },
+      {
+        "name": "Widespread Destruction",
+        "id": 11373
+      }
+    ],
+    "prefix_notables": [
+      {
+        "name": "Sadist",
+        "id": 11368
+      },
+      {
+        "name": "Corrosive Elements",
+        "id": 11369
+      },
+      {
+        "name": "Prismatic Heart",
+        "id": 11372
+      },
+      {
+        "name": "Inspired Oppression",
+        "id": 11421
+      }
+    ],
+    "icon": "Art/2DArt/SkillIcons/passives/ElementalDamagenode.png",
+    "small_passive_stats": ["10% increased Elemental Damage"]
+  },
+  "affliction_wand_damage": {
+    "suffix_notables": [
+      {
+        "name": "Smite the Weak",
+        "id": 11352
+      },
+      {
+        "name": "Heavy Hitter",
+        "id": 11353
+      },
+      {
+        "name": "Martial Prowess",
+        "id": 11354
+      }
+    ],
+    "prefix_notables": [
+      {
+        "name": "Vicious Skewering",
+        "id": 11270
+      },
+      {
+        "name": "Explosive Force",
+        "id": 11336
+      },
+      {
+        "name": "Opportunistic Fusilade",
+        "id": 11337
+      },
+      {
+        "name": "Storm's Hand",
+        "id": 11338
+      },
+      {
+        "name": "Calamitous",
+        "id": 11355
+      },
+      {
+        "name": "Devastator",
+        "id": 11356
+      },
+      {
+        "name": "Fuel the Fight",
+        "id": 11357
+      },
+      {
+        "name": "Drive the Destruction",
+        "id": 11358
+      },
+      {
+        "name": "Feed the Fury",
+        "id": 11359
+      }
+    ],
+    "icon": "Art/2DArt/SkillIcons/passives/NodeWandDamage.png",
+    "small_passive_stats": ["Wand Attacks deal 12% increased Damage with Hits and Ailments"]
+  },
+  "affliction_minion_damage": {
+    "suffix_notables": [
+      {
+        "name": "Call to the Slaughter",
+        "id": 11393
+      },
+      {
+        "name": "Vicious Bite",
+        "id": 11395
+      },
+      {
+        "name": "Primordial Bond",
+        "id": 11396
+      }
+    ],
+    "prefix_notables": [
+      {
+        "name": "Renewal",
+        "id": 11390
+      },
+      {
+        "name": "Raze and Pillage",
+        "id": 11391
+      },
+      {
+        "name": "Rotten Claws",
+        "id": 11392
+      },
+      {
+        "name": "Feasting Fiends",
+        "id": 11449
+      },
+      {
+        "name": "Skeletal Atrophy",
+        "id": 11686
+      }
+    ],
+    "icon": "Art/2DArt/SkillIcons/passives/IncreasedMinionDamageNode.png",
+    "small_passive_stats": ["Minions deal 10% increased Damage"]
+  },
+  "affliction_cold_damage": {
+    "suffix_notables": [
+      {
+        "name": "Doryani's Lesson",
+        "id": 11370
+      },
+      {
+        "name": "Disorienting Display",
+        "id": 11371
+      },
+      {
+        "name": "Widespread Destruction",
+        "id": 11373
+      }
+    ],
+    "prefix_notables": [
+      {
+        "name": "Sadist",
+        "id": 11368
+      },
+      {
+        "name": "Corrosive Elements",
+        "id": 11369
+      },
+      {
+        "name": "Prismatic Heart",
+        "id": 11372
+      },
+      {
+        "name": "Snowstorm",
+        "id": 11377
+      },
+      {
+        "name": "Blanketed Snow",
+        "id": 11381
+      },
+      {
+        "name": "Cold to the Core",
+        "id": 11382
+      },
+      {
+        "name": "Cold-Blooded Killer",
+        "id": 11383
+      },
+      {
+        "name": "Inspired Oppression",
+        "id": 11421
+      },
+      {
+        "name": "Deep Chill",
+        "id": 11423
+      },
+      {
+        "name": "Blast-Freeze",
+        "id": 11424
+      },
+      {
+        "name": "Stormrider",
+        "id": 11426
+      }
+    ],
+    "icon": "Art/2DArt/SkillIcons/passives/ColdDamagenode.png",
+    "small_passive_stats": ["12% increased Cold Damage"]
+  },
+  "affliction_dagger_and_claw_damage": {
+    "suffix_notables": [
+      {
+        "name": "Smite the Weak",
+        "id": 11352
+      },
+      {
+        "name": "Heavy Hitter",
+        "id": 11353
+      },
+      {
+        "name": "Martial Prowess",
+        "id": 11354
+      }
+    ],
+    "prefix_notables": [
+      {
+        "name": "Vicious Skewering",
+        "id": 11270
+      },
+      {
+        "name": "Wind-up",
+        "id": 11330
+      },
+      {
+        "name": "Fan of Blades",
+        "id": 11331
+      },
+      {
+        "name": "Disease Vector",
+        "id": 11332
+      },
+      {
+        "name": "Calamitous",
+        "id": 11355
+      },
+      {
+        "name": "Devastator",
+        "id": 11356
+      },
+      {
+        "name": "Fuel the Fight",
+        "id": 11357
+      },
+      {
+        "name": "Drive the Destruction",
+        "id": 11358
+      },
+      {
+        "name": "Feed the Fury",
+        "id": 11359
+      },
+      {
+        "name": "Aggressive Defence",
+        "id": 15563
+      }
+    ],
+    "icon": "Art/2DArt/SkillIcons/passives/NodeDaggerandClawDamage.png",
+    "small_passive_stats": [
+      "Claw Attacks deal 12% increased Damage with Hits and Ailments",
+      "Dagger Attacks deal 12% increased Damage with Hits and Ailments"
+    ]
+  },
+  "affliction_axe_and_sword_damage": {
+    "suffix_notables": [
+      {
+        "name": "Smite the Weak",
+        "id": 11352
+      },
+      {
+        "name": "Heavy Hitter",
+        "id": 11353
+      },
+      {
+        "name": "Martial Prowess",
+        "id": 11354
+      }
+    ],
+    "prefix_notables": [
+      {
+        "name": "Vicious Skewering",
+        "id": 11270
+      },
+      {
+        "name": "Bloodscent",
+        "id": 11324
+      },
+      {
+        "name": "Run Through",
+        "id": 11325
+      },
+      {
+        "name": "Wound Aggravation",
+        "id": 11326
+      },
+      {
+        "name": "Calamitous",
+        "id": 11355
+      },
+      {
+        "name": "Devastator",
+        "id": 11356
+      },
+      {
+        "name": "Fuel the Fight",
+        "id": 11357
+      },
+      {
+        "name": "Drive the Destruction",
+        "id": 11358
+      },
+      {
+        "name": "Feed the Fury",
+        "id": 11359
+      },
+      {
+        "name": "Aggressive Defence",
+        "id": 15563
+      }
+    ],
+    "icon": "Art/2DArt/SkillIcons/passives/NodeAxeandSwordDamage.png",
+    "small_passive_stats": [
+      "Axe Attacks deal 12% increased Damage with Hits and Ailments",
+      "Sword Attacks deal 12% increased Damage with Hits and Ailments"
+    ]
+  },
+  "affliction_fire_damage": {
+    "suffix_notables": [
+      {
+        "name": "Doryani's Lesson",
+        "id": 11370
+      },
+      {
+        "name": "Disorienting Display",
+        "id": 11371
+      },
+      {
+        "name": "Widespread Destruction",
+        "id": 11373
+      }
+    ],
+    "prefix_notables": [
+      {
+        "name": "Sadist",
+        "id": 11368
+      },
+      {
+        "name": "Corrosive Elements",
+        "id": 11369
+      },
+      {
+        "name": "Prismatic Heart",
+        "id": 11372
+      },
+      {
+        "name": "Master of Fire",
+        "id": 11374
+      },
+      {
+        "name": "Smoking Remains",
+        "id": 11375
+      },
+      {
+        "name": "Cremator",
+        "id": 11376
+      },
+      {
+        "name": "Burning Bright",
+        "id": 11400
+      }
+    ],
+    "icon": "Art/2DArt/SkillIcons/passives/FireDamagenode.png",
+    "small_passive_stats": ["12% increased Fire Damage"]
+  },
+  "affliction_physical_damage": {
+    "suffix_notables": [
+      {
+        "name": "Force Multiplier",
+        "id": 11268
+      },
+      {
+        "name": "Furious Assault",
+        "id": 11269
+      },
+      {
+        "name": "Grim Oath",
+        "id": 11271
+      }
+    ],
+    "prefix_notables": [
+      {
+        "name": "Iron Breaker",
+        "id": 11265
+      },
+      {
+        "name": "Master the Fundamentals",
+        "id": 11267
+      },
+      {
+        "name": "Battle-Hardened",
+        "id": 11272
+      }
+    ],
+    "icon": "Art/2DArt/SkillIcons/passives/PhysicalDamagenode2.png",
+    "small_passive_stats": ["12% increased Physical Damage"]
+  },
+  "affliction_attack_damage_while_dual_wielding_": {
+    "suffix_notables": [
+      {
+        "name": "Smite the Weak",
+        "id": 11352
+      },
+      {
+        "name": "Heavy Hitter",
+        "id": 11353
+      },
+      {
+        "name": "Martial Prowess",
+        "id": 11354
+      }
+    ],
+    "prefix_notables": [
+      {
+        "name": "Vicious Skewering",
+        "id": 11270
+      },
+      {
+        "name": "Combat Rhythm",
+        "id": 11345
+      },
+      {
+        "name": "Hit and Run",
+        "id": 11346
+      },
+      {
+        "name": "Insatiable Killer",
+        "id": 11347
+      },
+      {
+        "name": "Mage Bane",
+        "id": 11348
+      },
+      {
+        "name": "Martial Momentum",
+        "id": 11349
+      },
+      {
+        "name": "Deadly Repartee",
+        "id": 11350
+      },
+      {
+        "name": "Quick and Deadly",
+        "id": 11351
+      },
+      {
+        "name": "Calamitous",
+        "id": 11355
+      },
+      {
+        "name": "Devastator",
+        "id": 11356
+      },
+      {
+        "name": "Fuel the Fight",
+        "id": 11357
+      },
+      {
+        "name": "Drive the Destruction",
+        "id": 11358
+      },
+      {
+        "name": "Feed the Fury",
+        "id": 11359
+      }
+    ],
+    "icon": "Art/2DArt/SkillIcons/passives/NodeDualWieldingDamage.png",
+    "small_passive_stats": ["12% increased Attack Damage while Dual Wielding"]
+  }
+}

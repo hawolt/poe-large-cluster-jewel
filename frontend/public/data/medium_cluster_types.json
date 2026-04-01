@@ -1,0 +1,991 @@
+{
+  "affliction_cold_damage_over_time_multiplier": {
+    "suffix_notables": [],
+    "prefix_notables": [
+      {
+        "name": "Cold-Blooded Killer",
+        "id": 11383
+      },
+      {
+        "name": "Wasting Affliction",
+        "id": 11411
+      },
+      {
+        "name": "Haemorrhage",
+        "id": 11412
+      },
+      {
+        "name": "Flow of Life",
+        "id": 11413
+      },
+      {
+        "name": "Exposure Therapy",
+        "id": 11414
+      },
+      {
+        "name": "Brush with Death",
+        "id": 11415
+      },
+      {
+        "name": "Vile Reinvigoration",
+        "id": 11416
+      },
+      {
+        "name": "Circling Oblivion",
+        "id": 11417
+      },
+      {
+        "name": "Brewed for Potency",
+        "id": 11418
+      },
+      {
+        "name": "Chilling Presence",
+        "id": 11422
+      },
+      {
+        "name": "Deep Chill",
+        "id": 11423
+      },
+      {
+        "name": "Blast-Freeze",
+        "id": 11424
+      }
+    ],
+    "icon": "Art/2DArt/SkillIcons/passives/ColdDamageOverTimeNode.png",
+    "small_passive_stats": ["12% increased Cold Damage over Time"]
+  },
+  "affliction_trap_and_mine_damage": {
+    "suffix_notables": [],
+    "prefix_notables": [
+      {
+        "name": "Set and Forget",
+        "id": 11463
+      },
+      {
+        "name": "Expert Sabotage",
+        "id": 11464
+      },
+      {
+        "name": "Guerilla Tactics",
+        "id": 11465
+      },
+      {
+        "name": "Expendability",
+        "id": 11466
+      },
+      {
+        "name": "Arcane Pyrotechnics",
+        "id": 11467
+      },
+      {
+        "name": "Surprise Sabotage",
+        "id": 11468
+      },
+      {
+        "name": "Careful Handling",
+        "id": 11469
+      }
+    ],
+    "icon": "Art/2DArt/SkillIcons/passives/TrapAndMineDmgNode.png",
+    "small_passive_stats": [
+      "12% increased Trap Damage",
+      "12% increased Mine Damage"
+    ]
+  },
+  "affliction_flask_duration": {
+    "suffix_notables": [],
+    "prefix_notables": [
+      {
+        "name": "Distilled Perfection",
+        "id": 11311
+      },
+      {
+        "name": "Spiked Concoction",
+        "id": 11312
+      },
+      {
+        "name": "Fasting",
+        "id": 11313
+      },
+      {
+        "name": "Mender's Wellspring",
+        "id": 11314
+      },
+      {
+        "name": "Special Reserve",
+        "id": 11315
+      },
+      {
+        "name": "Numbing Elixir",
+        "id": 11316
+      },
+      {
+        "name": "Brewed for Potency",
+        "id": 11418
+      },
+      {
+        "name": "Peak Vigour",
+        "id": 11470
+      },
+      {
+        "name": "Liquid Inspiration",
+        "id": 11479
+      }
+    ],
+    "icon": "Art/2DArt/SkillIcons/passives/FlaskDurationnode.png",
+    "small_passive_stats": ["6% increased Flask Effect Duration"]
+  },
+  "old_do_not_use_affliction_curse_effect": {
+    "suffix_notables": [],
+    "prefix_notables": [
+      {
+        "name": "Evil Eye",
+        "id": 11429
+      },
+      {
+        "name": "Doedre's Spite",
+        "id": 11431
+      },
+      {
+        "name": "Victim Maker",
+        "id": 11432
+      },
+      {
+        "name": "Lord of Drought",
+        "id": 12383
+      },
+      {
+        "name": "Blizzard Caller",
+        "id": 12384
+      },
+      {
+        "name": "Tempt the Storm",
+        "id": 12385
+      },
+      {
+        "name": "Misery Everlasting",
+        "id": 12386
+      },
+      {
+        "name": "Exploit Weakness",
+        "id": 12387
+      },
+      {
+        "name": "Hound's Mark",
+        "id": 12388
+      },
+      {
+        "name": "Doedre's Gluttony",
+        "id": 12389
+      },
+      {
+        "name": "Doedre's Apathy",
+        "id": 12390
+      },
+      {
+        "name": "Master of the Maelstrom",
+        "id": 12391
+      }
+    ],
+    "icon": "Art/2DArt/SkillIcons/passives/CurseEffectNode.png",
+    "small_passive_stats": ["2% increased Effect of your Curses"]
+  },
+  "affliction_projectile_damage": {
+    "suffix_notables": [],
+    "prefix_notables": [
+      {
+        "name": "Follow-Through",
+        "id": 11451
+      },
+      {
+        "name": "Streamlined",
+        "id": 11452
+      },
+      {
+        "name": "Shrieking Bolts",
+        "id": 11453
+      },
+      {
+        "name": "Eye to Eye",
+        "id": 11454
+      },
+      {
+        "name": "Repeater",
+        "id": 11455
+      },
+      {
+        "name": "Aerodynamics",
+        "id": 11456
+      }
+    ],
+    "icon": "Art/2DArt/SkillIcons/passives/ProjectileDmgNode.png",
+    "small_passive_stats": ["10% increased Projectile Damage"]
+  },
+  "affliction_chaos_damage_over_time_multiplier": {
+    "suffix_notables": [],
+    "prefix_notables": [
+      {
+        "name": "Unwaveringly Evil",
+        "id": 11385
+      },
+      {
+        "name": "Dark Ideation",
+        "id": 11387
+      },
+      {
+        "name": "Wicked Pall",
+        "id": 11389
+      },
+      {
+        "name": "Septic Spells",
+        "id": 11406
+      },
+      {
+        "name": "Low Tolerance",
+        "id": 11407
+      },
+      {
+        "name": "Steady Torment",
+        "id": 11408
+      },
+      {
+        "name": "Eternal Suffering",
+        "id": 11409
+      },
+      {
+        "name": "Eldritch Inspiration",
+        "id": 11410
+      },
+      {
+        "name": "Wasting Affliction",
+        "id": 11411
+      },
+      {
+        "name": "Haemorrhage",
+        "id": 11412
+      },
+      {
+        "name": "Flow of Life",
+        "id": 11413
+      },
+      {
+        "name": "Exposure Therapy",
+        "id": 11414
+      },
+      {
+        "name": "Brush with Death",
+        "id": 11415
+      },
+      {
+        "name": "Vile Reinvigoration",
+        "id": 11416
+      },
+      {
+        "name": "Circling Oblivion",
+        "id": 11417
+      },
+      {
+        "name": "Brewed for Potency",
+        "id": 11418
+      },
+      {
+        "name": "Student of Decay",
+        "id": 11535
+      }
+    ],
+    "icon": "Art/2DArt/SkillIcons/passives/ChaosDamageOverTimeNode.png",
+    "small_passive_stats": ["12% increased Chaos Damage over Time"]
+  },
+  "affliction_damage_over_time_multiplier": {
+    "suffix_notables": [],
+    "prefix_notables": [
+      {
+        "name": "Wasting Affliction",
+        "id": 11411
+      },
+      {
+        "name": "Haemorrhage",
+        "id": 11412
+      },
+      {
+        "name": "Flow of Life",
+        "id": 11413
+      },
+      {
+        "name": "Exposure Therapy",
+        "id": 11414
+      },
+      {
+        "name": "Brush with Death",
+        "id": 11415
+      },
+      {
+        "name": "Vile Reinvigoration",
+        "id": 11416
+      },
+      {
+        "name": "Circling Oblivion",
+        "id": 11417
+      },
+      {
+        "name": "Brewed for Potency",
+        "id": 11418
+      },
+      {
+        "name": "Student of Decay",
+        "id": 11535
+      }
+    ],
+    "icon": "Art/2DArt/SkillIcons/passives/DamageOverTimeNode.png",
+    "small_passive_stats": ["10% increased Damage over Time"]
+  },
+  "affliction_minion_life": {
+    "suffix_notables": [],
+    "prefix_notables": [
+      {
+        "name": "Renewal",
+        "id": 11390
+      },
+      {
+        "name": "Hulking Corpses",
+        "id": 11394
+      },
+      {
+        "name": "Dread March",
+        "id": 11446
+      },
+      {
+        "name": "Blessed Rebirth",
+        "id": 11447
+      },
+      {
+        "name": "Life from Death",
+        "id": 11448
+      },
+      {
+        "name": "Feasting Fiends",
+        "id": 11449
+      },
+      {
+        "name": "Bodyguards",
+        "id": 11450
+      }
+    ],
+    "icon": "Art/2DArt/SkillIcons/passives/IncreaseMinionLifeNode.png",
+    "small_passive_stats": ["Minions have 12% increased maximum Life"]
+  },
+  "affliction_physical_damage_over_time_multiplier": {
+    "suffix_notables": [],
+    "prefix_notables": [
+      {
+        "name": "Wound Aggravation",
+        "id": 11326
+      },
+      {
+        "name": "Vivid Hues",
+        "id": 11402
+      },
+      {
+        "name": "Rend",
+        "id": 11403
+      },
+      {
+        "name": "Disorienting Wounds",
+        "id": 11404
+      },
+      {
+        "name": "Compound Injury",
+        "id": 11405
+      },
+      {
+        "name": "Steady Torment",
+        "id": 11408
+      },
+      {
+        "name": "Wasting Affliction",
+        "id": 11411
+      },
+      {
+        "name": "Haemorrhage",
+        "id": 11412
+      },
+      {
+        "name": "Flow of Life",
+        "id": 11413
+      },
+      {
+        "name": "Exposure Therapy",
+        "id": 11414
+      },
+      {
+        "name": "Brush with Death",
+        "id": 11415
+      },
+      {
+        "name": "Vile Reinvigoration",
+        "id": 11416
+      },
+      {
+        "name": "Circling Oblivion",
+        "id": 11417
+      },
+      {
+        "name": "Brewed for Potency",
+        "id": 11418
+      },
+      {
+        "name": "Student of Decay",
+        "id": 11535
+      },
+      {
+        "name": "Blood Artist",
+        "id": 14098
+      },
+      {
+        "name": "Phlebotomist",
+        "id": 14099
+      }
+    ],
+    "icon": "Art/2DArt/SkillIcons/passives/PhysicalDamageOverTimeNode.png",
+    "small_passive_stats": ["12% increased Physical Damage over Time"]
+  },
+  "affliction_warcry_buff_effect": {
+    "suffix_notables": [],
+    "prefix_notables": [
+      {
+        "name": "Mob Mentality",
+        "id": 11317
+      },
+      {
+        "name": "Cry Wolf",
+        "id": 11318
+      },
+      {
+        "name": "Haunting Shout",
+        "id": 11319
+      },
+      {
+        "name": "Lead By Example",
+        "id": 11320
+      },
+      {
+        "name": "Provocateur",
+        "id": 11321
+      },
+      {
+        "name": "Warning Call",
+        "id": 11322
+      },
+      {
+        "name": "Rattling Bellow",
+        "id": 11323
+      },
+      {
+        "name": "Holy Word",
+        "id": 22663
+      }
+    ],
+    "icon": "Art/2DArt/SkillIcons/passives/IncreasedWarcryNode.png",
+    "small_passive_stats": ["Exerted Attacks deal 20% increased Damage"]
+  },
+  "affliction_life_and_mana_recovery_from_flasks": {
+    "suffix_notables": [],
+    "prefix_notables": [
+      {
+        "name": "Distilled Perfection",
+        "id": 11311
+      },
+      {
+        "name": "Spiked Concoction",
+        "id": 11312
+      },
+      {
+        "name": "Fasting",
+        "id": 11313
+      },
+      {
+        "name": "Mender's Wellspring",
+        "id": 11314
+      },
+      {
+        "name": "Special Reserve",
+        "id": 11315
+      },
+      {
+        "name": "Numbing Elixir",
+        "id": 11316
+      }
+    ],
+    "icon": "Art/2DArt/SkillIcons/passives/LifeManaFlasksrecoverynode.png",
+    "small_passive_stats": [
+      "10% increased Life Recovery from Flasks",
+      "10% increased Mana Recovery from Flasks"
+    ]
+  },
+  "affliction_fire_damage_over_time_multiplier": {
+    "suffix_notables": [],
+    "prefix_notables": [
+      {
+        "name": "Eye of the Storm",
+        "id": 11286
+      },
+      {
+        "name": "Master of Fire",
+        "id": 11374
+      },
+      {
+        "name": "Smoking Remains",
+        "id": 11375
+      },
+      {
+        "name": "Cremator",
+        "id": 11376
+      },
+      {
+        "name": "Blowback",
+        "id": 11397
+      },
+      {
+        "name": "Fan the Flames",
+        "id": 11398
+      },
+      {
+        "name": "Cooked Alive",
+        "id": 11399
+      },
+      {
+        "name": "Burning Bright",
+        "id": 11400
+      },
+      {
+        "name": "Wrapped in Flame",
+        "id": 11401
+      },
+      {
+        "name": "Wasting Affliction",
+        "id": 11411
+      },
+      {
+        "name": "Haemorrhage",
+        "id": 11412
+      },
+      {
+        "name": "Flow of Life",
+        "id": 11413
+      },
+      {
+        "name": "Exposure Therapy",
+        "id": 11414
+      },
+      {
+        "name": "Brush with Death",
+        "id": 11415
+      },
+      {
+        "name": "Vile Reinvigoration",
+        "id": 11416
+      },
+      {
+        "name": "Circling Oblivion",
+        "id": 11417
+      },
+      {
+        "name": "Brewed for Potency",
+        "id": 11418
+      },
+      {
+        "name": "Student of Decay",
+        "id": 11535
+      }
+    ],
+    "icon": "Art/2DArt/SkillIcons/passives/FireDamageOverTimeNode.png",
+    "small_passive_stats": ["12% increased Burning Damage"]
+  },
+  "affliction_minion_damage_while_you_have_a_herald": {
+    "suffix_notables": [],
+    "prefix_notables": [
+      {
+        "name": "Purposeful Harbinger",
+        "id": 11276
+      },
+      {
+        "name": "Heraldry",
+        "id": 11435
+      },
+      {
+        "name": "Endbringer",
+        "id": 11436
+      },
+      {
+        "name": "Cult-Leader",
+        "id": 11437
+      },
+      {
+        "name": "Lasting Impression",
+        "id": 11441
+      },
+      {
+        "name": "Invigorating Portents",
+        "id": 11443
+      },
+      {
+        "name": "Pure Agony",
+        "id": 11444
+      },
+      {
+        "name": "Disciples",
+        "id": 11445
+      }
+    ],
+    "icon": "Art/2DArt/SkillIcons/passives/MinionDmgHeraldSkillsNode.png",
+    "small_passive_stats": ["Minions deal 10% increased Damage while you are affected by a Herald"]
+  },
+  "affliction_totem_damage": {
+    "suffix_notables": [],
+    "prefix_notables": [
+      {
+        "name": "Ancestral Echo",
+        "id": 11295
+      },
+      {
+        "name": "Ancestral Reach",
+        "id": 11296
+      },
+      {
+        "name": "Ancestral Might",
+        "id": 11297
+      },
+      {
+        "name": "Ancestral Preservation",
+        "id": 11298
+      },
+      {
+        "name": "Snaring Spirits",
+        "id": 11299
+      },
+      {
+        "name": "Sleepless Sentries",
+        "id": 11300
+      },
+      {
+        "name": "Ancestral Guidance",
+        "id": 11301
+      },
+      {
+        "name": "Ancestral Inspiration",
+        "id": 11302
+      }
+    ],
+    "icon": "Art/2DArt/SkillIcons/passives/TotemDmgNode.png",
+    "small_passive_stats": ["12% increased Totem Damage"]
+  },
+  "affliction_brand_damage": {
+    "suffix_notables": [],
+    "prefix_notables": [
+      {
+        "name": "Chip Away",
+        "id": 11457
+      },
+      {
+        "name": "Seeker Runes",
+        "id": 11458
+      },
+      {
+        "name": "Remarkable",
+        "id": 11459
+      },
+      {
+        "name": "Brand Loyalty",
+        "id": 11460
+      },
+      {
+        "name": "Holy Conquest",
+        "id": 11461
+      },
+      {
+        "name": "Grand Design",
+        "id": 11462
+      }
+    ],
+    "icon": "Art/2DArt/SkillIcons/passives/BrandDmgNode.png",
+    "small_passive_stats": ["12% increased Brand Damage"]
+  },
+  "affliction_critical_chance": {
+    "suffix_notables": [],
+    "prefix_notables": [
+      {
+        "name": "Precise Retaliation",
+        "id": 11263
+      },
+      {
+        "name": "Skullbreaker",
+        "id": 11281
+      },
+      {
+        "name": "Pressure Points",
+        "id": 11282
+      },
+      {
+        "name": "Overwhelming Malice",
+        "id": 11283
+      },
+      {
+        "name": "Magnifier",
+        "id": 11284
+      },
+      {
+        "name": "Savage Response",
+        "id": 11285
+      },
+      {
+        "name": "Eye of the Storm",
+        "id": 11286
+      },
+      {
+        "name": "Basics of Pain",
+        "id": 11287
+      },
+      {
+        "name": "Quick Getaway",
+        "id": 11288
+      },
+      {
+        "name": "Provocateur",
+        "id": 11321
+      },
+      {
+        "name": "Haemorrhage",
+        "id": 11412
+      }
+    ],
+    "icon": "Art/2DArt/SkillIcons/passives/IncreaseCritChanceNode.png",
+    "small_passive_stats": ["15% increased Critical Strike Chance"]
+  },
+  "affliction_effect_of_non-damaging_ailments": {
+    "suffix_notables": [],
+    "prefix_notables": [
+      {
+        "name": "Eye of the Storm",
+        "id": 11286
+      },
+      {
+        "name": "Astonishing Affliction",
+        "id": 11419
+      },
+      {
+        "name": "Cold Conduction",
+        "id": 11420
+      },
+      {
+        "name": "Inspired Oppression",
+        "id": 11421
+      },
+      {
+        "name": "Chilling Presence",
+        "id": 11422
+      },
+      {
+        "name": "Deep Chill",
+        "id": 11423
+      },
+      {
+        "name": "Blast-Freeze",
+        "id": 11424
+      },
+      {
+        "name": "Stormrider",
+        "id": 11426
+      },
+      {
+        "name": "Overshock",
+        "id": 11427
+      }
+    ],
+    "icon": "Art/2DArt/SkillIcons/passives/IncreasedNonDamageAilmentNode.png",
+    "small_passive_stats": ["10% increased Effect of Non-Damaging Ailments"]
+  },
+  "affliction_channelling_skill_damage": {
+    "suffix_notables": [],
+    "prefix_notables": [
+      {
+        "name": "Vital Focus",
+        "id": 11303
+      },
+      {
+        "name": "Unrestrained Focus",
+        "id": 11304
+      },
+      {
+        "name": "Unwavering Focus",
+        "id": 11305
+      },
+      {
+        "name": "Enduring Focus",
+        "id": 11306
+      },
+      {
+        "name": "Precise Focus",
+        "id": 11307
+      },
+      {
+        "name": "Stoic Focus",
+        "id": 11308
+      },
+      {
+        "name": "Hex Breaker",
+        "id": 11309
+      }
+    ],
+    "icon": "Art/2DArt/SkillIcons/passives/DmgWhenChannelSkillsNode.png",
+    "small_passive_stats": ["Channelling Skills deal 12% increased Damage"]
+  },
+  "old_do_not_use_affliction_aura_effect": {
+    "suffix_notables": [],
+    "prefix_notables": [
+      {
+        "name": "Replenishing Presence",
+        "id": 11273
+      },
+      {
+        "name": "Master of Command",
+        "id": 11274
+      },
+      {
+        "name": "Spiteful Presence",
+        "id": 11275
+      },
+      {
+        "name": "Purposeful Harbinger",
+        "id": 11276
+      },
+      {
+        "name": "Destructive Aspect",
+        "id": 11277
+      },
+      {
+        "name": "Electric Presence",
+        "id": 11278
+      },
+      {
+        "name": "Volatile Presence",
+        "id": 11279
+      },
+      {
+        "name": "Righteous Path",
+        "id": 11280
+      },
+      {
+        "name": "Pure Might",
+        "id": 11518
+      },
+      {
+        "name": "Pure Guile",
+        "id": 11523
+      },
+      {
+        "name": "Pure Aptitude",
+        "id": 11528
+      },
+      {
+        "name": "Self-Control",
+        "id": 12392
+      },
+      {
+        "name": "Uncompromising",
+        "id": 12393
+      },
+      {
+        "name": "Sublime Form",
+        "id": 12394
+      },
+      {
+        "name": "Mortifying Aspect",
+        "id": 12450
+      },
+      {
+        "name": "Frantic Aspect",
+        "id": 12451
+      },
+      {
+        "name": "Introspection",
+        "id": 12452
+      }
+    ],
+    "icon": "Art/2DArt/SkillIcons/passives/AuraEffectNode.png",
+    "small_passive_stats": ["3% increased effect of Non-Curse Auras from your Skills"]
+  },
+  "affliction_area_damage": {
+    "suffix_notables": [],
+    "prefix_notables": [
+      {
+        "name": "Magnifier",
+        "id": 11284
+      },
+      {
+        "name": "Assert Dominance",
+        "id": 11289
+      },
+      {
+        "name": "Vast Power",
+        "id": 11290
+      },
+      {
+        "name": "Powerful Assault",
+        "id": 11291
+      },
+      {
+        "name": "Titanic Swings",
+        "id": 11293
+      },
+      {
+        "name": "Towering Threat",
+        "id": 11294
+      },
+      {
+        "name": "Expansive Might",
+        "id": 11328
+      }
+    ],
+    "icon": "Art/2DArt/SkillIcons/passives/AreaDmgNode.png",
+    "small_passive_stats": ["10% increased Area Damage"]
+  },
+  "affliction_damage_while_you_have_a_herald": {
+    "suffix_notables": [],
+    "prefix_notables": [
+      {
+        "name": "Purposeful Harbinger",
+        "id": 11276
+      },
+      {
+        "name": "Heraldry",
+        "id": 11435
+      },
+      {
+        "name": "Endbringer",
+        "id": 11436
+      },
+      {
+        "name": "Empowered Envoy",
+        "id": 11438
+      },
+      {
+        "name": "Dark Messenger",
+        "id": 11439
+      },
+      {
+        "name": "Agent of Destruction",
+        "id": 11440
+      },
+      {
+        "name": "Lasting Impression",
+        "id": 11441
+      },
+      {
+        "name": "Self-Fulfilling Prophecy",
+        "id": 11442
+      }
+    ],
+    "icon": "Art/2DArt/SkillIcons/passives/DmgHeraldSkillsNode.png",
+    "small_passive_stats": ["10% increased Damage while affected by a Herald"]
+  }
+}

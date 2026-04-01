@@ -1,0 +1,677 @@
+{
+  "affliction_maximum_life": {
+    "suffix_notables": [],
+    "prefix_notables": [
+      {
+        "name": "Gladiator's Fortitude",
+        "id": 11262
+      },
+      {
+        "name": "Towering Threat",
+        "id": 11294
+      },
+      {
+        "name": "Flow of Life",
+        "id": 11413
+      },
+      {
+        "name": "Brush with Death",
+        "id": 11415
+      },
+      {
+        "name": "Careful Handling",
+        "id": 11469
+      },
+      {
+        "name": "Peak Vigour",
+        "id": 11470
+      },
+      {
+        "name": "Fettle",
+        "id": 11471
+      },
+      {
+        "name": "Feast of Flesh",
+        "id": 11472
+      },
+      {
+        "name": "Sublime Sensation",
+        "id": 11473
+      },
+      {
+        "name": "Surging Vitality",
+        "id": 11474
+      },
+      {
+        "name": "Peace Amidst Chaos",
+        "id": 11475
+      },
+      {
+        "name": "Adrenaline",
+        "id": 11476
+      },
+      {
+        "name": "Wall of Muscle",
+        "id": 11477
+      },
+      {
+        "name": "Holistic Health",
+        "id": 11484
+      },
+      {
+        "name": "Heart of Iron",
+        "id": 11493
+      },
+      {
+        "name": "Natural Vigour",
+        "id": 11500
+      },
+      {
+        "name": "Vicious Guard",
+        "id": 11506
+      },
+      {
+        "name": "Rote Reinforcement",
+        "id": 11508
+      },
+      {
+        "name": "Sage",
+        "id": 11529
+      },
+      {
+        "name": "Blessed",
+        "id": 11534
+      }
+    ],
+    "icon": "Art/2DArt/SkillIcons/passives/IncreasedMaximumLifeNode.png",
+    "small_passive_stats": ["4% increased maximum Life"]
+  },
+  "affliction_chance_to_block": {
+    "suffix_notables": [],
+    "prefix_notables": [
+      {
+        "name": "Prodigious Defence",
+        "id": 11256
+      },
+      {
+        "name": "Strike Leader",
+        "id": 11259
+      },
+      {
+        "name": "Powerful Ward",
+        "id": 11260
+      },
+      {
+        "name": "Enduring Ward",
+        "id": 11261
+      },
+      {
+        "name": "Stoic Focus",
+        "id": 11308
+      },
+      {
+        "name": "Mage Bane",
+        "id": 11348
+      },
+      {
+        "name": "Second Skin",
+        "id": 11496
+      },
+      {
+        "name": "Flexible Sentry",
+        "id": 11505
+      },
+      {
+        "name": "Vicious Guard",
+        "id": 11506
+      },
+      {
+        "name": "Mystical Ward",
+        "id": 11507
+      },
+      {
+        "name": "Rote Reinforcement",
+        "id": 11508
+      },
+      {
+        "name": "Mage Hunter",
+        "id": 11509
+      },
+      {
+        "name": "Riot Queller",
+        "id": 11510
+      },
+      {
+        "name": "One with the Shield",
+        "id": 11511
+      },
+      {
+        "name": "Fiery Aegis",
+        "id": 22664
+      }
+    ],
+    "icon": "Art/2DArt/SkillIcons/passives/BlockSpellDmgNode.png",
+    "small_passive_stats": ["2% Chance to Block Spell Damage"]
+  },
+  "affliction_maximum_mana": {
+    "suffix_notables": [],
+    "prefix_notables": [
+      {
+        "name": "Eldritch Inspiration",
+        "id": 11410
+      },
+      {
+        "name": "Careful Handling",
+        "id": 11469
+      },
+      {
+        "name": "Mindfulness",
+        "id": 11478
+      },
+      {
+        "name": "Liquid Inspiration",
+        "id": 11479
+      },
+      {
+        "name": "Openness",
+        "id": 11480
+      },
+      {
+        "name": "Daring Ideas",
+        "id": 11481
+      },
+      {
+        "name": "Clarity of Purpose",
+        "id": 11482
+      },
+      {
+        "name": "Scintillating Idea",
+        "id": 11483
+      },
+      {
+        "name": "Holistic Health",
+        "id": 11484
+      },
+      {
+        "name": "Genius",
+        "id": 11485
+      },
+      {
+        "name": "Improvisor",
+        "id": 11486
+      },
+      {
+        "name": "Stubborn Student",
+        "id": 11487
+      },
+      {
+        "name": "Will Shaper",
+        "id": 11490
+      },
+      {
+        "name": "Wizardry",
+        "id": 11526
+      },
+      {
+        "name": "Sage",
+        "id": 11529
+      },
+      {
+        "name": "Blessed",
+        "id": 11534
+      }
+    ],
+    "icon": "Art/2DArt/SkillIcons/passives/MaxManaNode.png",
+    "small_passive_stats": ["6% increased maximum Mana"]
+  },
+  "affliction_chaos_resistance": {
+    "suffix_notables": [],
+    "prefix_notables": [
+      {
+        "name": "Exposure Therapy",
+        "id": 11414
+      },
+      {
+        "name": "Born of Chaos",
+        "id": 11531
+      },
+      {
+        "name": "Antivenom",
+        "id": 11532
+      },
+      {
+        "name": "Rot-Resistant",
+        "id": 11533
+      },
+      {
+        "name": "Blessed",
+        "id": 11534
+      },
+      {
+        "name": "Student of Decay",
+        "id": 11535
+      }
+    ],
+    "icon": "Art/2DArt/SkillIcons/passives/ChaosResistNode.png",
+    "small_passive_stats": ["+12% to Chaos Resistance"]
+  },
+  "affliction_armour": {
+    "suffix_notables": [],
+    "prefix_notables": [
+      {
+        "name": "Battle-Hardened",
+        "id": 11272
+      },
+      {
+        "name": "Stubborn Student",
+        "id": 11487
+      },
+      {
+        "name": "Heart of Iron",
+        "id": 11493
+      },
+      {
+        "name": "Prismatic Carapace",
+        "id": 11494
+      },
+      {
+        "name": "Militarism",
+        "id": 11495
+      },
+      {
+        "name": "Second Skin",
+        "id": 11496
+      },
+      {
+        "name": "Dragon Hunter",
+        "id": 11497
+      },
+      {
+        "name": "Enduring Composure",
+        "id": 11498
+      },
+      {
+        "name": "Blacksmith",
+        "id": 11519
+      },
+      {
+        "name": "Uncompromising",
+        "id": 12393
+      }
+    ],
+    "icon": "Art/2DArt/SkillIcons/passives/ArmourNode.png",
+    "small_passive_stats": ["15% increased Armour"]
+  },
+  "affliction_cold_resistance": {
+    "suffix_notables": [],
+    "prefix_notables": [
+      {
+        "name": "Prismatic Heart",
+        "id": 11372
+      },
+      {
+        "name": "Prismatic Carapace",
+        "id": 11494
+      },
+      {
+        "name": "Prismatic Dance",
+        "id": 11499
+      },
+      {
+        "name": "Flexible Sentry",
+        "id": 11505
+      },
+      {
+        "name": "Winter Prowler",
+        "id": 11521
+      },
+      {
+        "name": "Hibernator",
+        "id": 11522
+      },
+      {
+        "name": "Pure Guile",
+        "id": 11523
+      },
+      {
+        "name": "Alchemist",
+        "id": 11524
+      },
+      {
+        "name": "Antifreeze",
+        "id": 11525
+      }
+    ],
+    "icon": "Art/2DArt/SkillIcons/passives/ColdResistNode.png",
+    "small_passive_stats": ["+15% to Cold Resistance"]
+  },
+  "affliction_chance_to_dodge_attacks": {
+    "suffix_notables": [],
+    "prefix_notables": [
+      {
+        "name": "Hit and Run",
+        "id": 11346
+      },
+      {
+        "name": "Untouchable",
+        "id": 11501
+      },
+      {
+        "name": "Aerialist",
+        "id": 11512
+      },
+      {
+        "name": "Elegant Form",
+        "id": 11513
+      },
+      {
+        "name": "Darting Movements",
+        "id": 11514
+      }
+    ],
+    "icon": "Art/2DArt/SkillIcons/passives/DodgeAtksNode.png",
+    "small_passive_stats": ["+4% chance to Suppress Spell Damage"]
+  },
+  "affliction_lightning_resistance": {
+    "suffix_notables": [],
+    "prefix_notables": [
+      {
+        "name": "Prismatic Heart",
+        "id": 11372
+      },
+      {
+        "name": "Prismatic Carapace",
+        "id": 11494
+      },
+      {
+        "name": "Prismatic Dance",
+        "id": 11499
+      },
+      {
+        "name": "Flexible Sentry",
+        "id": 11505
+      },
+      {
+        "name": "Wizardry",
+        "id": 11526
+      },
+      {
+        "name": "Capacitor",
+        "id": 11527
+      },
+      {
+        "name": "Pure Aptitude",
+        "id": 11528
+      },
+      {
+        "name": "Sage",
+        "id": 11529
+      },
+      {
+        "name": "Insulated",
+        "id": 11530
+      }
+    ],
+    "icon": "Art/2DArt/SkillIcons/passives/LightningResistNode.png",
+    "small_passive_stats": ["+15% to Lightning Resistance"]
+  },
+  "affliction_maximum_energy_shield": {
+    "suffix_notables": [],
+    "prefix_notables": [
+      {
+        "name": "Brush with Death",
+        "id": 11415
+      },
+      {
+        "name": "Vile Reinvigoration",
+        "id": 11416
+      },
+      {
+        "name": "Sublime Sensation",
+        "id": 11473
+      },
+      {
+        "name": "Savour the Moment",
+        "id": 11488
+      },
+      {
+        "name": "Energy From Naught",
+        "id": 11489
+      },
+      {
+        "name": "Will Shaper",
+        "id": 11490
+      },
+      {
+        "name": "Spring Back",
+        "id": 11491
+      },
+      {
+        "name": "Conservation of Energy",
+        "id": 11492
+      },
+      {
+        "name": "Mystical Ward",
+        "id": 11507
+      },
+      {
+        "name": "Self-Control",
+        "id": 12392
+      }
+    ],
+    "icon": "Art/2DArt/SkillIcons/passives/EnergyShieldNode.png",
+    "small_passive_stats": ["6% increased maximum Energy Shield"]
+  },
+  "affliction_reservation_efficiency_small": {
+    "suffix_notables": [],
+    "prefix_notables": [
+      {
+        "name": "Replenishing Presence",
+        "id": 11273
+      },
+      {
+        "name": "Master of Command",
+        "id": 11274
+      },
+      {
+        "name": "Spiteful Presence",
+        "id": 11275
+      },
+      {
+        "name": "Purposeful Harbinger",
+        "id": 11276
+      },
+      {
+        "name": "Destructive Aspect",
+        "id": 11277
+      },
+      {
+        "name": "Electric Presence",
+        "id": 11278
+      },
+      {
+        "name": "Volatile Presence",
+        "id": 11279
+      },
+      {
+        "name": "Righteous Path",
+        "id": 11280
+      },
+      {
+        "name": "Pure Might",
+        "id": 11518
+      },
+      {
+        "name": "Pure Guile",
+        "id": 11523
+      },
+      {
+        "name": "Pure Aptitude",
+        "id": 11528
+      },
+      {
+        "name": "Self-Control",
+        "id": 12392
+      },
+      {
+        "name": "Uncompromising",
+        "id": 12393
+      },
+      {
+        "name": "Sublime Form",
+        "id": 12394
+      },
+      {
+        "name": "Mortifying Aspect",
+        "id": 12450
+      },
+      {
+        "name": "Frantic Aspect",
+        "id": 12451
+      },
+      {
+        "name": "Introspection",
+        "id": 12452
+      }
+    ],
+    "icon": "Art/2DArt/SkillIcons/passives/AuraEffectNode.png",
+    "small_passive_stats": ["6% increased Mana Reservation Efficiency of Skills"]
+  },
+  "affliction_evasion": {
+    "suffix_notables": [],
+    "prefix_notables": [
+      {
+        "name": "Battle-Hardened",
+        "id": 11272
+      },
+      {
+        "name": "Prismatic Dance",
+        "id": 11499
+      },
+      {
+        "name": "Natural Vigour",
+        "id": 11500
+      },
+      {
+        "name": "Untouchable",
+        "id": 11501
+      },
+      {
+        "name": "Shifting Shadow",
+        "id": 11502
+      },
+      {
+        "name": "Readiness",
+        "id": 11503
+      },
+      {
+        "name": "Sublime Form",
+        "id": 12394
+      }
+    ],
+    "icon": "Art/2DArt/SkillIcons/passives/EvasionNode.png",
+    "small_passive_stats": ["15% increased Evasion Rating"]
+  },
+  "affliction_fire_resistance": {
+    "suffix_notables": [],
+    "prefix_notables": [
+      {
+        "name": "Prismatic Heart",
+        "id": 11372
+      },
+      {
+        "name": "Prismatic Carapace",
+        "id": 11494
+      },
+      {
+        "name": "Dragon Hunter",
+        "id": 11497
+      },
+      {
+        "name": "Prismatic Dance",
+        "id": 11499
+      },
+      {
+        "name": "Flexible Sentry",
+        "id": 11505
+      },
+      {
+        "name": "Molten One's Mark",
+        "id": 11516
+      },
+      {
+        "name": "Fire Attunement",
+        "id": 11517
+      },
+      {
+        "name": "Pure Might",
+        "id": 11518
+      },
+      {
+        "name": "Blacksmith",
+        "id": 11519
+      },
+      {
+        "name": "Non-Flammable",
+        "id": 11520
+      }
+    ],
+    "icon": "Art/2DArt/SkillIcons/passives/FireResistNode.png",
+    "small_passive_stats": ["+15% to Fire Resistance"]
+  },
+  "affliction_curse_effect_small": {
+    "suffix_notables": [],
+    "prefix_notables": [
+      {
+        "name": "Evil Eye",
+        "id": 11429
+      },
+      {
+        "name": "Doedre's Spite",
+        "id": 11431
+      },
+      {
+        "name": "Victim Maker",
+        "id": 11432
+      },
+      {
+        "name": "Lord of Drought",
+        "id": 12383
+      },
+      {
+        "name": "Blizzard Caller",
+        "id": 12384
+      },
+      {
+        "name": "Tempt the Storm",
+        "id": 12385
+      },
+      {
+        "name": "Misery Everlasting",
+        "id": 12386
+      },
+      {
+        "name": "Exploit Weakness",
+        "id": 12387
+      },
+      {
+        "name": "Hound's Mark",
+        "id": 12388
+      },
+      {
+        "name": "Doedre's Gluttony",
+        "id": 12389
+      },
+      {
+        "name": "Doedre's Apathy",
+        "id": 12390
+      },
+      {
+        "name": "Master of the Maelstrom",
+        "id": 12391
+      }
+    ],
+    "icon": "Art/2DArt/SkillIcons/passives/CurseEffectNode.png",
+    "small_passive_stats": ["2% increased Effect of your Curses"]
+  }
+}
