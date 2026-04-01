@@ -1,0 +1,6084 @@
+{
+  "Blessed Rebirth": {
+    "implicit_tags": [
+      "resource",
+      "life",
+      "minion"
+    ],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [{
+      "weight": 269,
+      "tag": "affliction_minion_life"
+    }],
+    "name": "Blessed Rebirth",
+    "placements": [],
+    "id": 11447
+  },
+  "One with the Shield": {
+    "implicit_tags": [
+      "block",
+      "resource",
+      "life",
+      "defences"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [{
+      "weight": 375,
+      "tag": "affliction_chance_to_block"
+    }],
+    "name": "One with the Shield",
+    "placements": [],
+    "id": 11511
+  },
+  "Insatiable Killer": {
+    "implicit_tags": [
+      "frenzy_charge",
+      "attack",
+      "speed"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [{
+      "weight": 312,
+      "tag": "affliction_attack_damage_while_dual_wielding_"
+    }],
+    "name": "Insatiable Killer",
+    "placements": [],
+    "id": 11347
+  },
+  "Seal Mender": {
+    "implicit_tags": [],
+    "stats": [],
+    "required_level": 75,
+    "spawn_tags": [{
+      "weight": 94,
+      "tag": "affliction_spell_damage"
+    }],
+    "name": "Seal Mender",
+    "placements": [],
+    "id": 11360
+  },
+  "Life from Death": {
+    "implicit_tags": [
+      "resource",
+      "life",
+      "minion"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [{
+      "weight": 716,
+      "tag": "affliction_minion_life"
+    }],
+    "name": "Life from Death",
+    "placements": [],
+    "id": 11448
+  },
+  "Skullbreaker": {
+    "implicit_tags": [
+      "damage",
+      "critical"
+    ],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [{
+      "weight": 171,
+      "tag": "affliction_critical_chance"
+    }],
+    "name": "Skullbreaker",
+    "placements": [],
+    "id": 11281
+  },
+  "Battlefield Dominator": {
+    "implicit_tags": [
+      "damage",
+      "attack"
+    ],
+    "stats": [],
+    "required_level": 1,
+    "spawn_tags": [{
+      "weight": 604,
+      "tag": "affliction_damage_with_two_handed_melee_weapons"
+    }],
+    "name": "Battlefield Dominator",
+    "placements": [],
+    "id": 11339
+  },
+  "Openness": {
+    "implicit_tags": [
+      "resource",
+      "mana"
+    ],
+    "stats": [],
+    "required_level": 1,
+    "spawn_tags": [{
+      "weight": 932,
+      "tag": "affliction_maximum_mana"
+    }],
+    "name": "Openness",
+    "placements": [],
+    "id": 11480
+  },
+  "Iron Breaker": {
+    "implicit_tags": [
+      "physical_damage",
+      "damage",
+      "physical"
+    ],
+    "stats": [],
+    "required_level": 1,
+    "spawn_tags": [{
+      "weight": 464,
+      "tag": "affliction_physical_damage"
+    }],
+    "name": "Iron Breaker",
+    "placements": [],
+    "id": 11265
+  },
+  "Holistic Health": {
+    "implicit_tags": [
+      "resource",
+      "life",
+      "mana"
+    ],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [
+      {
+        "weight": 175,
+        "tag": "affliction_maximum_mana"
+      },
+      {
+        "weight": 146,
+        "tag": "affliction_maximum_life"
+      }
+    ],
+    "name": "Holistic Health",
+    "placements": [],
+    "id": 11484
+  },
+  "Cooked Alive": {
+    "implicit_tags": [
+      "elemental_damage",
+      "damage",
+      "elemental",
+      "fire",
+      "ailment"
+    ],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [{
+      "weight": 137,
+      "tag": "affliction_fire_damage_over_time_multiplier"
+    }],
+    "name": "Cooked Alive",
+    "placements": [],
+    "id": 11399
+  },
+  "Frantic Aspect": {
+    "implicit_tags": [
+      "resource",
+      "mana",
+      "speed",
+      "aura"
+    ],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [
+      {
+        "weight": 180,
+        "tag": "old_do_not_use_affliction_aura_effect"
+      },
+      {
+        "weight": 180,
+        "tag": "affliction_reservation_efficiency_small"
+      }
+    ],
+    "name": "Frantic Aspect",
+    "placements": [],
+    "id": 12451
+  },
+  "Ancestral Might": {
+    "implicit_tags": ["damage"],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [{
+      "weight": 738,
+      "tag": "affliction_totem_damage"
+    }],
+    "name": "Ancestral Might",
+    "placements": [],
+    "id": 11297
+  },
+  "Second Skin": {
+    "implicit_tags": [
+      "block",
+      "defences",
+      "armour"
+    ],
+    "stats": [],
+    "required_level": 1,
+    "spawn_tags": [
+      {
+        "weight": 1391,
+        "tag": "affliction_armour"
+      },
+      {
+        "weight": 750,
+        "tag": "affliction_chance_to_block"
+      }
+    ],
+    "name": "Second Skin",
+    "placements": [],
+    "id": 11496
+  },
+  "Exploit Weakness": {
+    "implicit_tags": [
+      "physical_damage",
+      "caster_damage",
+      "damage",
+      "physical",
+      "caster",
+      "curse"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [
+      {
+        "weight": 353,
+        "tag": "old_do_not_use_affliction_curse_effect"
+      },
+      {
+        "weight": 353,
+        "tag": "affliction_curse_effect_small"
+      }
+    ],
+    "name": "Exploit Weakness",
+    "placements": [],
+    "id": 12387
+  },
+  "Arcane Heroism": {
+    "implicit_tags": [],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [{
+      "weight": 281,
+      "tag": "affliction_spell_damage"
+    }],
+    "name": "Arcane Heroism",
+    "placements": [],
+    "id": 11362
+  },
+  "Snaring Spirits": {
+    "implicit_tags": ["damage"],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [{
+      "weight": 738,
+      "tag": "affliction_totem_damage"
+    }],
+    "name": "Snaring Spirits",
+    "placements": [],
+    "id": 11299
+  },
+  "Basics of Pain": {
+    "implicit_tags": [
+      "damage",
+      "critical"
+    ],
+    "stats": [],
+    "required_level": 1,
+    "spawn_tags": [{
+      "weight": 914,
+      "tag": "affliction_critical_chance"
+    }],
+    "name": "Basics of Pain",
+    "placements": [],
+    "id": 11287
+  },
+  "Expert Sabotage": {
+    "implicit_tags": ["speed"],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [{
+      "weight": 980,
+      "tag": "affliction_trap_and_mine_damage"
+    }],
+    "name": "Expert Sabotage",
+    "placements": [],
+    "id": 11464
+  },
+  "Aerodynamics": {
+    "implicit_tags": [
+      "damage",
+      "speed"
+    ],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [{
+      "weight": 333,
+      "tag": "affliction_projectile_damage"
+    }],
+    "name": "Aerodynamics",
+    "placements": [],
+    "id": 11456
+  },
+  "Run Through": {
+    "implicit_tags": [
+      "physical_damage",
+      "damage",
+      "physical",
+      "attack"
+    ],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [{
+      "weight": 141,
+      "tag": "affliction_axe_and_sword_damage"
+    }],
+    "name": "Run Through",
+    "placements": [],
+    "id": 11325
+  },
+  "Fearsome Warrior": {
+    "implicit_tags": [
+      "damage",
+      "attack"
+    ],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [{
+      "weight": 113,
+      "tag": "affliction_damage_with_two_handed_melee_weapons"
+    }],
+    "name": "Fearsome Warrior",
+    "placements": [],
+    "id": 11344
+  },
+  "Born of Chaos": {
+    "implicit_tags": [
+      "chaos",
+      "resistance"
+    ],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [{
+      "weight": 439,
+      "tag": "affliction_chaos_resistance"
+    }],
+    "name": "Born of Chaos",
+    "placements": [],
+    "id": 11531
+  },
+  "Eternal Suffering": {
+    "implicit_tags": [
+      "chaos_damage",
+      "damage",
+      "chaos"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [{
+      "weight": 348,
+      "tag": "affliction_chaos_damage_over_time_multiplier"
+    }],
+    "name": "Eternal Suffering",
+    "placements": [],
+    "id": 11409
+  },
+  "Follow-Through": {
+    "implicit_tags": ["damage"],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [{
+      "weight": 333,
+      "tag": "affliction_projectile_damage"
+    }],
+    "name": "Follow-Through",
+    "placements": [],
+    "id": 11451
+  },
+  "Guerilla Tactics": {
+    "implicit_tags": [
+      "damage",
+      "speed"
+    ],
+    "stats": [],
+    "required_level": 1,
+    "spawn_tags": [{
+      "weight": 1959,
+      "tag": "affliction_trap_and_mine_damage"
+    }],
+    "name": "Guerilla Tactics",
+    "placements": [],
+    "id": 11465
+  },
+  "Electric Presence": {
+    "implicit_tags": [
+      "resource",
+      "mana",
+      "elemental",
+      "lightning",
+      "aura",
+      "ailment"
+    ],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [
+      {
+        "weight": 180,
+        "tag": "old_do_not_use_affliction_aura_effect"
+      },
+      {
+        "weight": 180,
+        "tag": "affliction_reservation_efficiency_small"
+      }
+    ],
+    "name": "Electric Presence",
+    "placements": [],
+    "id": 11278
+  },
+  "Feasting Fiends": {
+    "implicit_tags": [
+      "resource",
+      "life",
+      "damage",
+      "minion"
+    ],
+    "stats": [],
+    "required_level": 1,
+    "spawn_tags": [
+      {
+        "weight": 1433,
+        "tag": "affliction_minion_life"
+      },
+      {
+        "weight": 1000,
+        "tag": "affliction_minion_damage"
+      }
+    ],
+    "name": "Feasting Fiends",
+    "placements": [],
+    "id": 11449
+  },
+  "Doedre's Gluttony": {
+    "implicit_tags": [
+      "caster_damage",
+      "damage",
+      "caster",
+      "curse"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [
+      {
+        "weight": 353,
+        "tag": "old_do_not_use_affliction_curse_effect"
+      },
+      {
+        "weight": 353,
+        "tag": "affliction_curse_effect_small"
+      }
+    ],
+    "name": "Doedre's Gluttony",
+    "placements": [],
+    "id": 12389
+  },
+  "Expansive Might": {
+    "implicit_tags": [
+      "damage",
+      "attack"
+    ],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [
+      {
+        "weight": 141,
+        "tag": "affliction_mace_and_staff_damage"
+      },
+      {
+        "weight": 367,
+        "tag": "affliction_area_damage"
+      }
+    ],
+    "name": "Expansive Might",
+    "placements": [],
+    "id": 11328
+  },
+  "Sadist": {
+    "implicit_tags": [
+      "elemental_damage",
+      "damage",
+      "elemental"
+    ],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [
+      {
+        "weight": 281,
+        "tag": "affliction_elemental_damage"
+      },
+      {
+        "weight": 136,
+        "tag": "affliction_lightning_damage"
+      },
+      {
+        "weight": 95,
+        "tag": "affliction_cold_damage"
+      },
+      {
+        "weight": 89,
+        "tag": "affliction_fire_damage"
+      }
+    ],
+    "name": "Sadist",
+    "placements": [],
+    "id": 11368
+  },
+  "Peace Amidst Chaos": {
+    "implicit_tags": [
+      "resource",
+      "life",
+      "defences",
+      "armour"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [{
+      "weight": 390,
+      "tag": "affliction_maximum_life"
+    }],
+    "name": "Peace Amidst Chaos",
+    "placements": [],
+    "id": 11475
+  },
+  "Provocateur": {
+    "implicit_tags": [
+      "damage",
+      "critical"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [
+      {
+        "weight": 873,
+        "tag": "affliction_warcry_buff_effect"
+      },
+      {
+        "weight": 457,
+        "tag": "affliction_critical_chance"
+      }
+    ],
+    "name": "Provocateur",
+    "placements": [],
+    "id": 11321
+  },
+  "Broadside": {
+    "implicit_tags": ["attack"],
+    "stats": [],
+    "required_level": 1,
+    "spawn_tags": [{
+      "weight": 774,
+      "tag": "affliction_bow_damage"
+    }],
+    "name": "Broadside",
+    "placements": [],
+    "id": 11335
+  },
+  "Surprise Sabotage": {
+    "implicit_tags": [
+      "elemental_damage",
+      "damage",
+      "elemental",
+      "critical"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [{
+      "weight": 980,
+      "tag": "affliction_trap_and_mine_damage"
+    }],
+    "name": "Surprise Sabotage",
+    "placements": [],
+    "id": 11468
+  },
+  "Enduring Composure": {
+    "implicit_tags": [
+      "endurance_charge",
+      "defences",
+      "armour"
+    ],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [{
+      "weight": 261,
+      "tag": "affliction_armour"
+    }],
+    "name": "Enduring Composure",
+    "placements": [],
+    "id": 11498
+  },
+  "Misery Everlasting": {
+    "implicit_tags": [
+      "caster",
+      "curse"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [
+      {
+        "weight": 353,
+        "tag": "old_do_not_use_affliction_curse_effect"
+      },
+      {
+        "weight": 353,
+        "tag": "affliction_curse_effect_small"
+      }
+    ],
+    "name": "Misery Everlasting",
+    "placements": [],
+    "id": 12386
+  },
+  "Prismatic Carapace": {
+    "implicit_tags": [
+      "defences",
+      "armour",
+      "elemental",
+      "resistance"
+    ],
+    "stats": [],
+    "required_level": 75,
+    "spawn_tags": [
+      {
+        "weight": 87,
+        "tag": "affliction_armour"
+      },
+      {
+        "weight": 86,
+        "tag": "affliction_lightning_resistance"
+      },
+      {
+        "weight": 86,
+        "tag": "affliction_cold_resistance"
+      },
+      {
+        "weight": 82,
+        "tag": "affliction_fire_resistance"
+      }
+    ],
+    "name": "Prismatic Carapace",
+    "placements": [],
+    "id": 11494
+  },
+  "Graceful Execution": {
+    "implicit_tags": [
+      "attack",
+      "speed",
+      "critical",
+      "attribute"
+    ],
+    "stats": [],
+    "required_level": 1,
+    "spawn_tags": [{
+      "weight": 604,
+      "tag": "affliction_damage_with_two_handed_melee_weapons"
+    }],
+    "name": "Graceful Execution",
+    "placements": [],
+    "id": 11342
+  },
+  "Master of Fire": {
+    "implicit_tags": [],
+    "stats": [],
+    "required_level": 75,
+    "spawn_tags": [
+      {
+        "weight": 30,
+        "tag": "affliction_fire_damage"
+      },
+      {
+        "weight": 46,
+        "tag": "affliction_fire_damage_over_time_multiplier"
+      }
+    ],
+    "name": "Master of Fire",
+    "placements": [],
+    "id": 11374
+  },
+  "Self-Control": {
+    "implicit_tags": [
+      "resource",
+      "mana"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [
+      {
+        "weight": 505,
+        "tag": "affliction_maximum_energy_shield"
+      },
+      {
+        "weight": 480,
+        "tag": "old_do_not_use_affliction_aura_effect"
+      },
+      {
+        "weight": 480,
+        "tag": "affliction_reservation_efficiency_small"
+      }
+    ],
+    "name": "Self-Control",
+    "placements": [],
+    "id": 12392
+  },
+  "Streamlined": {
+    "implicit_tags": [
+      "damage",
+      "speed"
+    ],
+    "stats": [],
+    "required_level": 1,
+    "spawn_tags": [{
+      "weight": 1778,
+      "tag": "affliction_projectile_damage"
+    }],
+    "name": "Streamlined",
+    "placements": [],
+    "id": 11452
+  },
+  "Enduring Ward": {
+    "implicit_tags": [
+      "block",
+      "endurance_charge"
+    ],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [{
+      "weight": 141,
+      "tag": "affliction_chance_to_block"
+    }],
+    "name": "Enduring Ward",
+    "placements": [],
+    "id": 11261
+  },
+  "Alchemist": {
+    "implicit_tags": [
+      "flask",
+      "elemental",
+      "cold",
+      "resistance",
+      "attack",
+      "caster",
+      "speed"
+    ],
+    "stats": [],
+    "required_level": 1,
+    "spawn_tags": [{
+      "weight": 1371,
+      "tag": "affliction_cold_resistance"
+    }],
+    "name": "Alchemist",
+    "placements": [],
+    "id": 11524
+  },
+  "Sap Psyche": {
+    "implicit_tags": [
+      "caster_damage",
+      "resource",
+      "mana",
+      "defences",
+      "energy_shield",
+      "damage",
+      "caster"
+    ],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [{
+      "weight": 281,
+      "tag": "affliction_spell_damage"
+    }],
+    "name": "Sap Psyche",
+    "placements": [],
+    "id": 11367
+  },
+  "Righteous Path": {
+    "implicit_tags": [
+      "resource",
+      "mana",
+      "aura"
+    ],
+    "stats": [],
+    "required_level": 1,
+    "spawn_tags": [
+      {
+        "weight": 960,
+        "tag": "old_do_not_use_affliction_aura_effect"
+      },
+      {
+        "weight": 960,
+        "tag": "affliction_reservation_efficiency_small"
+      }
+    ],
+    "name": "Righteous Path",
+    "placements": [],
+    "id": 11280
+  },
+  "Battle-Hardened": {
+    "implicit_tags": [
+      "defences",
+      "armour",
+      "evasion",
+      "physical"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [
+      {
+        "weight": 232,
+        "tag": "affliction_physical_damage"
+      },
+      {
+        "weight": 696,
+        "tag": "affliction_armour"
+      },
+      {
+        "weight": 658,
+        "tag": "affliction_evasion"
+      }
+    ],
+    "name": "Battle-Hardened",
+    "placements": [],
+    "id": 11272
+  },
+  "Flow of Life": {
+    "implicit_tags": [
+      "resource",
+      "life",
+      "damage"
+    ],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [
+      {
+        "weight": 222,
+        "tag": "affliction_damage_over_time_multiplier"
+      },
+      {
+        "weight": 178,
+        "tag": "affliction_cold_damage_over_time_multiplier"
+      },
+      {
+        "weight": 129,
+        "tag": "affliction_physical_damage_over_time_multiplier"
+      },
+      {
+        "weight": 137,
+        "tag": "affliction_fire_damage_over_time_multiplier"
+      },
+      {
+        "weight": 130,
+        "tag": "affliction_chaos_damage_over_time_multiplier"
+      },
+      {
+        "weight": 146,
+        "tag": "affliction_maximum_life"
+      }
+    ],
+    "name": "Flow of Life",
+    "placements": [],
+    "id": 11413
+  },
+  "Thaumophage": {
+    "implicit_tags": [
+      "caster_damage",
+      "defences",
+      "energy_shield",
+      "damage",
+      "caster"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [{
+      "weight": 750,
+      "tag": "affliction_spell_damage"
+    }],
+    "name": "Thaumophage",
+    "placements": [],
+    "id": 11365
+  },
+  "Mob Mentality": {
+    "implicit_tags": [
+      "endurance_charge",
+      "frenzy_charge",
+      "power_charge",
+      "damage",
+      "attack"
+    ],
+    "stats": [],
+    "required_level": 75,
+    "spawn_tags": [{
+      "weight": 109,
+      "tag": "affliction_warcry_buff_effect"
+    }],
+    "name": "Mob Mentality",
+    "placements": [],
+    "id": 11317
+  },
+  "Grim Oath": {
+    "implicit_tags": [
+      "physical_damage",
+      "chaos_damage",
+      "damage",
+      "physical",
+      "chaos"
+    ],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [
+      {
+        "weight": 87,
+        "tag": "affliction_physical_damage"
+      },
+      {
+        "weight": 97,
+        "tag": "affliction_chaos_damage"
+      }
+    ],
+    "name": "Grim Oath",
+    "placements": [],
+    "id": 11271
+  },
+  "Fettle": {
+    "implicit_tags": [
+      "resource",
+      "life"
+    ],
+    "stats": [],
+    "required_level": 75,
+    "spawn_tags": [{
+      "weight": 49,
+      "tag": "affliction_maximum_life"
+    }],
+    "name": "Fettle",
+    "placements": [],
+    "id": 11471
+  },
+  "Blanketed Snow": {
+    "implicit_tags": [
+      "elemental_damage",
+      "damage",
+      "elemental",
+      "cold"
+    ],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [{
+      "weight": 95,
+      "tag": "affliction_cold_damage"
+    }],
+    "name": "Blanketed Snow",
+    "placements": [],
+    "id": 11381
+  },
+  "Daring Ideas": {
+    "implicit_tags": [
+      "resource",
+      "mana",
+      "attack"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [{
+      "weight": 466,
+      "tag": "affliction_maximum_mana"
+    }],
+    "name": "Daring Ideas",
+    "placements": [],
+    "id": 11481
+  },
+  "Stoic Focus": {
+    "implicit_tags": [
+      "block",
+      "damage"
+    ],
+    "stats": [],
+    "required_level": 1,
+    "spawn_tags": [
+      {
+        "weight": 1811,
+        "tag": "affliction_channelling_skill_damage"
+      },
+      {
+        "weight": 750,
+        "tag": "affliction_chance_to_block"
+      }
+    ],
+    "name": "Stoic Focus",
+    "placements": [],
+    "id": 11308
+  },
+  "Disorienting Display": {
+    "implicit_tags": [
+      "elemental_damage",
+      "damage",
+      "elemental"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [
+      {
+        "weight": 750,
+        "tag": "affliction_elemental_damage"
+      },
+      {
+        "weight": 364,
+        "tag": "affliction_lightning_damage"
+      },
+      {
+        "weight": 253,
+        "tag": "affliction_cold_damage"
+      },
+      {
+        "weight": 238,
+        "tag": "affliction_fire_damage"
+      }
+    ],
+    "name": "Disorienting Display",
+    "placements": [],
+    "id": 11371
+  },
+  "Rot-Resistant": {
+    "implicit_tags": [
+      "resource",
+      "life",
+      "mana",
+      "defences",
+      "energy_shield",
+      "chaos",
+      "resistance"
+    ],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [{
+      "weight": 439,
+      "tag": "affliction_chaos_resistance"
+    }],
+    "name": "Rot-Resistant",
+    "placements": [],
+    "id": 11533
+  },
+  "Bloodscent": {
+    "implicit_tags": ["attack"],
+    "stats": [],
+    "required_level": 75,
+    "spawn_tags": [{
+      "weight": 47,
+      "tag": "affliction_axe_and_sword_damage"
+    }],
+    "name": "Bloodscent",
+    "placements": [],
+    "id": 11324
+  },
+  "Vicious Bite": {
+    "implicit_tags": [
+      "damage",
+      "minion",
+      "critical"
+    ],
+    "stats": [],
+    "required_level": 75,
+    "spawn_tags": [{
+      "weight": 63,
+      "tag": "affliction_minion_damage"
+    }],
+    "name": "Vicious Bite",
+    "placements": [],
+    "id": 11395
+  },
+  "Winter Prowler": {
+    "implicit_tags": [
+      "elemental",
+      "cold",
+      "resistance",
+      "speed"
+    ],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [{
+      "weight": 257,
+      "tag": "affliction_cold_resistance"
+    }],
+    "name": "Winter Prowler",
+    "placements": [],
+    "id": 11521
+  },
+  "Overwhelming Malice": {
+    "implicit_tags": [],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [
+      {
+        "weight": 171,
+        "tag": "affliction_critical_chance"
+      },
+      {
+        "weight": 97,
+        "tag": "affliction_chaos_damage"
+      }
+    ],
+    "name": "Overwhelming Malice",
+    "placements": [],
+    "id": 11283
+  },
+  "Grand Design": {
+    "implicit_tags": [
+      "caster",
+      "speed"
+    ],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [{
+      "weight": 439,
+      "tag": "affliction_brand_damage"
+    }],
+    "name": "Grand Design",
+    "placements": [],
+    "id": 11462
+  },
+  "Skeletal Atrophy": {
+    "implicit_tags": [
+      "physical_damage",
+      "chaos_damage",
+      "damage",
+      "physical",
+      "chaos",
+      "minion"
+    ],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [{
+      "weight": 188,
+      "tag": "affliction_minion_damage"
+    }],
+    "name": "Skeletal Atrophy",
+    "placements": [],
+    "id": 11686
+  },
+  "Fan of Blades": {
+    "implicit_tags": [
+      "damage",
+      "attack"
+    ],
+    "stats": [],
+    "required_level": 75,
+    "spawn_tags": [{
+      "weight": 51,
+      "tag": "affliction_dagger_and_claw_damage"
+    }],
+    "name": "Fan of Blades",
+    "placements": [],
+    "id": 11331
+  },
+  "Set and Forget": {
+    "implicit_tags": ["damage"],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [{
+      "weight": 980,
+      "tag": "affliction_trap_and_mine_damage"
+    }],
+    "name": "Set and Forget",
+    "placements": [],
+    "id": 11463
+  },
+  "Repeater": {
+    "implicit_tags": [
+      "caster_damage",
+      "damage",
+      "attack",
+      "caster",
+      "speed"
+    ],
+    "stats": [],
+    "required_level": 1,
+    "spawn_tags": [{
+      "weight": 1778,
+      "tag": "affliction_projectile_damage"
+    }],
+    "name": "Repeater",
+    "placements": [],
+    "id": 11455
+  },
+  "Blizzard Caller": {
+    "implicit_tags": [
+      "caster",
+      "critical",
+      "curse"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [
+      {
+        "weight": 353,
+        "tag": "old_do_not_use_affliction_curse_effect"
+      },
+      {
+        "weight": 353,
+        "tag": "affliction_curse_effect_small"
+      }
+    ],
+    "name": "Blizzard Caller",
+    "placements": [],
+    "id": 12384
+  },
+  "Vast Power": {
+    "implicit_tags": ["damage"],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [{
+      "weight": 980,
+      "tag": "affliction_area_damage"
+    }],
+    "name": "Vast Power",
+    "placements": [],
+    "id": 11290
+  },
+  "Inspired Oppression": {
+    "implicit_tags": [
+      "elemental_damage",
+      "resource",
+      "mana",
+      "damage",
+      "elemental",
+      "ailment"
+    ],
+    "stats": [],
+    "required_level": 75,
+    "spawn_tags": [
+      {
+        "weight": 102,
+        "tag": "affliction_effect_of_non-damaging_ailments"
+      },
+      {
+        "weight": 94,
+        "tag": "affliction_elemental_damage"
+      },
+      {
+        "weight": 45,
+        "tag": "affliction_lightning_damage"
+      },
+      {
+        "weight": 32,
+        "tag": "affliction_cold_damage"
+      }
+    ],
+    "name": "Inspired Oppression",
+    "placements": [],
+    "id": 11421
+  },
+  "Flexible Sentry": {
+    "implicit_tags": [
+      "block",
+      "ailment"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [
+      {
+        "weight": 375,
+        "tag": "affliction_chance_to_block"
+      },
+      {
+        "weight": 686,
+        "tag": "affliction_lightning_resistance"
+      },
+      {
+        "weight": 686,
+        "tag": "affliction_cold_resistance"
+      },
+      {
+        "weight": 658,
+        "tag": "affliction_fire_resistance"
+      }
+    ],
+    "name": "Flexible Sentry",
+    "placements": [],
+    "id": 11505
+  },
+  "Hex Breaker": {
+    "implicit_tags": [
+      "attack",
+      "caster",
+      "speed",
+      "curse"
+    ],
+    "stats": [],
+    "required_level": 75,
+    "spawn_tags": [{
+      "weight": 113,
+      "tag": "affliction_channelling_skill_damage"
+    }],
+    "name": "Hex Breaker",
+    "placements": [],
+    "id": 11309
+  },
+  "Ancestral Reach": {
+    "implicit_tags": [
+      "damage",
+      "speed"
+    ],
+    "stats": [],
+    "required_level": 1,
+    "spawn_tags": [{
+      "weight": 1477,
+      "tag": "affliction_totem_damage"
+    }],
+    "name": "Ancestral Reach",
+    "placements": [],
+    "id": 11296
+  },
+  "Cult-Leader": {
+    "implicit_tags": [
+      "damage",
+      "minion"
+    ],
+    "stats": [],
+    "required_level": 1,
+    "spawn_tags": [{
+      "weight": 2526,
+      "tag": "affliction_minion_damage_while_you_have_a_herald"
+    }],
+    "name": "Cult-Leader",
+    "placements": [],
+    "id": 11437
+  },
+  "Overlord": {
+    "implicit_tags": [
+      "damage",
+      "attack"
+    ],
+    "stats": [],
+    "required_level": 75,
+    "spawn_tags": [{
+      "weight": 47,
+      "tag": "affliction_mace_and_staff_damage"
+    }],
+    "name": "Overlord",
+    "placements": [],
+    "id": 11327
+  },
+  "Fuel the Fight": {
+    "implicit_tags": [
+      "resource",
+      "mana",
+      "attack",
+      "speed"
+    ],
+    "stats": [],
+    "required_level": 1,
+    "spawn_tags": [
+      {
+        "weight": 432,
+        "tag": "affliction_attack_damage_"
+      },
+      {
+        "weight": 750,
+        "tag": "affliction_axe_and_sword_damage"
+      },
+      {
+        "weight": 750,
+        "tag": "affliction_mace_and_staff_damage"
+      },
+      {
+        "weight": 808,
+        "tag": "affliction_dagger_and_claw_damage"
+      },
+      {
+        "weight": 774,
+        "tag": "affliction_bow_damage"
+      },
+      {
+        "weight": 807,
+        "tag": "affliction_wand_damage"
+      },
+      {
+        "weight": 604,
+        "tag": "affliction_damage_with_two_handed_melee_weapons"
+      },
+      {
+        "weight": 623,
+        "tag": "affliction_attack_damage_while_dual_wielding_"
+      },
+      {
+        "weight": 600,
+        "tag": "affliction_attack_damage_while_holding_a_shield"
+      }
+    ],
+    "name": "Fuel the Fight",
+    "placements": [],
+    "id": 11357
+  },
+  "Unholy Grace": {
+    "implicit_tags": [
+      "caster_damage",
+      "chaos_damage",
+      "damage",
+      "chaos",
+      "attack",
+      "caster",
+      "speed"
+    ],
+    "stats": [],
+    "required_level": 1,
+    "spawn_tags": [{
+      "weight": 519,
+      "tag": "affliction_chaos_damage"
+    }],
+    "name": "Unholy Grace",
+    "placements": [],
+    "id": 11388
+  },
+  "Shrieking Bolts": {
+    "implicit_tags": ["damage"],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [{
+      "weight": 889,
+      "tag": "affliction_projectile_damage"
+    }],
+    "name": "Shrieking Bolts",
+    "placements": [],
+    "id": 11453
+  },
+  "Quick Getaway": {
+    "implicit_tags": [
+      "attack",
+      "caster",
+      "speed",
+      "critical"
+    ],
+    "stats": [],
+    "required_level": 1,
+    "spawn_tags": [{
+      "weight": 914,
+      "tag": "affliction_critical_chance"
+    }],
+    "name": "Quick Getaway",
+    "placements": [],
+    "id": 11288
+  },
+  "Spiked Concoction": {
+    "implicit_tags": [
+      "flask",
+      "attack",
+      "caster",
+      "speed"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [
+      {
+        "weight": 539,
+        "tag": "affliction_flask_duration"
+      },
+      {
+        "weight": 889,
+        "tag": "affliction_life_and_mana_recovery_from_flasks"
+      }
+    ],
+    "name": "Spiked Concoction",
+    "placements": [],
+    "id": 11312
+  },
+  "Chip Away": {
+    "implicit_tags": [
+      "caster",
+      "speed"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [{
+      "weight": 1171,
+      "tag": "affliction_brand_damage"
+    }],
+    "name": "Chip Away",
+    "placements": [],
+    "id": 11457
+  },
+  "Pure Aptitude": {
+    "implicit_tags": [
+      "resource",
+      "mana",
+      "defences",
+      "energy_shield",
+      "attribute"
+    ],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [
+      {
+        "weight": 257,
+        "tag": "affliction_lightning_resistance"
+      },
+      {
+        "weight": 180,
+        "tag": "old_do_not_use_affliction_aura_effect"
+      },
+      {
+        "weight": 180,
+        "tag": "affliction_reservation_efficiency_small"
+      }
+    ],
+    "name": "Pure Aptitude",
+    "placements": [],
+    "id": 11528
+  },
+  "Raze and Pillage": {
+    "implicit_tags": [
+      "physical_damage",
+      "elemental_damage",
+      "bleed",
+      "damage",
+      "physical",
+      "elemental",
+      "fire",
+      "minion",
+      "ailment"
+    ],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [{
+      "weight": 188,
+      "tag": "affliction_minion_damage"
+    }],
+    "name": "Raze and Pillage",
+    "placements": [],
+    "id": 11391
+  },
+  "Forbidden Words": {
+    "implicit_tags": [
+      "resource",
+      "mana",
+      "caster",
+      "curse"
+    ],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [],
+    "name": "Forbidden Words",
+    "placements": [],
+    "id": 11430
+  },
+  "Vivid Hues": {
+    "implicit_tags": [
+      "bleed",
+      "resource",
+      "life",
+      "physical",
+      "attack",
+      "ailment"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [{
+      "weight": 343,
+      "tag": "affliction_physical_damage_over_time_multiplier"
+    }],
+    "name": "Vivid Hues",
+    "placements": [],
+    "id": 11402
+  },
+  "Precise Retaliation": {
+    "implicit_tags": [
+      "damage",
+      "critical"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [
+      {
+        "weight": 300,
+        "tag": "affliction_attack_damage_while_holding_a_shield"
+      },
+      {
+        "weight": 457,
+        "tag": "affliction_critical_chance"
+      }
+    ],
+    "name": "Precise Retaliation",
+    "placements": [],
+    "id": 11263
+  },
+  "Corrosive Elements": {
+    "implicit_tags": [
+      "elemental_damage",
+      "damage",
+      "elemental"
+    ],
+    "stats": [],
+    "required_level": 75,
+    "spawn_tags": [
+      {
+        "weight": 94,
+        "tag": "affliction_elemental_damage"
+      },
+      {
+        "weight": 45,
+        "tag": "affliction_lightning_damage"
+      },
+      {
+        "weight": 32,
+        "tag": "affliction_cold_damage"
+      },
+      {
+        "weight": 30,
+        "tag": "affliction_fire_damage"
+      }
+    ],
+    "name": "Corrosive Elements",
+    "placements": [],
+    "id": 11369
+  },
+  "Strike Leader": {
+    "implicit_tags": [
+      "block",
+      "damage",
+      "attack"
+    ],
+    "stats": [],
+    "required_level": 1,
+    "spawn_tags": [
+      {
+        "weight": 600,
+        "tag": "affliction_attack_damage_while_holding_a_shield"
+      },
+      {
+        "weight": 750,
+        "tag": "affliction_chance_to_block"
+      }
+    ],
+    "name": "Strike Leader",
+    "placements": [],
+    "id": 11259
+  },
+  "Dark Messenger": {
+    "implicit_tags": ["damage"],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [{
+      "weight": 941,
+      "tag": "affliction_damage_while_you_have_a_herald"
+    }],
+    "name": "Dark Messenger",
+    "placements": [],
+    "id": 11439
+  },
+  "Wizardry": {
+    "implicit_tags": [
+      "resource",
+      "mana",
+      "elemental",
+      "lightning",
+      "resistance"
+    ],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [
+      {
+        "weight": 257,
+        "tag": "affliction_lightning_resistance"
+      },
+      {
+        "weight": 175,
+        "tag": "affliction_maximum_mana"
+      }
+    ],
+    "name": "Wizardry",
+    "placements": [],
+    "id": 11526
+  },
+  "Powerful Ward": {
+    "implicit_tags": [
+      "block",
+      "power_charge"
+    ],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [{
+      "weight": 141,
+      "tag": "affliction_chance_to_block"
+    }],
+    "name": "Powerful Ward",
+    "placements": [],
+    "id": 11260
+  },
+  "Exposure Therapy": {
+    "implicit_tags": [
+      "chaos_damage",
+      "damage",
+      "chaos",
+      "resistance"
+    ],
+    "stats": [],
+    "required_level": 1,
+    "spawn_tags": [
+      {
+        "weight": 1185,
+        "tag": "affliction_damage_over_time_multiplier"
+      },
+      {
+        "weight": 950,
+        "tag": "affliction_cold_damage_over_time_multiplier"
+      },
+      {
+        "weight": 686,
+        "tag": "affliction_physical_damage_over_time_multiplier"
+      },
+      {
+        "weight": 733,
+        "tag": "affliction_fire_damage_over_time_multiplier"
+      },
+      {
+        "weight": 696,
+        "tag": "affliction_chaos_damage_over_time_multiplier"
+      },
+      {
+        "weight": 2341,
+        "tag": "affliction_chaos_resistance"
+      }
+    ],
+    "name": "Exposure Therapy",
+    "placements": [],
+    "id": 11414
+  },
+  "Arcane Pyrotechnics": {
+    "implicit_tags": ["damage"],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [{
+      "weight": 367,
+      "tag": "affliction_trap_and_mine_damage"
+    }],
+    "name": "Arcane Pyrotechnics",
+    "placements": [],
+    "id": 11467
+  },
+  "Enduring Focus": {
+    "implicit_tags": [
+      "endurance_charge",
+      "damage"
+    ],
+    "stats": [],
+    "required_level": 75,
+    "spawn_tags": [{
+      "weight": 113,
+      "tag": "affliction_channelling_skill_damage"
+    }],
+    "name": "Enduring Focus",
+    "placements": [],
+    "id": 11306
+  },
+  "Rattling Bellow": {
+    "implicit_tags": [
+      "damage",
+      "attack",
+      "attribute"
+    ],
+    "stats": [],
+    "required_level": 1,
+    "spawn_tags": [{
+      "weight": 1745,
+      "tag": "affliction_warcry_buff_effect"
+    }],
+    "name": "Rattling Bellow",
+    "placements": [],
+    "id": 11323
+  },
+  "Rote Reinforcement": {
+    "implicit_tags": [
+      "block",
+      "endurance_charge",
+      "resource",
+      "life"
+    ],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [
+      {
+        "weight": 141,
+        "tag": "affliction_chance_to_block"
+      },
+      {
+        "weight": 146,
+        "tag": "affliction_maximum_life"
+      }
+    ],
+    "name": "Rote Reinforcement",
+    "placements": [],
+    "id": 11508
+  },
+  "Warning Call": {
+    "implicit_tags": [
+      "defences",
+      "armour"
+    ],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [{
+      "weight": 327,
+      "tag": "affliction_warcry_buff_effect"
+    }],
+    "name": "Warning Call",
+    "placements": [],
+    "id": 11322
+  },
+  "Practiced Caster": {
+    "implicit_tags": [
+      "caster_damage",
+      "damage",
+      "caster",
+      "speed"
+    ],
+    "stats": [],
+    "required_level": 1,
+    "spawn_tags": [{
+      "weight": 1500,
+      "tag": "affliction_spell_damage"
+    }],
+    "name": "Practiced Caster",
+    "placements": [],
+    "id": 11363
+  },
+  "Dark Ideation": {
+    "implicit_tags": [
+      "chaos_damage",
+      "damage",
+      "chaos"
+    ],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [
+      {
+        "weight": 97,
+        "tag": "affliction_chaos_damage"
+      },
+      {
+        "weight": 130,
+        "tag": "affliction_chaos_damage_over_time_multiplier"
+      }
+    ],
+    "name": "Dark Ideation",
+    "placements": [],
+    "id": 11387
+  },
+  "Conjured Wall": {
+    "implicit_tags": [
+      "block",
+      "caster_damage",
+      "damage",
+      "caster"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [{
+      "weight": 750,
+      "tag": "affliction_spell_damage"
+    }],
+    "name": "Conjured Wall",
+    "placements": [],
+    "id": 11361
+  },
+  "Storm's Hand": {
+    "implicit_tags": [
+      "physical_damage",
+      "elemental_damage",
+      "damage",
+      "physical",
+      "elemental",
+      "lightning",
+      "attack"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [{
+      "weight": 403,
+      "tag": "affliction_wand_damage"
+    }],
+    "name": "Storm's Hand",
+    "placements": [],
+    "id": 11338
+  },
+  "Doryani's Lesson": {
+    "implicit_tags": [
+      "elemental_damage",
+      "resource",
+      "life",
+      "damage",
+      "elemental"
+    ],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [
+      {
+        "weight": 281,
+        "tag": "affliction_elemental_damage"
+      },
+      {
+        "weight": 136,
+        "tag": "affliction_lightning_damage"
+      },
+      {
+        "weight": 95,
+        "tag": "affliction_cold_damage"
+      },
+      {
+        "weight": 89,
+        "tag": "affliction_fire_damage"
+      }
+    ],
+    "name": "Doryani's Lesson",
+    "placements": [],
+    "id": 11370
+  },
+  "Thunderstruck": {
+    "implicit_tags": [
+      "elemental_damage",
+      "damage",
+      "elemental",
+      "lightning",
+      "critical"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [{
+      "weight": 364,
+      "tag": "affliction_lightning_damage"
+    }],
+    "name": "Thunderstruck",
+    "placements": [],
+    "id": 11425
+  },
+  "Haemorrhage": {
+    "implicit_tags": [
+      "damage",
+      "critical",
+      "ailment"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [
+      {
+        "weight": 593,
+        "tag": "affliction_damage_over_time_multiplier"
+      },
+      {
+        "weight": 475,
+        "tag": "affliction_cold_damage_over_time_multiplier"
+      },
+      {
+        "weight": 343,
+        "tag": "affliction_physical_damage_over_time_multiplier"
+      },
+      {
+        "weight": 366,
+        "tag": "affliction_fire_damage_over_time_multiplier"
+      },
+      {
+        "weight": 348,
+        "tag": "affliction_chaos_damage_over_time_multiplier"
+      },
+      {
+        "weight": 457,
+        "tag": "affliction_critical_chance"
+      }
+    ],
+    "name": "Haemorrhage",
+    "placements": [],
+    "id": 11412
+  },
+  "Cold Conduction": {
+    "implicit_tags": [
+      "elemental",
+      "cold",
+      "lightning",
+      "ailment"
+    ],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [{
+      "weight": 305,
+      "tag": "affliction_effect_of_non-damaging_ailments"
+    }],
+    "name": "Cold Conduction",
+    "placements": [],
+    "id": 11420
+  },
+  "Tempt the Storm": {
+    "implicit_tags": [
+      "caster",
+      "speed",
+      "curse"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [
+      {
+        "weight": 353,
+        "tag": "old_do_not_use_affliction_curse_effect"
+      },
+      {
+        "weight": 353,
+        "tag": "affliction_curse_effect_small"
+      }
+    ],
+    "name": "Tempt the Storm",
+    "placements": [],
+    "id": 12385
+  },
+  "Furious Assault": {
+    "implicit_tags": [
+      "physical_damage",
+      "caster_damage",
+      "damage",
+      "damage",
+      "physical",
+      "attack",
+      "caster"
+    ],
+    "stats": [],
+    "required_level": 1,
+    "spawn_tags": [{
+      "weight": 464,
+      "tag": "affliction_physical_damage"
+    }],
+    "name": "Furious Assault",
+    "placements": [],
+    "id": 11269
+  },
+  "Expendability": {
+    "implicit_tags": [],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [{
+      "weight": 367,
+      "tag": "affliction_trap_and_mine_damage"
+    }],
+    "name": "Expendability",
+    "placements": [],
+    "id": 11466
+  },
+  "Pure Guile": {
+    "implicit_tags": [
+      "resource",
+      "mana",
+      "attribute"
+    ],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [
+      {
+        "weight": 257,
+        "tag": "affliction_cold_resistance"
+      },
+      {
+        "weight": 180,
+        "tag": "old_do_not_use_affliction_aura_effect"
+      },
+      {
+        "weight": 180,
+        "tag": "affliction_reservation_efficiency_small"
+      }
+    ],
+    "name": "Pure Guile",
+    "placements": [],
+    "id": 11523
+  },
+  "Opportunistic Fusilade": {
+    "implicit_tags": [
+      "damage",
+      "attack",
+      "critical"
+    ],
+    "stats": [],
+    "required_level": 1,
+    "spawn_tags": [{
+      "weight": 807,
+      "tag": "affliction_wand_damage"
+    }],
+    "name": "Opportunistic Fusilade",
+    "placements": [],
+    "id": 11337
+  },
+  "Fiery Aegis": {
+    "implicit_tags": [
+      "elemental",
+      "fire"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [{
+      "weight": 750,
+      "tag": "affliction_chance_to_block"
+    }],
+    "name": "Fiery Aegis",
+    "placements": [],
+    "id": 22664
+  },
+  "Ancestral Inspiration": {
+    "implicit_tags": ["caster"],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [
+      {
+        "weight": 277,
+        "tag": "affliction_totem_damage"
+      },
+      {
+        "weight": 281,
+        "tag": "affliction_spell_damage"
+      }
+    ],
+    "name": "Ancestral Inspiration",
+    "placements": [],
+    "id": 11302
+  },
+  "Lead By Example": {
+    "implicit_tags": ["attribute"],
+    "stats": [],
+    "required_level": 1,
+    "spawn_tags": [{
+      "weight": 1745,
+      "tag": "affliction_warcry_buff_effect"
+    }],
+    "name": "Lead By Example",
+    "placements": [],
+    "id": 11320
+  },
+  "Unwaveringly Evil": {
+    "implicit_tags": [
+      "chaos_damage",
+      "damage",
+      "chaos"
+    ],
+    "stats": [],
+    "required_level": 1,
+    "spawn_tags": [
+      {
+        "weight": 519,
+        "tag": "affliction_chaos_damage"
+      },
+      {
+        "weight": 696,
+        "tag": "affliction_chaos_damage_over_time_multiplier"
+      }
+    ],
+    "name": "Unwaveringly Evil",
+    "placements": [],
+    "id": 11385
+  },
+  "Doedre's Apathy": {
+    "implicit_tags": [
+      "caster",
+      "curse"
+    ],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [
+      {
+        "weight": 132,
+        "tag": "old_do_not_use_affliction_curse_effect"
+      },
+      {
+        "weight": 132,
+        "tag": "affliction_curse_effect_small"
+      }
+    ],
+    "name": "Doedre's Apathy",
+    "placements": [],
+    "id": 12390
+  },
+  "Elegant Form": {
+    "implicit_tags": ["ailment"],
+    "stats": [],
+    "required_level": 1,
+    "spawn_tags": [{
+      "weight": 1477,
+      "tag": "affliction_chance_to_dodge_attacks"
+    }],
+    "name": "Elegant Form",
+    "placements": [],
+    "id": 11513
+  },
+  "Savage Response": {
+    "implicit_tags": [
+      "damage",
+      "critical"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [{
+      "weight": 457,
+      "tag": "affliction_critical_chance"
+    }],
+    "name": "Savage Response",
+    "placements": [],
+    "id": 11285
+  },
+  "Wicked Pall": {
+    "implicit_tags": [
+      "chaos_damage",
+      "damage",
+      "chaos"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [
+      {
+        "weight": 259,
+        "tag": "affliction_chaos_damage"
+      },
+      {
+        "weight": 348,
+        "tag": "affliction_chaos_damage_over_time_multiplier"
+      }
+    ],
+    "name": "Wicked Pall",
+    "placements": [],
+    "id": 11389
+  },
+  "Pure Agony": {
+    "implicit_tags": [
+      "damage",
+      "minion"
+    ],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [{
+      "weight": 474,
+      "tag": "affliction_minion_damage_while_you_have_a_herald"
+    }],
+    "name": "Pure Agony",
+    "placements": [],
+    "id": 11444
+  },
+  "Brush with Death": {
+    "implicit_tags": [
+      "resource",
+      "life",
+      "defences",
+      "energy_shield",
+      "damage"
+    ],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [
+      {
+        "weight": 222,
+        "tag": "affliction_damage_over_time_multiplier"
+      },
+      {
+        "weight": 178,
+        "tag": "affliction_cold_damage_over_time_multiplier"
+      },
+      {
+        "weight": 129,
+        "tag": "affliction_physical_damage_over_time_multiplier"
+      },
+      {
+        "weight": 137,
+        "tag": "affliction_fire_damage_over_time_multiplier"
+      },
+      {
+        "weight": 130,
+        "tag": "affliction_chaos_damage_over_time_multiplier"
+      },
+      {
+        "weight": 146,
+        "tag": "affliction_maximum_life"
+      },
+      {
+        "weight": 189,
+        "tag": "affliction_maximum_energy_shield"
+      }
+    ],
+    "name": "Brush with Death",
+    "placements": [],
+    "id": 11415
+  },
+  "Wound Aggravation": {
+    "implicit_tags": [
+      "physical_damage",
+      "damage",
+      "physical",
+      "attack"
+    ],
+    "stats": [],
+    "required_level": 1,
+    "spawn_tags": [
+      {
+        "weight": 750,
+        "tag": "affliction_axe_and_sword_damage"
+      },
+      {
+        "weight": 686,
+        "tag": "affliction_physical_damage_over_time_multiplier"
+      }
+    ],
+    "name": "Wound Aggravation",
+    "placements": [],
+    "id": 11326
+  },
+  "Overshock": {
+    "implicit_tags": [
+      "elemental",
+      "lightning",
+      "ailment"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [
+      {
+        "weight": 364,
+        "tag": "affliction_lightning_damage"
+      },
+      {
+        "weight": 814,
+        "tag": "affliction_effect_of_non-damaging_ailments"
+      }
+    ],
+    "name": "Overshock",
+    "placements": [],
+    "id": 11427
+  },
+  "Fasting": {
+    "implicit_tags": [
+      "flask",
+      "speed"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [
+      {
+        "weight": 539,
+        "tag": "affliction_flask_duration"
+      },
+      {
+        "weight": 889,
+        "tag": "affliction_life_and_mana_recovery_from_flasks"
+      }
+    ],
+    "name": "Fasting",
+    "placements": [],
+    "id": 11313
+  },
+  "Brutal Infamy": {
+    "implicit_tags": [
+      "damage",
+      "attack"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [{
+      "weight": 302,
+      "tag": "affliction_damage_with_two_handed_melee_weapons"
+    }],
+    "name": "Brutal Infamy",
+    "placements": [],
+    "id": 11343
+  },
+  "Adrenaline": {
+    "implicit_tags": [
+      "resource",
+      "life"
+    ],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [{
+      "weight": 146,
+      "tag": "affliction_maximum_life"
+    }],
+    "name": "Adrenaline",
+    "placements": [],
+    "id": 11476
+  },
+  "Hulking Corpses": {
+    "implicit_tags": [
+      "resource",
+      "life",
+      "minion"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [{
+      "weight": 716,
+      "tag": "affliction_minion_life"
+    }],
+    "name": "Hulking Corpses",
+    "placements": [],
+    "id": 11394
+  },
+  "Hit and Run": {
+    "implicit_tags": [
+      "damage",
+      "attack"
+    ],
+    "stats": [],
+    "required_level": 1,
+    "spawn_tags": [
+      {
+        "weight": 623,
+        "tag": "affliction_attack_damage_while_dual_wielding_"
+      },
+      {
+        "weight": 1477,
+        "tag": "affliction_chance_to_dodge_attacks"
+      }
+    ],
+    "name": "Hit and Run",
+    "placements": [],
+    "id": 11346
+  },
+  "Blowback": {
+    "implicit_tags": [
+      "elemental_damage",
+      "damage",
+      "elemental",
+      "fire",
+      "ailment"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [{
+      "weight": 366,
+      "tag": "affliction_fire_damage_over_time_multiplier"
+    }],
+    "name": "Blowback",
+    "placements": [],
+    "id": 11397
+  },
+  "Holy Conquest": {
+    "implicit_tags": [
+      "caster",
+      "speed"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [{
+      "weight": 1171,
+      "tag": "affliction_brand_damage"
+    }],
+    "name": "Holy Conquest",
+    "placements": [],
+    "id": 11461
+  },
+  "No Witnesses": {
+    "implicit_tags": [],
+    "stats": [],
+    "required_level": 75,
+    "spawn_tags": [],
+    "name": "No Witnesses",
+    "placements": [],
+    "id": 11515
+  },
+  "Uncompromising": {
+    "implicit_tags": [
+      "resource",
+      "mana"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [
+      {
+        "weight": 696,
+        "tag": "affliction_armour"
+      },
+      {
+        "weight": 480,
+        "tag": "old_do_not_use_affliction_aura_effect"
+      },
+      {
+        "weight": 480,
+        "tag": "affliction_reservation_efficiency_small"
+      }
+    ],
+    "name": "Uncompromising",
+    "placements": [],
+    "id": 12393
+  },
+  "Magnifier": {
+    "implicit_tags": [
+      "damage",
+      "critical"
+    ],
+    "stats": [],
+    "required_level": 1,
+    "spawn_tags": [
+      {
+        "weight": 914,
+        "tag": "affliction_critical_chance"
+      },
+      {
+        "weight": 1959,
+        "tag": "affliction_area_damage"
+      }
+    ],
+    "name": "Magnifier",
+    "placements": [],
+    "id": 11284
+  },
+  "Mortifying Aspect": {
+    "implicit_tags": [
+      "resource",
+      "mana",
+      "chaos",
+      "resistance",
+      "aura"
+    ],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [
+      {
+        "weight": 180,
+        "tag": "old_do_not_use_affliction_aura_effect"
+      },
+      {
+        "weight": 180,
+        "tag": "affliction_reservation_efficiency_small"
+      }
+    ],
+    "name": "Mortifying Aspect",
+    "placements": [],
+    "id": 12450
+  },
+  "Fire Attunement": {
+    "implicit_tags": [
+      "elemental",
+      "fire",
+      "ailment"
+    ],
+    "stats": [],
+    "required_level": 1,
+    "spawn_tags": [{
+      "weight": 1315,
+      "tag": "affliction_fire_resistance"
+    }],
+    "name": "Fire Attunement",
+    "placements": [],
+    "id": 11517
+  },
+  "Cold to the Core": {
+    "implicit_tags": [
+      "elemental_damage",
+      "damage",
+      "elemental",
+      "cold"
+    ],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [{
+      "weight": 95,
+      "tag": "affliction_cold_damage"
+    }],
+    "name": "Cold to the Core",
+    "placements": [],
+    "id": 11382
+  },
+  "Stubborn Student": {
+    "implicit_tags": [
+      "resource",
+      "mana",
+      "defences",
+      "armour"
+    ],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [
+      {
+        "weight": 175,
+        "tag": "affliction_maximum_mana"
+      },
+      {
+        "weight": 261,
+        "tag": "affliction_armour"
+      }
+    ],
+    "name": "Stubborn Student",
+    "placements": [],
+    "id": 11487
+  },
+  "Shifting Shadow": {
+    "implicit_tags": [
+      "defences",
+      "evasion",
+      "attribute"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [{
+      "weight": 658,
+      "tag": "affliction_evasion"
+    }],
+    "name": "Shifting Shadow",
+    "placements": [],
+    "id": 11502
+  },
+  "Precise Focus": {
+    "implicit_tags": [
+      "damage",
+      "critical"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [{
+      "weight": 906,
+      "tag": "affliction_channelling_skill_damage"
+    }],
+    "name": "Precise Focus",
+    "placements": [],
+    "id": 11307
+  },
+  "Brand Loyalty": {
+    "implicit_tags": [
+      "caster_damage",
+      "damage",
+      "caster"
+    ],
+    "stats": [],
+    "required_level": 1,
+    "spawn_tags": [{
+      "weight": 2341,
+      "tag": "affliction_brand_damage"
+    }],
+    "name": "Brand Loyalty",
+    "placements": [],
+    "id": 11460
+  },
+  "Will Shaper": {
+    "implicit_tags": [
+      "defences",
+      "energy_shield"
+    ],
+    "stats": [],
+    "required_level": 75,
+    "spawn_tags": [
+      {
+        "weight": 63,
+        "tag": "affliction_maximum_energy_shield"
+      },
+      {
+        "weight": 58,
+        "tag": "affliction_maximum_mana"
+      }
+    ],
+    "name": "Will Shaper",
+    "placements": [],
+    "id": 11490
+  },
+  "Conservation of Energy": {
+    "implicit_tags": [
+      "defences",
+      "energy_shield",
+      "caster"
+    ],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [{
+      "weight": 189,
+      "tag": "affliction_maximum_energy_shield"
+    }],
+    "name": "Conservation of Energy",
+    "placements": [],
+    "id": 11492
+  },
+  "Touch of Cruelty": {
+    "implicit_tags": [
+      "chaos_damage",
+      "damage",
+      "chaos"
+    ],
+    "stats": [],
+    "required_level": 1,
+    "spawn_tags": [{
+      "weight": 519,
+      "tag": "affliction_chaos_damage"
+    }],
+    "name": "Touch of Cruelty",
+    "placements": [],
+    "id": 11384
+  },
+  "Deep Cuts": {
+    "implicit_tags": [
+      "physical",
+      "attack"
+    ],
+    "stats": [],
+    "required_level": 75,
+    "spawn_tags": [],
+    "name": "Deep Cuts",
+    "placements": [],
+    "id": 11266
+  },
+  "Dragon Hunter": {
+    "implicit_tags": [
+      "defences",
+      "armour",
+      "elemental",
+      "fire",
+      "resistance"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [
+      {
+        "weight": 696,
+        "tag": "affliction_armour"
+      },
+      {
+        "weight": 658,
+        "tag": "affliction_fire_resistance"
+      }
+    ],
+    "name": "Dragon Hunter",
+    "placements": [],
+    "id": 11497
+  },
+  "Prodigious Defence": {
+    "implicit_tags": [
+      "block",
+      "damage",
+      "attack"
+    ],
+    "stats": [],
+    "required_level": 1,
+    "spawn_tags": [
+      {
+        "weight": 600,
+        "tag": "affliction_attack_damage_while_holding_a_shield"
+      },
+      {
+        "weight": 750,
+        "tag": "affliction_chance_to_block"
+      }
+    ],
+    "name": "Prodigious Defence",
+    "placements": [],
+    "id": 11256
+  },
+  "Storm Drinker": {
+    "implicit_tags": [
+      "elemental_damage",
+      "defences",
+      "energy_shield",
+      "damage",
+      "elemental",
+      "lightning"
+    ],
+    "stats": [],
+    "required_level": 1,
+    "spawn_tags": [{
+      "weight": 727,
+      "tag": "affliction_lightning_damage"
+    }],
+    "name": "Storm Drinker",
+    "placements": [],
+    "id": 11378
+  },
+  "Quick and Deadly": {
+    "implicit_tags": [
+      "damage",
+      "attack",
+      "speed"
+    ],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [{
+      "weight": 117,
+      "tag": "affliction_attack_damage_while_dual_wielding_"
+    }],
+    "name": "Quick and Deadly",
+    "placements": [],
+    "id": 11351
+  },
+  "Force Multiplier": {
+    "implicit_tags": [
+      "physical_damage",
+      "damage",
+      "physical"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [{
+      "weight": 232,
+      "tag": "affliction_physical_damage"
+    }],
+    "name": "Force Multiplier",
+    "placements": [],
+    "id": 11268
+  },
+  "Introspection": {
+    "implicit_tags": ["aura"],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [
+      {
+        "weight": 180,
+        "tag": "old_do_not_use_affliction_aura_effect"
+      },
+      {
+        "weight": 180,
+        "tag": "affliction_reservation_efficiency_small"
+      }
+    ],
+    "name": "Introspection",
+    "placements": [],
+    "id": 12452
+  },
+  "Renewal": {
+    "implicit_tags": [
+      "resource",
+      "life",
+      "damage",
+      "minion"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [
+      {
+        "weight": 500,
+        "tag": "affliction_minion_damage"
+      },
+      {
+        "weight": 716,
+        "tag": "affliction_minion_life"
+      }
+    ],
+    "name": "Renewal",
+    "placements": [],
+    "id": 11390
+  },
+  "Blast-Freeze": {
+    "implicit_tags": [
+      "elemental_damage",
+      "damage",
+      "elemental",
+      "cold",
+      "ailment"
+    ],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [
+      {
+        "weight": 95,
+        "tag": "affliction_cold_damage"
+      },
+      {
+        "weight": 178,
+        "tag": "affliction_cold_damage_over_time_multiplier"
+      },
+      {
+        "weight": 305,
+        "tag": "affliction_effect_of_non-damaging_ailments"
+      }
+    ],
+    "name": "Blast-Freeze",
+    "placements": [],
+    "id": 11424
+  },
+  "Insulated": {
+    "implicit_tags": [
+      "elemental",
+      "lightning",
+      "resistance",
+      "ailment"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [{
+      "weight": 686,
+      "tag": "affliction_lightning_resistance"
+    }],
+    "name": "Insulated",
+    "placements": [],
+    "id": 11530
+  },
+  "Mender's Wellspring": {
+    "implicit_tags": [
+      "flask",
+      "resource",
+      "life"
+    ],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [
+      {
+        "weight": 202,
+        "tag": "affliction_flask_duration"
+      },
+      {
+        "weight": 333,
+        "tag": "affliction_life_and_mana_recovery_from_flasks"
+      }
+    ],
+    "name": "Mender's Wellspring",
+    "placements": [],
+    "id": 11314
+  },
+  "Supercharge": {
+    "implicit_tags": [
+      "elemental_damage",
+      "damage",
+      "elemental",
+      "lightning"
+    ],
+    "stats": [],
+    "required_level": 75,
+    "spawn_tags": [],
+    "name": "Supercharge",
+    "placements": [],
+    "id": 11380
+  },
+  "Volatile Presence": {
+    "implicit_tags": [
+      "resource",
+      "mana",
+      "elemental",
+      "fire",
+      "aura",
+      "ailment"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [
+      {
+        "weight": 480,
+        "tag": "old_do_not_use_affliction_aura_effect"
+      },
+      {
+        "weight": 480,
+        "tag": "affliction_reservation_efficiency_small"
+      }
+    ],
+    "name": "Volatile Presence",
+    "placements": [],
+    "id": 11279
+  },
+  "Devastator": {
+    "implicit_tags": [
+      "physical_damage",
+      "damage",
+      "physical",
+      "attack"
+    ],
+    "stats": [],
+    "required_level": 75,
+    "spawn_tags": [
+      {
+        "weight": 27,
+        "tag": "affliction_attack_damage_"
+      },
+      {
+        "weight": 47,
+        "tag": "affliction_axe_and_sword_damage"
+      },
+      {
+        "weight": 47,
+        "tag": "affliction_mace_and_staff_damage"
+      },
+      {
+        "weight": 51,
+        "tag": "affliction_dagger_and_claw_damage"
+      },
+      {
+        "weight": 48,
+        "tag": "affliction_bow_damage"
+      },
+      {
+        "weight": 50,
+        "tag": "affliction_wand_damage"
+      },
+      {
+        "weight": 38,
+        "tag": "affliction_damage_with_two_handed_melee_weapons"
+      },
+      {
+        "weight": 39,
+        "tag": "affliction_attack_damage_while_dual_wielding_"
+      },
+      {
+        "weight": 38,
+        "tag": "affliction_attack_damage_while_holding_a_shield"
+      }
+    ],
+    "name": "Devastator",
+    "placements": [],
+    "id": 11356
+  },
+  "Gladiatorial Combat": {
+    "implicit_tags": [
+      "damage",
+      "attack",
+      "critical"
+    ],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [],
+    "name": "Gladiatorial Combat",
+    "placements": [],
+    "id": 11258
+  },
+  "Chilling Presence": {
+    "implicit_tags": [
+      "elemental",
+      "cold",
+      "ailment"
+    ],
+    "stats": [],
+    "required_level": 75,
+    "spawn_tags": [
+      {
+        "weight": 102,
+        "tag": "affliction_effect_of_non-damaging_ailments"
+      },
+      {
+        "weight": 59,
+        "tag": "affliction_cold_damage_over_time_multiplier"
+      }
+    ],
+    "name": "Chilling Presence",
+    "placements": [],
+    "id": 11422
+  },
+  "Pressure Points": {
+    "implicit_tags": [
+      "damage",
+      "critical"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [{
+      "weight": 457,
+      "tag": "affliction_critical_chance"
+    }],
+    "name": "Pressure Points",
+    "placements": [],
+    "id": 11282
+  },
+  "Unwavering Focus": {
+    "implicit_tags": [
+      "resource",
+      "mana",
+      "damage"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [{
+      "weight": 906,
+      "tag": "affliction_channelling_skill_damage"
+    }],
+    "name": "Unwavering Focus",
+    "placements": [],
+    "id": 11305
+  },
+  "Disciples": {
+    "implicit_tags": [
+      "damage",
+      "speed",
+      "minion"
+    ],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [{
+      "weight": 474,
+      "tag": "affliction_minion_damage_while_you_have_a_herald"
+    }],
+    "name": "Disciples",
+    "placements": [],
+    "id": 11445
+  },
+  "Prismatic Dance": {
+    "implicit_tags": [
+      "defences",
+      "evasion",
+      "elemental",
+      "resistance"
+    ],
+    "stats": [],
+    "required_level": 75,
+    "spawn_tags": [
+      {
+        "weight": 82,
+        "tag": "affliction_evasion"
+      },
+      {
+        "weight": 86,
+        "tag": "affliction_lightning_resistance"
+      },
+      {
+        "weight": 86,
+        "tag": "affliction_cold_resistance"
+      },
+      {
+        "weight": 82,
+        "tag": "affliction_fire_resistance"
+      }
+    ],
+    "name": "Prismatic Dance",
+    "placements": [],
+    "id": 11499
+  },
+  "Distilled Perfection": {
+    "implicit_tags": [
+      "flask",
+      "resource",
+      "life",
+      "mana"
+    ],
+    "stats": [],
+    "required_level": 1,
+    "spawn_tags": [
+      {
+        "weight": 1079,
+        "tag": "affliction_flask_duration"
+      },
+      {
+        "weight": 1778,
+        "tag": "affliction_life_and_mana_recovery_from_flasks"
+      }
+    ],
+    "name": "Distilled Perfection",
+    "placements": [],
+    "id": 11311
+  },
+  "Stormrider": {
+    "implicit_tags": [
+      "power_charge",
+      "elemental_damage",
+      "damage",
+      "elemental",
+      "cold",
+      "lightning"
+    ],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [
+      {
+        "weight": 305,
+        "tag": "affliction_effect_of_non-damaging_ailments"
+      },
+      {
+        "weight": 95,
+        "tag": "affliction_cold_damage"
+      },
+      {
+        "weight": 136,
+        "tag": "affliction_lightning_damage"
+      }
+    ],
+    "name": "Stormrider",
+    "placements": [],
+    "id": 11426
+  },
+  "Militarism": {
+    "implicit_tags": [
+      "resource",
+      "life",
+      "defences",
+      "armour"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [{
+      "weight": 696,
+      "tag": "affliction_armour"
+    }],
+    "name": "Militarism",
+    "placements": [],
+    "id": 11495
+  },
+  "Intensity": {
+    "implicit_tags": ["damage"],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [],
+    "name": "Intensity",
+    "placements": [],
+    "id": 11292
+  },
+  "Deadly Repartee": {
+    "implicit_tags": [
+      "block",
+      "damage",
+      "attack",
+      "critical"
+    ],
+    "stats": [],
+    "required_level": 1,
+    "spawn_tags": [{
+      "weight": 623,
+      "tag": "affliction_attack_damage_while_dual_wielding_"
+    }],
+    "name": "Deadly Repartee",
+    "placements": [],
+    "id": 11350
+  },
+  "Energy From Naught": {
+    "implicit_tags": [
+      "defences",
+      "energy_shield"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [{
+      "weight": 505,
+      "tag": "affliction_maximum_energy_shield"
+    }],
+    "name": "Energy From Naught",
+    "placements": [],
+    "id": 11489
+  },
+  "Lord of Drought": {
+    "implicit_tags": [
+      "caster",
+      "curse"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [
+      {
+        "weight": 353,
+        "tag": "old_do_not_use_affliction_curse_effect"
+      },
+      {
+        "weight": 353,
+        "tag": "affliction_curse_effect_small"
+      }
+    ],
+    "name": "Lord of Drought",
+    "placements": [],
+    "id": 12383
+  },
+  "Burning Bright": {
+    "implicit_tags": [
+      "elemental_damage",
+      "damage",
+      "elemental",
+      "fire"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [
+      {
+        "weight": 366,
+        "tag": "affliction_fire_damage_over_time_multiplier"
+      },
+      {
+        "weight": 238,
+        "tag": "affliction_fire_damage"
+      }
+    ],
+    "name": "Burning Bright",
+    "placements": [],
+    "id": 11400
+  },
+  "Titanic Swings": {
+    "implicit_tags": [
+      "damage",
+      "attack"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [
+      {
+        "weight": 980,
+        "tag": "affliction_area_damage"
+      },
+      {
+        "weight": 302,
+        "tag": "affliction_damage_with_two_handed_melee_weapons"
+      }
+    ],
+    "name": "Titanic Swings",
+    "placements": [],
+    "id": 11293
+  },
+  "Septic Spells": {
+    "implicit_tags": [
+      "caster_damage",
+      "chaos_damage",
+      "poison",
+      "damage",
+      "chaos",
+      "caster",
+      "speed",
+      "ailment"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [{
+      "weight": 348,
+      "tag": "affliction_chaos_damage_over_time_multiplier"
+    }],
+    "name": "Septic Spells",
+    "placements": [],
+    "id": 11406
+  },
+  "Vile Reinvigoration": {
+    "implicit_tags": [
+      "defences",
+      "energy_shield",
+      "damage"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [
+      {
+        "weight": 593,
+        "tag": "affliction_damage_over_time_multiplier"
+      },
+      {
+        "weight": 475,
+        "tag": "affliction_cold_damage_over_time_multiplier"
+      },
+      {
+        "weight": 343,
+        "tag": "affliction_physical_damage_over_time_multiplier"
+      },
+      {
+        "weight": 366,
+        "tag": "affliction_fire_damage_over_time_multiplier"
+      },
+      {
+        "weight": 348,
+        "tag": "affliction_chaos_damage_over_time_multiplier"
+      },
+      {
+        "weight": 505,
+        "tag": "affliction_maximum_energy_shield"
+      }
+    ],
+    "name": "Vile Reinvigoration",
+    "placements": [],
+    "id": 11416
+  },
+  "Combat Rhythm": {
+    "implicit_tags": [
+      "attack",
+      "speed"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [{
+      "weight": 312,
+      "tag": "affliction_attack_damage_while_dual_wielding_"
+    }],
+    "name": "Combat Rhythm",
+    "placements": [],
+    "id": 11345
+  },
+  "Eldritch Inspiration": {
+    "implicit_tags": [
+      "chaos_damage",
+      "resource",
+      "mana",
+      "damage",
+      "chaos"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [
+      {
+        "weight": 348,
+        "tag": "affliction_chaos_damage_over_time_multiplier"
+      },
+      {
+        "weight": 466,
+        "tag": "affliction_maximum_mana"
+      }
+    ],
+    "name": "Eldritch Inspiration",
+    "placements": [],
+    "id": 11410
+  },
+  "Student of Decay": {
+    "implicit_tags": [
+      "chaos_damage",
+      "damage",
+      "chaos",
+      "resistance"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [
+      {
+        "weight": 1171,
+        "tag": "affliction_chaos_resistance"
+      },
+      {
+        "weight": 593,
+        "tag": "affliction_damage_over_time_multiplier"
+      },
+      {
+        "weight": 343,
+        "tag": "affliction_physical_damage_over_time_multiplier"
+      },
+      {
+        "weight": 366,
+        "tag": "affliction_fire_damage_over_time_multiplier"
+      },
+      {
+        "weight": 348,
+        "tag": "affliction_chaos_damage_over_time_multiplier"
+      }
+    ],
+    "name": "Student of Decay",
+    "placements": [],
+    "id": 11535
+  },
+  "Hibernator": {
+    "implicit_tags": [
+      "elemental",
+      "cold",
+      "ailment"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [{
+      "weight": 686,
+      "tag": "affliction_cold_resistance"
+    }],
+    "name": "Hibernator",
+    "placements": [],
+    "id": 11522
+  },
+  "Pure Might": {
+    "implicit_tags": [
+      "resource",
+      "mana",
+      "attribute"
+    ],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [
+      {
+        "weight": 247,
+        "tag": "affliction_fire_resistance"
+      },
+      {
+        "weight": 180,
+        "tag": "old_do_not_use_affliction_aura_effect"
+      },
+      {
+        "weight": 180,
+        "tag": "affliction_reservation_efficiency_small"
+      }
+    ],
+    "name": "Pure Might",
+    "placements": [],
+    "id": 11518
+  },
+  "Antivenom": {
+    "implicit_tags": [
+      "poison",
+      "chaos",
+      "resistance",
+      "ailment"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [{
+      "weight": 1171,
+      "tag": "affliction_chaos_resistance"
+    }],
+    "name": "Antivenom",
+    "placements": [],
+    "id": 11532
+  },
+  "Call to the Slaughter": {
+    "implicit_tags": [
+      "caster_damage",
+      "damage",
+      "attack",
+      "caster",
+      "speed",
+      "minion"
+    ],
+    "stats": [],
+    "required_level": 1,
+    "spawn_tags": [{
+      "weight": 1000,
+      "tag": "affliction_minion_damage"
+    }],
+    "name": "Call to the Slaughter",
+    "placements": [],
+    "id": 11393
+  },
+  "Hound's Mark": {
+    "implicit_tags": [
+      "caster_damage",
+      "damage",
+      "caster",
+      "curse"
+    ],
+    "stats": [],
+    "required_level": 1,
+    "spawn_tags": [
+      {
+        "weight": 706,
+        "tag": "old_do_not_use_affliction_curse_effect"
+      },
+      {
+        "weight": 706,
+        "tag": "affliction_curse_effect_small"
+      }
+    ],
+    "name": "Hound's Mark",
+    "placements": [],
+    "id": 12388
+  },
+  "Aggressive Defence": {
+    "implicit_tags": [
+      "damage",
+      "attack"
+    ],
+    "stats": [],
+    "required_level": 1,
+    "spawn_tags": [
+      {
+        "weight": 750,
+        "tag": "affliction_axe_and_sword_damage"
+      },
+      {
+        "weight": 750,
+        "tag": "affliction_mace_and_staff_damage"
+      },
+      {
+        "weight": 750,
+        "tag": "affliction_dagger_and_claw_damage"
+      }
+    ],
+    "name": "Aggressive Defence",
+    "placements": [],
+    "id": 15563
+  },
+  "Darting Movements": {
+    "implicit_tags": ["speed"],
+    "stats": [],
+    "required_level": 1,
+    "spawn_tags": [{
+      "weight": 1477,
+      "tag": "affliction_chance_to_dodge_attacks"
+    }],
+    "name": "Darting Movements",
+    "placements": [],
+    "id": 11514
+  },
+  "Eye to Eye": {
+    "implicit_tags": ["damage"],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [{
+      "weight": 889,
+      "tag": "affliction_projectile_damage"
+    }],
+    "name": "Eye to Eye",
+    "placements": [],
+    "id": 11454
+  },
+  "Ancestral Echo": {
+    "implicit_tags": [
+      "attack",
+      "caster",
+      "speed"
+    ],
+    "stats": [],
+    "required_level": 1,
+    "spawn_tags": [{
+      "weight": 1477,
+      "tag": "affliction_totem_damage"
+    }],
+    "name": "Ancestral Echo",
+    "placements": [],
+    "id": 11295
+  },
+  "Snowstorm": {
+    "implicit_tags": [
+      "elemental_damage",
+      "damage",
+      "elemental",
+      "cold",
+      "lightning"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [
+      {
+        "weight": 364,
+        "tag": "affliction_lightning_damage"
+      },
+      {
+        "weight": 253,
+        "tag": "affliction_cold_damage"
+      }
+    ],
+    "name": "Snowstorm",
+    "placements": [],
+    "id": 11377
+  },
+  "Compound Injury": {
+    "implicit_tags": [
+      "bleed",
+      "physical",
+      "attack",
+      "ailment"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [{
+      "weight": 343,
+      "tag": "affliction_physical_damage_over_time_multiplier"
+    }],
+    "name": "Compound Injury",
+    "placements": [],
+    "id": 11405
+  },
+  "Calamitous": {
+    "implicit_tags": [
+      "elemental",
+      "fire",
+      "cold",
+      "lightning",
+      "attack",
+      "ailment"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [
+      {
+        "weight": 216,
+        "tag": "affliction_attack_damage_"
+      },
+      {
+        "weight": 375,
+        "tag": "affliction_axe_and_sword_damage"
+      },
+      {
+        "weight": 375,
+        "tag": "affliction_mace_and_staff_damage"
+      },
+      {
+        "weight": 404,
+        "tag": "affliction_dagger_and_claw_damage"
+      },
+      {
+        "weight": 387,
+        "tag": "affliction_bow_damage"
+      },
+      {
+        "weight": 403,
+        "tag": "affliction_wand_damage"
+      },
+      {
+        "weight": 302,
+        "tag": "affliction_damage_with_two_handed_melee_weapons"
+      },
+      {
+        "weight": 312,
+        "tag": "affliction_attack_damage_while_dual_wielding_"
+      },
+      {
+        "weight": 300,
+        "tag": "affliction_attack_damage_while_holding_a_shield"
+      }
+    ],
+    "name": "Calamitous",
+    "placements": [],
+    "id": 11355
+  },
+  "Invigorating Portents": {
+    "implicit_tags": [
+      "damage",
+      "speed",
+      "minion"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [{
+      "weight": 1263,
+      "tag": "affliction_minion_damage_while_you_have_a_herald"
+    }],
+    "name": "Invigorating Portents",
+    "placements": [],
+    "id": 11443
+  },
+  "Assert Dominance": {
+    "implicit_tags": [],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [{
+      "weight": 367,
+      "tag": "affliction_area_damage"
+    }],
+    "name": "Assert Dominance",
+    "placements": [],
+    "id": 11289
+  },
+  "Master of the Maelstrom": {
+    "implicit_tags": [
+      "elemental",
+      "caster",
+      "ailment",
+      "curse"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [
+      {
+        "weight": 353,
+        "tag": "old_do_not_use_affliction_curse_effect"
+      },
+      {
+        "weight": 353,
+        "tag": "affliction_curse_effect_small"
+      }
+    ],
+    "name": "Master of the Maelstrom",
+    "placements": [],
+    "id": 12391
+  },
+  "Burden Projection": {
+    "implicit_tags": [
+      "caster_damage",
+      "damage",
+      "caster",
+      "speed"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [{
+      "weight": 750,
+      "tag": "affliction_spell_damage"
+    }],
+    "name": "Burden Projection",
+    "placements": [],
+    "id": 11364
+  },
+  "Explosive Force": {
+    "implicit_tags": [
+      "physical_damage",
+      "chaos_damage",
+      "damage",
+      "physical",
+      "chaos",
+      "attack"
+    ],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [{
+      "weight": 151,
+      "tag": "affliction_wand_damage"
+    }],
+    "name": "Explosive Force",
+    "placements": [],
+    "id": 11336
+  },
+  "Widespread Destruction": {
+    "implicit_tags": [
+      "elemental_damage",
+      "damage",
+      "elemental"
+    ],
+    "stats": [],
+    "required_level": 1,
+    "spawn_tags": [
+      {
+        "weight": 1500,
+        "tag": "affliction_elemental_damage"
+      },
+      {
+        "weight": 727,
+        "tag": "affliction_lightning_damage"
+      },
+      {
+        "weight": 505,
+        "tag": "affliction_cold_damage"
+      },
+      {
+        "weight": 475,
+        "tag": "affliction_fire_damage"
+      }
+    ],
+    "name": "Widespread Destruction",
+    "placements": [],
+    "id": 11373
+  },
+  "Evil Eye": {
+    "implicit_tags": [
+      "caster_damage",
+      "damage",
+      "caster",
+      "curse"
+    ],
+    "stats": [],
+    "required_level": 1,
+    "spawn_tags": [
+      {
+        "weight": 706,
+        "tag": "old_do_not_use_affliction_curse_effect"
+      },
+      {
+        "weight": 706,
+        "tag": "affliction_curse_effect_small"
+      }
+    ],
+    "name": "Evil Eye",
+    "placements": [],
+    "id": 11429
+  },
+  "Riot Queller": {
+    "implicit_tags": ["block"],
+    "stats": [],
+    "required_level": 75,
+    "spawn_tags": [
+      {
+        "weight": 47,
+        "tag": "affliction_chance_to_block"
+      },
+      {
+        "weight": 38,
+        "tag": "affliction_attack_damage_while_holding_a_shield"
+      }
+    ],
+    "name": "Riot Queller",
+    "placements": [],
+    "id": 11510
+  },
+  "Smoking Remains": {
+    "implicit_tags": [
+      "elemental_damage",
+      "damage",
+      "elemental",
+      "fire"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [
+      {
+        "weight": 238,
+        "tag": "affliction_fire_damage"
+      },
+      {
+        "weight": 366,
+        "tag": "affliction_fire_damage_over_time_multiplier"
+      }
+    ],
+    "name": "Smoking Remains",
+    "placements": [],
+    "id": 11375
+  },
+  "Martial Mastery": {
+    "implicit_tags": [
+      "attack",
+      "speed",
+      "attribute"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [{
+      "weight": 302,
+      "tag": "affliction_damage_with_two_handed_melee_weapons"
+    }],
+    "name": "Martial Mastery",
+    "placements": [],
+    "id": 11340
+  },
+  "Gladiator's Fortitude": {
+    "implicit_tags": [
+      "resource",
+      "life",
+      "damage",
+      "attack"
+    ],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [
+      {
+        "weight": 113,
+        "tag": "affliction_attack_damage_while_holding_a_shield"
+      },
+      {
+        "weight": 146,
+        "tag": "affliction_maximum_life"
+      }
+    ],
+    "name": "Gladiator's Fortitude",
+    "placements": [],
+    "id": 11262
+  },
+  "Endbringer": {
+    "implicit_tags": ["damage"],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [
+      {
+        "weight": 353,
+        "tag": "affliction_damage_while_you_have_a_herald"
+      },
+      {
+        "weight": 474,
+        "tag": "affliction_minion_damage_while_you_have_a_herald"
+      }
+    ],
+    "name": "Endbringer",
+    "placements": [],
+    "id": 11436
+  },
+  "Savour the Moment": {
+    "implicit_tags": [
+      "defences",
+      "energy_shield"
+    ],
+    "stats": [],
+    "required_level": 1,
+    "spawn_tags": [{
+      "weight": 1011,
+      "tag": "affliction_maximum_energy_shield"
+    }],
+    "name": "Savour the Moment",
+    "placements": [],
+    "id": 11488
+  },
+  "Haunting Shout": {
+    "implicit_tags": [],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [{
+      "weight": 873,
+      "tag": "affliction_warcry_buff_effect"
+    }],
+    "name": "Haunting Shout",
+    "placements": [],
+    "id": 11319
+  },
+  "Mindfulness": {
+    "implicit_tags": [
+      "resource",
+      "mana"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [{
+      "weight": 466,
+      "tag": "affliction_maximum_mana"
+    }],
+    "name": "Mindfulness",
+    "placements": [],
+    "id": 11478
+  },
+  "Martial Prowess": {
+    "implicit_tags": [
+      "damage",
+      "attack",
+      "speed"
+    ],
+    "stats": [],
+    "required_level": 1,
+    "spawn_tags": [
+      {
+        "weight": 432,
+        "tag": "affliction_attack_damage_"
+      },
+      {
+        "weight": 750,
+        "tag": "affliction_axe_and_sword_damage"
+      },
+      {
+        "weight": 750,
+        "tag": "affliction_mace_and_staff_damage"
+      },
+      {
+        "weight": 808,
+        "tag": "affliction_dagger_and_claw_damage"
+      },
+      {
+        "weight": 774,
+        "tag": "affliction_bow_damage"
+      },
+      {
+        "weight": 807,
+        "tag": "affliction_wand_damage"
+      },
+      {
+        "weight": 604,
+        "tag": "affliction_damage_with_two_handed_melee_weapons"
+      },
+      {
+        "weight": 623,
+        "tag": "affliction_attack_damage_while_dual_wielding_"
+      },
+      {
+        "weight": 600,
+        "tag": "affliction_attack_damage_while_holding_a_shield"
+      }
+    ],
+    "name": "Martial Prowess",
+    "placements": [],
+    "id": 11354
+  },
+  "Clarity of Purpose": {
+    "implicit_tags": [
+      "resource",
+      "mana"
+    ],
+    "stats": [],
+    "required_level": 1,
+    "spawn_tags": [{
+      "weight": 932,
+      "tag": "affliction_maximum_mana"
+    }],
+    "name": "Clarity of Purpose",
+    "placements": [],
+    "id": 11482
+  },
+  "Low Tolerance": {
+    "implicit_tags": [
+      "chaos_damage",
+      "poison",
+      "damage",
+      "chaos",
+      "ailment"
+    ],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [{
+      "weight": 130,
+      "tag": "affliction_chaos_damage_over_time_multiplier"
+    }],
+    "name": "Low Tolerance",
+    "placements": [],
+    "id": 11407
+  },
+  "Rend": {
+    "implicit_tags": [
+      "bleed",
+      "physical",
+      "attack",
+      "ailment"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [{
+      "weight": 343,
+      "tag": "affliction_physical_damage_over_time_multiplier"
+    }],
+    "name": "Rend",
+    "placements": [],
+    "id": 11403
+  },
+  "Careful Handling": {
+    "implicit_tags": [
+      "resource",
+      "life",
+      "mana",
+      "damage"
+    ],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [
+      {
+        "weight": 367,
+        "tag": "affliction_trap_and_mine_damage"
+      },
+      {
+        "weight": 175,
+        "tag": "affliction_maximum_mana"
+      },
+      {
+        "weight": 146,
+        "tag": "affliction_maximum_life"
+      }
+    ],
+    "name": "Careful Handling",
+    "placements": [],
+    "id": 11469
+  },
+  "Powerful Assault": {
+    "implicit_tags": ["damage"],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [{
+      "weight": 980,
+      "tag": "affliction_area_damage"
+    }],
+    "name": "Powerful Assault",
+    "placements": [],
+    "id": 11291
+  },
+  "Master of Fear": {
+    "implicit_tags": [
+      "caster",
+      "curse"
+    ],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [],
+    "name": "Master of Fear",
+    "placements": [],
+    "id": 11433
+  },
+  "Bodyguards": {
+    "implicit_tags": [
+      "resource",
+      "life",
+      "minion"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [{
+      "weight": 716,
+      "tag": "affliction_minion_life"
+    }],
+    "name": "Bodyguards",
+    "placements": [],
+    "id": 11450
+  },
+  "Wrapped in Flame": {
+    "implicit_tags": [
+      "elemental_damage",
+      "damage",
+      "elemental",
+      "fire"
+    ],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [{
+      "weight": 137,
+      "tag": "affliction_fire_damage_over_time_multiplier"
+    }],
+    "name": "Wrapped in Flame",
+    "placements": [],
+    "id": 11401
+  },
+  "Spiteful Presence": {
+    "implicit_tags": [
+      "resource",
+      "mana",
+      "elemental",
+      "cold",
+      "aura",
+      "ailment"
+    ],
+    "stats": [],
+    "required_level": 1,
+    "spawn_tags": [
+      {
+        "weight": 960,
+        "tag": "old_do_not_use_affliction_aura_effect"
+      },
+      {
+        "weight": 960,
+        "tag": "affliction_reservation_efficiency_small"
+      }
+    ],
+    "name": "Spiteful Presence",
+    "placements": [],
+    "id": 11275
+  },
+  "Mystical Ward": {
+    "implicit_tags": [
+      "block",
+      "defences",
+      "energy_shield"
+    ],
+    "stats": [],
+    "required_level": 1,
+    "spawn_tags": [
+      {
+        "weight": 750,
+        "tag": "affliction_chance_to_block"
+      },
+      {
+        "weight": 1011,
+        "tag": "affliction_maximum_energy_shield"
+      }
+    ],
+    "name": "Mystical Ward",
+    "placements": [],
+    "id": 11507
+  },
+  "Drive the Destruction": {
+    "implicit_tags": [
+      "resource",
+      "life",
+      "damage",
+      "attack"
+    ],
+    "stats": [],
+    "required_level": 1,
+    "spawn_tags": [
+      {
+        "weight": 432,
+        "tag": "affliction_attack_damage_"
+      },
+      {
+        "weight": 750,
+        "tag": "affliction_axe_and_sword_damage"
+      },
+      {
+        "weight": 750,
+        "tag": "affliction_mace_and_staff_damage"
+      },
+      {
+        "weight": 808,
+        "tag": "affliction_dagger_and_claw_damage"
+      },
+      {
+        "weight": 774,
+        "tag": "affliction_bow_damage"
+      },
+      {
+        "weight": 807,
+        "tag": "affliction_wand_damage"
+      },
+      {
+        "weight": 604,
+        "tag": "affliction_damage_with_two_handed_melee_weapons"
+      },
+      {
+        "weight": 623,
+        "tag": "affliction_attack_damage_while_dual_wielding_"
+      },
+      {
+        "weight": 600,
+        "tag": "affliction_attack_damage_while_holding_a_shield"
+      }
+    ],
+    "name": "Drive the Destruction",
+    "placements": [],
+    "id": 11358
+  },
+  "Veteran Defender": {
+    "implicit_tags": [
+      "defences",
+      "elemental",
+      "resistance",
+      "attribute"
+    ],
+    "stats": [],
+    "required_level": 1,
+    "spawn_tags": [{
+      "weight": 600,
+      "tag": "affliction_attack_damage_while_holding_a_shield"
+    }],
+    "name": "Veteran Defender",
+    "placements": [],
+    "id": 11264
+  },
+  "Genius": {
+    "implicit_tags": [
+      "resource",
+      "mana",
+      "attribute"
+    ],
+    "stats": [],
+    "required_level": 75,
+    "spawn_tags": [{
+      "weight": 58,
+      "tag": "affliction_maximum_mana"
+    }],
+    "name": "Genius",
+    "placements": [],
+    "id": 11485
+  },
+  "Deep Chill": {
+    "implicit_tags": [
+      "elemental_damage",
+      "damage",
+      "elemental",
+      "cold",
+      "ailment"
+    ],
+    "stats": [],
+    "required_level": 1,
+    "spawn_tags": [
+      {
+        "weight": 1627,
+        "tag": "affliction_effect_of_non-damaging_ailments"
+      },
+      {
+        "weight": 505,
+        "tag": "affliction_cold_damage"
+      },
+      {
+        "weight": 950,
+        "tag": "affliction_cold_damage_over_time_multiplier"
+      }
+    ],
+    "name": "Deep Chill",
+    "placements": [],
+    "id": 11423
+  },
+  "Martial Momentum": {
+    "implicit_tags": [
+      "damage",
+      "attack",
+      "speed"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [{
+      "weight": 312,
+      "tag": "affliction_attack_damage_while_dual_wielding_"
+    }],
+    "name": "Martial Momentum",
+    "placements": [],
+    "id": 11349
+  },
+  "Unspeakable Gifts": {
+    "implicit_tags": [
+      "chaos_damage",
+      "damage",
+      "chaos"
+    ],
+    "stats": [],
+    "required_level": 75,
+    "spawn_tags": [{
+      "weight": 32,
+      "tag": "affliction_chaos_damage"
+    }],
+    "name": "Unspeakable Gifts",
+    "placements": [],
+    "id": 11386
+  },
+  "Improvisor": {
+    "implicit_tags": [
+      "resource",
+      "mana",
+      "attack"
+    ],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [{
+      "weight": 175,
+      "tag": "affliction_maximum_mana"
+    }],
+    "name": "Improvisor",
+    "placements": [],
+    "id": 11486
+  },
+  "Steady Torment": {
+    "implicit_tags": [
+      "physical_damage",
+      "chaos_damage",
+      "bleed",
+      "poison",
+      "damage",
+      "physical",
+      "chaos",
+      "attack",
+      "ailment",
+      "ailment"
+    ],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [
+      {
+        "weight": 130,
+        "tag": "affliction_chaos_damage_over_time_multiplier"
+      },
+      {
+        "weight": 129,
+        "tag": "affliction_physical_damage_over_time_multiplier"
+      }
+    ],
+    "name": "Steady Torment",
+    "placements": [],
+    "id": 11408
+  },
+  "Molten One's Mark": {
+    "implicit_tags": [
+      "resource",
+      "life",
+      "elemental",
+      "fire",
+      "resistance"
+    ],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [{
+      "weight": 247,
+      "tag": "affliction_fire_resistance"
+    }],
+    "name": "Molten One's Mark",
+    "placements": [],
+    "id": 11516
+  },
+  "Cold-Blooded Killer": {
+    "implicit_tags": [
+      "elemental_damage",
+      "resource",
+      "life",
+      "damage",
+      "elemental",
+      "cold"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [
+      {
+        "weight": 253,
+        "tag": "affliction_cold_damage"
+      },
+      {
+        "weight": 390,
+        "tag": "affliction_cold_damage_over_time_multiplier"
+      }
+    ],
+    "name": "Cold-Blooded Killer",
+    "placements": [],
+    "id": 11383
+  },
+  "Liquid Inspiration": {
+    "implicit_tags": [
+      "flask",
+      "power_charge",
+      "resource",
+      "mana"
+    ],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [
+      {
+        "weight": 175,
+        "tag": "affliction_maximum_mana"
+      },
+      {
+        "weight": 202,
+        "tag": "affliction_flask_duration"
+      }
+    ],
+    "name": "Liquid Inspiration",
+    "placements": [],
+    "id": 11479
+  },
+  "Weight Advantage": {
+    "implicit_tags": [
+      "damage",
+      "attack",
+      "attribute"
+    ],
+    "stats": [],
+    "required_level": 1,
+    "spawn_tags": [{
+      "weight": 750,
+      "tag": "affliction_mace_and_staff_damage"
+    }],
+    "name": "Weight Advantage",
+    "placements": [],
+    "id": 11329
+  },
+  "Prismatic Heart": {
+    "implicit_tags": [
+      "elemental_damage",
+      "damage",
+      "elemental",
+      "resistance"
+    ],
+    "stats": [],
+    "required_level": 1,
+    "spawn_tags": [
+      {
+        "weight": 1500,
+        "tag": "affliction_elemental_damage"
+      },
+      {
+        "weight": 727,
+        "tag": "affliction_lightning_damage"
+      },
+      {
+        "weight": 505,
+        "tag": "affliction_cold_damage"
+      },
+      {
+        "weight": 475,
+        "tag": "affliction_fire_damage"
+      },
+      {
+        "weight": 1371,
+        "tag": "affliction_lightning_resistance"
+      },
+      {
+        "weight": 1371,
+        "tag": "affliction_cold_resistance"
+      },
+      {
+        "weight": 1315,
+        "tag": "affliction_fire_resistance"
+      }
+    ],
+    "name": "Prismatic Heart",
+    "placements": [],
+    "id": 11372
+  },
+  "Natural Vigour": {
+    "implicit_tags": [
+      "resource",
+      "life",
+      "defences",
+      "evasion"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [
+      {
+        "weight": 658,
+        "tag": "affliction_evasion"
+      },
+      {
+        "weight": 390,
+        "tag": "affliction_maximum_life"
+      }
+    ],
+    "name": "Natural Vigour",
+    "placements": [],
+    "id": 11500
+  },
+  "Antifreeze": {
+    "implicit_tags": [
+      "elemental",
+      "cold",
+      "resistance",
+      "ailment"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [{
+      "weight": 686,
+      "tag": "affliction_cold_resistance"
+    }],
+    "name": "Antifreeze",
+    "placements": [],
+    "id": 11525
+  },
+  "Wasting Affliction": {
+    "implicit_tags": [
+      "damage",
+      "ailment"
+    ],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [
+      {
+        "weight": 222,
+        "tag": "affliction_damage_over_time_multiplier"
+      },
+      {
+        "weight": 178,
+        "tag": "affliction_cold_damage_over_time_multiplier"
+      },
+      {
+        "weight": 129,
+        "tag": "affliction_physical_damage_over_time_multiplier"
+      },
+      {
+        "weight": 137,
+        "tag": "affliction_fire_damage_over_time_multiplier"
+      },
+      {
+        "weight": 130,
+        "tag": "affliction_chaos_damage_over_time_multiplier"
+      }
+    ],
+    "name": "Wasting Affliction",
+    "placements": [],
+    "id": 11411
+  },
+  "Wall of Muscle": {
+    "implicit_tags": [
+      "resource",
+      "life",
+      "attribute"
+    ],
+    "stats": [],
+    "required_level": 75,
+    "spawn_tags": [{
+      "weight": 49,
+      "tag": "affliction_maximum_life"
+    }],
+    "name": "Wall of Muscle",
+    "placements": [],
+    "id": 11477
+  },
+  "Sublime Form": {
+    "implicit_tags": [
+      "resource",
+      "mana",
+      "elemental",
+      "resistance"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [
+      {
+        "weight": 658,
+        "tag": "affliction_evasion"
+      },
+      {
+        "weight": 480,
+        "tag": "old_do_not_use_affliction_aura_effect"
+      },
+      {
+        "weight": 480,
+        "tag": "affliction_reservation_efficiency_small"
+      }
+    ],
+    "name": "Sublime Form",
+    "placements": [],
+    "id": 12394
+  },
+  "Vital Focus": {
+    "implicit_tags": [
+      "resource",
+      "life",
+      "damage"
+    ],
+    "stats": [],
+    "required_level": 1,
+    "spawn_tags": [{
+      "weight": 1811,
+      "tag": "affliction_channelling_skill_damage"
+    }],
+    "name": "Vital Focus",
+    "placements": [],
+    "id": 11303
+  },
+  "Aerialist": {
+    "implicit_tags": ["attribute"],
+    "stats": [],
+    "required_level": 75,
+    "spawn_tags": [{
+      "weight": 92,
+      "tag": "affliction_chance_to_dodge_attacks"
+    }],
+    "name": "Aerialist",
+    "placements": [],
+    "id": 11512
+  },
+  "Scintillating Idea": {
+    "implicit_tags": [
+      "elemental_damage",
+      "resource",
+      "mana",
+      "damage",
+      "elemental",
+      "lightning"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [
+      {
+        "weight": 466,
+        "tag": "affliction_maximum_mana"
+      },
+      {
+        "weight": 364,
+        "tag": "affliction_lightning_damage"
+      }
+    ],
+    "name": "Scintillating Idea",
+    "placements": [],
+    "id": 11483
+  },
+  "Confident Combatant": {
+    "implicit_tags": ["damage"],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [],
+    "name": "Confident Combatant",
+    "placements": [],
+    "id": 11504
+  },
+  "Destructive Aspect": {
+    "implicit_tags": [
+      "resource",
+      "mana",
+      "aura"
+    ],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [
+      {
+        "weight": 180,
+        "tag": "old_do_not_use_affliction_aura_effect"
+      },
+      {
+        "weight": 180,
+        "tag": "affliction_reservation_efficiency_small"
+      }
+    ],
+    "name": "Destructive Aspect",
+    "placements": [],
+    "id": 11277
+  },
+  "Self-Fulfilling Prophecy": {
+    "implicit_tags": [
+      "damage",
+      "critical"
+    ],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [{
+      "weight": 353,
+      "tag": "affliction_damage_while_you_have_a_herald"
+    }],
+    "name": "Self-Fulfilling Prophecy",
+    "placements": [],
+    "id": 11442
+  },
+  "Blood Artist": {
+    "implicit_tags": [
+      "bleed",
+      "physical",
+      "ailment"
+    ],
+    "stats": [],
+    "required_level": 75,
+    "spawn_tags": [{
+      "weight": 129,
+      "tag": "affliction_physical_damage_over_time_multiplier"
+    }],
+    "name": "Blood Artist",
+    "placements": [],
+    "id": 14098
+  },
+  "Master the Fundamentals": {
+    "implicit_tags": [
+      "physical_damage",
+      "elemental_damage",
+      "damage",
+      "physical",
+      "elemental",
+      "resistance"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [{
+      "weight": 232,
+      "tag": "affliction_physical_damage"
+    }],
+    "name": "Master the Fundamentals",
+    "placements": [],
+    "id": 11267
+  },
+  "Primordial Bond": {
+    "implicit_tags": [
+      "resource",
+      "life",
+      "damage",
+      "minion"
+    ],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [{
+      "weight": 188,
+      "tag": "affliction_minion_damage"
+    }],
+    "name": "Primordial Bond",
+    "placements": [],
+    "id": 11396
+  },
+  "Tempered Arrowheads": {
+    "implicit_tags": [
+      "damage",
+      "attack",
+      "ailment"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [{
+      "weight": 387,
+      "tag": "affliction_bow_damage"
+    }],
+    "name": "Tempered Arrowheads",
+    "placements": [],
+    "id": 11334
+  },
+  "Vicious Skewering": {
+    "implicit_tags": [
+      "bleed",
+      "physical",
+      "attack",
+      "ailment"
+    ],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [
+      {
+        "weight": 81,
+        "tag": "affliction_attack_damage_"
+      },
+      {
+        "weight": 141,
+        "tag": "affliction_axe_and_sword_damage"
+      },
+      {
+        "weight": 141,
+        "tag": "affliction_mace_and_staff_damage"
+      },
+      {
+        "weight": 151,
+        "tag": "affliction_dagger_and_claw_damage"
+      },
+      {
+        "weight": 145,
+        "tag": "affliction_bow_damage"
+      },
+      {
+        "weight": 151,
+        "tag": "affliction_wand_damage"
+      },
+      {
+        "weight": 113,
+        "tag": "affliction_damage_with_two_handed_melee_weapons"
+      },
+      {
+        "weight": 117,
+        "tag": "affliction_attack_damage_while_dual_wielding_"
+      },
+      {
+        "weight": 113,
+        "tag": "affliction_attack_damage_while_holding_a_shield"
+      }
+    ],
+    "name": "Vicious Skewering",
+    "placements": [],
+    "id": 11270
+  },
+  "Rotten Claws": {
+    "implicit_tags": [
+      "physical",
+      "attack",
+      "minion"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [{
+      "weight": 500,
+      "tag": "affliction_minion_damage"
+    }],
+    "name": "Rotten Claws",
+    "placements": [],
+    "id": 11392
+  },
+  "Phlebotomist": {
+    "implicit_tags": [
+      "bleed",
+      "physical",
+      "critical",
+      "ailment"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [{
+      "weight": 343,
+      "tag": "affliction_physical_damage_over_time_multiplier"
+    }],
+    "name": "Phlebotomist",
+    "placements": [],
+    "id": 14099
+  },
+  "Seeker Runes": {
+    "implicit_tags": [
+      "caster_damage",
+      "damage",
+      "caster"
+    ],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [{
+      "weight": 439,
+      "tag": "affliction_brand_damage"
+    }],
+    "name": "Seeker Runes",
+    "placements": [],
+    "id": 11458
+  },
+  "Lasting Impression": {
+    "implicit_tags": ["damage"],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [
+      {
+        "weight": 353,
+        "tag": "affliction_damage_while_you_have_a_herald"
+      },
+      {
+        "weight": 474,
+        "tag": "affliction_minion_damage_while_you_have_a_herald"
+      }
+    ],
+    "name": "Lasting Impression",
+    "placements": [],
+    "id": 11441
+  },
+  "Smite the Weak": {
+    "implicit_tags": [
+      "damage",
+      "attack"
+    ],
+    "stats": [],
+    "required_level": 1,
+    "spawn_tags": [
+      {
+        "weight": 432,
+        "tag": "affliction_attack_damage_"
+      },
+      {
+        "weight": 750,
+        "tag": "affliction_axe_and_sword_damage"
+      },
+      {
+        "weight": 750,
+        "tag": "affliction_mace_and_staff_damage"
+      },
+      {
+        "weight": 808,
+        "tag": "affliction_dagger_and_claw_damage"
+      },
+      {
+        "weight": 774,
+        "tag": "affliction_bow_damage"
+      },
+      {
+        "weight": 807,
+        "tag": "affliction_wand_damage"
+      },
+      {
+        "weight": 604,
+        "tag": "affliction_damage_with_two_handed_melee_weapons"
+      },
+      {
+        "weight": 623,
+        "tag": "affliction_attack_damage_while_dual_wielding_"
+      },
+      {
+        "weight": 600,
+        "tag": "affliction_attack_damage_while_holding_a_shield"
+      }
+    ],
+    "name": "Smite the Weak",
+    "placements": [],
+    "id": 11352
+  },
+  "Mage Hunter": {
+    "implicit_tags": [
+      "block",
+      "power_charge",
+      "caster_damage",
+      "damage",
+      "caster"
+    ],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [
+      {
+        "weight": 141,
+        "tag": "affliction_chance_to_block"
+      },
+      {
+        "weight": 281,
+        "tag": "affliction_spell_damage"
+      }
+    ],
+    "name": "Mage Hunter",
+    "placements": [],
+    "id": 11509
+  },
+  "Heart of Iron": {
+    "implicit_tags": [
+      "defences",
+      "armour"
+    ],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [
+      {
+        "weight": 146,
+        "tag": "affliction_maximum_life"
+      },
+      {
+        "weight": 261,
+        "tag": "affliction_armour"
+      }
+    ],
+    "name": "Heart of Iron",
+    "placements": [],
+    "id": 11493
+  },
+  "Surging Vitality": {
+    "implicit_tags": [
+      "resource",
+      "life"
+    ],
+    "stats": [],
+    "required_level": 1,
+    "spawn_tags": [{
+      "weight": 780,
+      "tag": "affliction_maximum_life"
+    }],
+    "name": "Surging Vitality",
+    "placements": [],
+    "id": 11474
+  },
+  "Master of Command": {
+    "implicit_tags": [
+      "resource",
+      "mana",
+      "aura"
+    ],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [
+      {
+        "weight": 180,
+        "tag": "old_do_not_use_affliction_aura_effect"
+      },
+      {
+        "weight": 180,
+        "tag": "affliction_reservation_efficiency_small"
+      }
+    ],
+    "name": "Master of Command",
+    "placements": [],
+    "id": 11274
+  },
+  "Cremator": {
+    "implicit_tags": [
+      "elemental_damage",
+      "damage",
+      "elemental",
+      "fire"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [
+      {
+        "weight": 238,
+        "tag": "affliction_fire_damage"
+      },
+      {
+        "weight": 366,
+        "tag": "affliction_fire_damage_over_time_multiplier"
+      }
+    ],
+    "name": "Cremator",
+    "placements": [],
+    "id": 11376
+  },
+  "Untouchable": {
+    "implicit_tags": [
+      "defences",
+      "evasion"
+    ],
+    "stats": [],
+    "required_level": 1,
+    "spawn_tags": [
+      {
+        "weight": 1315,
+        "tag": "affliction_evasion"
+      },
+      {
+        "weight": 1477,
+        "tag": "affliction_chance_to_dodge_attacks"
+      }
+    ],
+    "name": "Untouchable",
+    "placements": [],
+    "id": 11501
+  },
+  "Doedre's Spite": {
+    "implicit_tags": [
+      "caster",
+      "curse"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [
+      {
+        "weight": 353,
+        "tag": "old_do_not_use_affliction_curse_effect"
+      },
+      {
+        "weight": 353,
+        "tag": "affliction_curse_effect_small"
+      }
+    ],
+    "name": "Doedre's Spite",
+    "placements": [],
+    "id": 11431
+  },
+  "Advance Guard": {
+    "implicit_tags": [
+      "damage",
+      "attack",
+      "speed"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [{
+      "weight": 300,
+      "tag": "affliction_attack_damage_while_holding_a_shield"
+    }],
+    "name": "Advance Guard",
+    "placements": [],
+    "id": 11257
+  },
+  "Unrestrained Focus": {
+    "implicit_tags": ["speed"],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [{
+      "weight": 340,
+      "tag": "affliction_channelling_skill_damage"
+    }],
+    "name": "Unrestrained Focus",
+    "placements": [],
+    "id": 11304
+  },
+  "Feast of Flesh": {
+    "implicit_tags": [
+      "resource",
+      "life",
+      "attack"
+    ],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [{
+      "weight": 146,
+      "tag": "affliction_maximum_life"
+    }],
+    "name": "Feast of Flesh",
+    "placements": [],
+    "id": 11472
+  },
+  "Spring Back": {
+    "implicit_tags": [
+      "defences",
+      "energy_shield"
+    ],
+    "stats": [],
+    "required_level": 1,
+    "spawn_tags": [{
+      "weight": 1011,
+      "tag": "affliction_maximum_energy_shield"
+    }],
+    "name": "Spring Back",
+    "placements": [],
+    "id": 11491
+  },
+  "Vicious Guard": {
+    "implicit_tags": [
+      "block",
+      "resource",
+      "life",
+      "attack"
+    ],
+    "stats": [],
+    "required_level": 1,
+    "spawn_tags": [
+      {
+        "weight": 750,
+        "tag": "affliction_chance_to_block"
+      },
+      {
+        "weight": 780,
+        "tag": "affliction_maximum_life"
+      }
+    ],
+    "name": "Vicious Guard",
+    "placements": [],
+    "id": 11506
+  },
+  "Circling Oblivion": {
+    "implicit_tags": [
+      "damage",
+      "ailment"
+    ],
+    "stats": [],
+    "required_level": 1,
+    "spawn_tags": [
+      {
+        "weight": 1185,
+        "tag": "affliction_damage_over_time_multiplier"
+      },
+      {
+        "weight": 950,
+        "tag": "affliction_cold_damage_over_time_multiplier"
+      },
+      {
+        "weight": 686,
+        "tag": "affliction_physical_damage_over_time_multiplier"
+      },
+      {
+        "weight": 733,
+        "tag": "affliction_fire_damage_over_time_multiplier"
+      },
+      {
+        "weight": 696,
+        "tag": "affliction_chaos_damage_over_time_multiplier"
+      }
+    ],
+    "name": "Circling Oblivion",
+    "placements": [],
+    "id": 11417
+  },
+  "Capacitor": {
+    "implicit_tags": [
+      "elemental",
+      "lightning",
+      "ailment"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [{
+      "weight": 686,
+      "tag": "affliction_lightning_resistance"
+    }],
+    "name": "Capacitor",
+    "placements": [],
+    "id": 11527
+  },
+  "Holy Word": {
+    "implicit_tags": [
+      "elemental",
+      "fire"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [{
+      "weight": 873,
+      "tag": "affliction_warcry_buff_effect"
+    }],
+    "name": "Holy Word",
+    "placements": [],
+    "id": 22663
+  },
+  "Essence Rush": {
+    "implicit_tags": [
+      "caster_damage",
+      "defences",
+      "energy_shield",
+      "damage",
+      "attack",
+      "caster",
+      "speed"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [{
+      "weight": 750,
+      "tag": "affliction_spell_damage"
+    }],
+    "name": "Essence Rush",
+    "placements": [],
+    "id": 11366
+  },
+  "Blacksmith": {
+    "implicit_tags": [
+      "resource",
+      "life",
+      "defences",
+      "armour",
+      "elemental",
+      "fire",
+      "resistance"
+    ],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [
+      {
+        "weight": 247,
+        "tag": "affliction_fire_resistance"
+      },
+      {
+        "weight": 261,
+        "tag": "affliction_armour"
+      }
+    ],
+    "name": "Blacksmith",
+    "placements": [],
+    "id": 11519
+  },
+  "Astonishing Affliction": {
+    "implicit_tags": [
+      "damage",
+      "ailment"
+    ],
+    "stats": [],
+    "required_level": 1,
+    "spawn_tags": [{
+      "weight": 1627,
+      "tag": "affliction_effect_of_non-damaging_ailments"
+    }],
+    "name": "Astonishing Affliction",
+    "placements": [],
+    "id": 11419
+  },
+  "Remarkable": {
+    "implicit_tags": [
+      "caster",
+      "speed"
+    ],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [{
+      "weight": 439,
+      "tag": "affliction_brand_damage"
+    }],
+    "name": "Remarkable",
+    "placements": [],
+    "id": 11459
+  },
+  "Special Reserve": {
+    "implicit_tags": [
+      "flask",
+      "resource",
+      "life",
+      "damage"
+    ],
+    "stats": [],
+    "required_level": 1,
+    "spawn_tags": [
+      {
+        "weight": 1079,
+        "tag": "affliction_flask_duration"
+      },
+      {
+        "weight": 1778,
+        "tag": "affliction_life_and_mana_recovery_from_flasks"
+      }
+    ],
+    "name": "Special Reserve",
+    "placements": [],
+    "id": 11315
+  },
+  "Wind-up": {
+    "implicit_tags": [
+      "power_charge",
+      "damage",
+      "attack",
+      "critical"
+    ],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [{
+      "weight": 151,
+      "tag": "affliction_dagger_and_claw_damage"
+    }],
+    "name": "Wind-up",
+    "placements": [],
+    "id": 11330
+  },
+  "Heavy Hitter": {
+    "implicit_tags": [
+      "damage",
+      "attack"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [
+      {
+        "weight": 216,
+        "tag": "affliction_attack_damage_"
+      },
+      {
+        "weight": 375,
+        "tag": "affliction_axe_and_sword_damage"
+      },
+      {
+        "weight": 375,
+        "tag": "affliction_mace_and_staff_damage"
+      },
+      {
+        "weight": 404,
+        "tag": "affliction_dagger_and_claw_damage"
+      },
+      {
+        "weight": 387,
+        "tag": "affliction_bow_damage"
+      },
+      {
+        "weight": 403,
+        "tag": "affliction_wand_damage"
+      },
+      {
+        "weight": 302,
+        "tag": "affliction_damage_with_two_handed_melee_weapons"
+      },
+      {
+        "weight": 312,
+        "tag": "affliction_attack_damage_while_dual_wielding_"
+      },
+      {
+        "weight": 300,
+        "tag": "affliction_attack_damage_while_holding_a_shield"
+      }
+    ],
+    "name": "Heavy Hitter",
+    "placements": [],
+    "id": 11353
+  },
+  "Sleepless Sentries": {
+    "implicit_tags": [],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [{
+      "weight": 277,
+      "tag": "affliction_totem_damage"
+    }],
+    "name": "Sleepless Sentries",
+    "placements": [],
+    "id": 11300
+  },
+  "Towering Threat": {
+    "implicit_tags": [
+      "resource",
+      "life"
+    ],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [
+      {
+        "weight": 367,
+        "tag": "affliction_area_damage"
+      },
+      {
+        "weight": 146,
+        "tag": "affliction_maximum_life"
+      }
+    ],
+    "name": "Towering Threat",
+    "placements": [],
+    "id": 11294
+  },
+  "Ancestral Preservation": {
+    "implicit_tags": [
+      "resource",
+      "life",
+      "chaos",
+      "resistance"
+    ],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [{
+      "weight": 277,
+      "tag": "affliction_totem_damage"
+    }],
+    "name": "Ancestral Preservation",
+    "placements": [],
+    "id": 11298
+  },
+  "Blessed": {
+    "implicit_tags": [
+      "resource",
+      "life",
+      "mana",
+      "chaos",
+      "resistance"
+    ],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [
+      {
+        "weight": 439,
+        "tag": "affliction_chaos_resistance"
+      },
+      {
+        "weight": 146,
+        "tag": "affliction_maximum_life"
+      },
+      {
+        "weight": 175,
+        "tag": "affliction_maximum_mana"
+      }
+    ],
+    "name": "Blessed",
+    "placements": [],
+    "id": 11534
+  },
+  "Cry Wolf": {
+    "implicit_tags": [
+      "damage",
+      "attack"
+    ],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [{
+      "weight": 327,
+      "tag": "affliction_warcry_buff_effect"
+    }],
+    "name": "Cry Wolf",
+    "placements": [],
+    "id": 11318
+  },
+  "Wish for Death": {
+    "implicit_tags": [
+      "caster",
+      "curse"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [],
+    "name": "Wish for Death",
+    "placements": [],
+    "id": 11434
+  },
+  "Readiness": {
+    "implicit_tags": [
+      "bleed",
+      "defences",
+      "evasion",
+      "physical",
+      "attack",
+      "ailment"
+    ],
+    "stats": [],
+    "required_level": 1,
+    "spawn_tags": [{
+      "weight": 1315,
+      "tag": "affliction_evasion"
+    }],
+    "name": "Readiness",
+    "placements": [],
+    "id": 11503
+  },
+  "Feed the Fury": {
+    "implicit_tags": [
+      "resource",
+      "life",
+      "damage",
+      "attack",
+      "speed"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [
+      {
+        "weight": 216,
+        "tag": "affliction_attack_damage_"
+      },
+      {
+        "weight": 375,
+        "tag": "affliction_axe_and_sword_damage"
+      },
+      {
+        "weight": 375,
+        "tag": "affliction_mace_and_staff_damage"
+      },
+      {
+        "weight": 404,
+        "tag": "affliction_dagger_and_claw_damage"
+      },
+      {
+        "weight": 387,
+        "tag": "affliction_bow_damage"
+      },
+      {
+        "weight": 403,
+        "tag": "affliction_wand_damage"
+      },
+      {
+        "weight": 302,
+        "tag": "affliction_damage_with_two_handed_melee_weapons"
+      },
+      {
+        "weight": 312,
+        "tag": "affliction_attack_damage_while_dual_wielding_"
+      },
+      {
+        "weight": 300,
+        "tag": "affliction_attack_damage_while_holding_a_shield"
+      }
+    ],
+    "name": "Feed the Fury",
+    "placements": [],
+    "id": 11359
+  },
+  "Paralysis": {
+    "implicit_tags": [
+      "elemental_damage",
+      "damage",
+      "elemental",
+      "lightning"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [{
+      "weight": 364,
+      "tag": "affliction_lightning_damage"
+    }],
+    "name": "Paralysis",
+    "placements": [],
+    "id": 11379
+  },
+  "Victim Maker": {
+    "implicit_tags": [
+      "caster",
+      "speed",
+      "curse"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [
+      {
+        "weight": 353,
+        "tag": "old_do_not_use_affliction_curse_effect"
+      },
+      {
+        "weight": 353,
+        "tag": "affliction_curse_effect_small"
+      }
+    ],
+    "name": "Victim Maker",
+    "placements": [],
+    "id": 11432
+  },
+  "Mage Bane": {
+    "implicit_tags": [
+      "block",
+      "power_charge",
+      "damage",
+      "attack"
+    ],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [
+      {
+        "weight": 117,
+        "tag": "affliction_attack_damage_while_dual_wielding_"
+      },
+      {
+        "weight": 141,
+        "tag": "affliction_chance_to_block"
+      }
+    ],
+    "name": "Mage Bane",
+    "placements": [],
+    "id": 11348
+  },
+  "Purposeful Harbinger": {
+    "implicit_tags": [
+      "resource",
+      "mana",
+      "aura"
+    ],
+    "stats": [],
+    "required_level": 75,
+    "spawn_tags": [
+      {
+        "weight": 60,
+        "tag": "old_do_not_use_affliction_aura_effect"
+      },
+      {
+        "weight": 60,
+        "tag": "affliction_reservation_efficiency_small"
+      },
+      {
+        "weight": 118,
+        "tag": "affliction_damage_while_you_have_a_herald"
+      },
+      {
+        "weight": 158,
+        "tag": "affliction_minion_damage_while_you_have_a_herald"
+      }
+    ],
+    "name": "Purposeful Harbinger",
+    "placements": [],
+    "id": 11276
+  },
+  "Peak Vigour": {
+    "implicit_tags": [
+      "flask",
+      "resource",
+      "life"
+    ],
+    "stats": [],
+    "required_level": 1,
+    "spawn_tags": [
+      {
+        "weight": 780,
+        "tag": "affliction_maximum_life"
+      },
+      {
+        "weight": 1079,
+        "tag": "affliction_flask_duration"
+      }
+    ],
+    "name": "Peak Vigour",
+    "placements": [],
+    "id": 11470
+  },
+  "Replenishing Presence": {
+    "implicit_tags": ["aura"],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [
+      {
+        "weight": 480,
+        "tag": "old_do_not_use_affliction_aura_effect"
+      },
+      {
+        "weight": 480,
+        "tag": "affliction_reservation_efficiency_small"
+      }
+    ],
+    "name": "Replenishing Presence",
+    "placements": [],
+    "id": 11273
+  },
+  "Sublime Sensation": {
+    "implicit_tags": [
+      "resource",
+      "life",
+      "defences",
+      "energy_shield"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [
+      {
+        "weight": 390,
+        "tag": "affliction_maximum_life"
+      },
+      {
+        "weight": 505,
+        "tag": "affliction_maximum_energy_shield"
+      }
+    ],
+    "name": "Sublime Sensation",
+    "placements": [],
+    "id": 11473
+  },
+  "Fan the Flames": {
+    "implicit_tags": [
+      "elemental",
+      "fire",
+      "ailment"
+    ],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [{
+      "weight": 137,
+      "tag": "affliction_fire_damage_over_time_multiplier"
+    }],
+    "name": "Fan the Flames",
+    "placements": [],
+    "id": 11398
+  },
+  "Dread March": {
+    "implicit_tags": [
+      "resource",
+      "life",
+      "chaos",
+      "resistance",
+      "speed",
+      "minion"
+    ],
+    "stats": [],
+    "required_level": 1,
+    "spawn_tags": [{
+      "weight": 1433,
+      "tag": "affliction_minion_life"
+    }],
+    "name": "Dread March",
+    "placements": [],
+    "id": 11446
+  },
+  "Brewed for Potency": {
+    "implicit_tags": [
+      "flask",
+      "resource",
+      "life",
+      "mana",
+      "damage"
+    ],
+    "stats": [],
+    "required_level": 1,
+    "spawn_tags": [
+      {
+        "weight": 1185,
+        "tag": "affliction_damage_over_time_multiplier"
+      },
+      {
+        "weight": 950,
+        "tag": "affliction_cold_damage_over_time_multiplier"
+      },
+      {
+        "weight": 686,
+        "tag": "affliction_physical_damage_over_time_multiplier"
+      },
+      {
+        "weight": 733,
+        "tag": "affliction_fire_damage_over_time_multiplier"
+      },
+      {
+        "weight": 696,
+        "tag": "affliction_chaos_damage_over_time_multiplier"
+      },
+      {
+        "weight": 1079,
+        "tag": "affliction_flask_duration"
+      }
+    ],
+    "name": "Brewed for Potency",
+    "placements": [],
+    "id": 11418
+  },
+  "Non-Flammable": {
+    "implicit_tags": [
+      "elemental",
+      "fire",
+      "resistance",
+      "ailment"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [{
+      "weight": 658,
+      "tag": "affliction_fire_resistance"
+    }],
+    "name": "Non-Flammable",
+    "placements": [],
+    "id": 11520
+  },
+  "Sage": {
+    "implicit_tags": [
+      "resource",
+      "life",
+      "mana",
+      "elemental",
+      "lightning",
+      "resistance"
+    ],
+    "stats": [],
+    "required_level": 1,
+    "spawn_tags": [
+      {
+        "weight": 1371,
+        "tag": "affliction_lightning_resistance"
+      },
+      {
+        "weight": 932,
+        "tag": "affliction_maximum_mana"
+      },
+      {
+        "weight": 780,
+        "tag": "affliction_maximum_life"
+      }
+    ],
+    "name": "Sage",
+    "placements": [],
+    "id": 11529
+  },
+  "Eye of the Storm": {
+    "implicit_tags": [
+      "elemental_damage",
+      "damage",
+      "elemental",
+      "fire",
+      "cold",
+      "lightning",
+      "critical",
+      "ailment"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [
+      {
+        "weight": 457,
+        "tag": "affliction_critical_chance"
+      },
+      {
+        "weight": 366,
+        "tag": "affliction_fire_damage_over_time_multiplier"
+      },
+      {
+        "weight": 814,
+        "tag": "affliction_effect_of_non-damaging_ailments"
+      }
+    ],
+    "name": "Eye of the Storm",
+    "placements": [],
+    "id": 11286
+  },
+  "Arcane Adept": {
+    "implicit_tags": [
+      "caster_damage",
+      "damage",
+      "attack",
+      "caster",
+      "speed"
+    ],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [{
+      "weight": 281,
+      "tag": "affliction_spell_damage"
+    }],
+    "name": "Arcane Adept",
+    "placements": [],
+    "id": 11310
+  },
+  "Heraldry": {
+    "implicit_tags": [],
+    "stats": [],
+    "required_level": 75,
+    "spawn_tags": [
+      {
+        "weight": 118,
+        "tag": "affliction_damage_while_you_have_a_herald"
+      },
+      {
+        "weight": 158,
+        "tag": "affliction_minion_damage_while_you_have_a_herald"
+      }
+    ],
+    "name": "Heraldry",
+    "placements": [],
+    "id": 11435
+  },
+  "Surefooted Striker": {
+    "implicit_tags": [
+      "damage",
+      "attack",
+      "critical"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [{
+      "weight": 302,
+      "tag": "affliction_damage_with_two_handed_melee_weapons"
+    }],
+    "name": "Surefooted Striker",
+    "placements": [],
+    "id": 11341
+  },
+  "Numbing Elixir": {
+    "implicit_tags": [
+      "flask",
+      "caster",
+      "ailment",
+      "curse"
+    ],
+    "stats": [],
+    "required_level": 68,
+    "spawn_tags": [
+      {
+        "weight": 202,
+        "tag": "affliction_flask_duration"
+      },
+      {
+        "weight": 333,
+        "tag": "affliction_life_and_mana_recovery_from_flasks"
+      }
+    ],
+    "name": "Numbing Elixir",
+    "placements": [],
+    "id": 11316
+  },
+  "Arcing Shot": {
+    "implicit_tags": [
+      "damage",
+      "attack",
+      "critical"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [{
+      "weight": 387,
+      "tag": "affliction_bow_damage"
+    }],
+    "name": "Arcing Shot",
+    "placements": [],
+    "id": 11333
+  },
+  "Disease Vector": {
+    "implicit_tags": [
+      "chaos_damage",
+      "poison",
+      "damage",
+      "chaos",
+      "ailment"
+    ],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [{
+      "weight": 404,
+      "tag": "affliction_dagger_and_claw_damage"
+    }],
+    "name": "Disease Vector",
+    "placements": [],
+    "id": 11332
+  },
+  "Disorienting Wounds": {
+    "implicit_tags": [
+      "bleed",
+      "physical",
+      "attack",
+      "ailment"
+    ],
+    "stats": [],
+    "required_level": 1,
+    "spawn_tags": [{
+      "weight": 686,
+      "tag": "affliction_physical_damage_over_time_multiplier"
+    }],
+    "name": "Disorienting Wounds",
+    "placements": [],
+    "id": 11404
+  },
+  "Agent of Destruction": {
+    "implicit_tags": [
+      "elemental_damage",
+      "damage",
+      "elemental",
+      "fire",
+      "cold",
+      "lightning",
+      "ailment"
+    ],
+    "stats": [],
+    "required_level": 1,
+    "spawn_tags": [{
+      "weight": 1882,
+      "tag": "affliction_damage_while_you_have_a_herald"
+    }],
+    "name": "Agent of Destruction",
+    "placements": [],
+    "id": 11440
+  },
+  "Ancestral Guidance": {
+    "implicit_tags": ["speed"],
+    "stats": [],
+    "required_level": 50,
+    "spawn_tags": [{
+      "weight": 738,
+      "tag": "affliction_totem_damage"
+    }],
+    "name": "Ancestral Guidance",
+    "placements": [],
+    "id": 11301
+  },
+  "Empowered Envoy": {
+    "implicit_tags": ["damage"],
+    "stats": [],
+    "required_level": 1,
+    "spawn_tags": [{
+      "weight": 1882,
+      "tag": "affliction_damage_while_you_have_a_herald"
+    }],
+    "name": "Empowered Envoy",
+    "placements": [],
+    "id": 11438
+  }
+}
