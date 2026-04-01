@@ -275,10 +275,6 @@ select:focus { outline: none; border-color: var(--border-hi); }
 .notable-list {
     display: flex;
     flex-direction: column;
-    max-height: 453px;
-    overflow-y: auto;
-    scrollbar-width: thin;
-    scrollbar-color: var(--surface-3) transparent;
 }
 
 .notable-item {
