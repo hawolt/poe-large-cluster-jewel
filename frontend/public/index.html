@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Large Cluster Jewel</title>
+    <title>Cluster Jewel</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -11,6 +11,11 @@
 <div class="app">
 
     <header class="top-bar">
+        <select id="jewelTypeSelect">
+            <option value="large" selected>Large Cluster Jewel</option>
+            <option value="medium">Medium Cluster Jewel</option>
+            <option value="small">Small Cluster Jewel</option>
+        </select>
         <span class="top-label">cluster type</span>
         <select id="clusterSelect"></select>
         <a class="gh-link" href="https://github.com/hawolt/poe-large-cluster-jewel" target="_blank" rel="noopener" aria-label="GitHub">
@@ -23,7 +28,8 @@
     <div class="main">
 
         <aside class="jewel-aside">
-            <svg viewBox="-150 -150 300 300"
+            <svg id="jewel-svg"
+                 viewBox="-150 -150 300 300"
                  xmlns="http://www.w3.org/2000/svg"
                  xmlns:xlink="http://www.w3.org/1999/xlink"
                  class="jewel-svg">
@@ -49,42 +55,8 @@
                     </filter>
                 </defs>
 
-                <g fill="none" stroke-width="6" stroke="#444">
-                    <line x1="0" y1="-150" x2="0" y2="-100"/>
-                    <path d="M 0 -100 A 100 100 0 0 1 87 -50"/>
-                    <path d="M 87 -50 A 100 100 0 0 1 87 50"/>
-                    <path d="M 87 50 A 100 100 0 0 1 50 87"/>
-                    <path d="M 50 87 A 100 100 0 0 1 0 100"/>
-                    <path d="M 0 100 A 100 100 0 0 1 -50 87"/>
-                    <path d="M -50 87 A 100 100 0 0 1 -87 50"/>
-                    <path d="M -87 50 A 100 100 0 0 1 -87 -50"/>
-                    <path d="M -87 -50 A 100 100 0 0 1 0 -100"/>
-                </g>
-
-                <g stroke="#333" fill="#2a2a2a">
-                    <circle cx="0" cy="-100" r="14"/>
-                    <circle cx="-50" cy="87" r="14"/>
-                    <circle cx="50" cy="87" r="14"/>
-                </g>
-
-                <image id="svg-img2" x="-113" y="24" width="52" height="52"
-                       href="socket.png"
-                       opacity="1.0"/>
-                <image id="svg-img3" x="61" y="24" width="52" height="52"
-                       href="socket.png"
-                       opacity="1.0"/>
-
-                <image id="svg-notable-icon1" x="-28" y="72" width="56" height="56" href="" opacity="0"/>
-                <image id="svg-notable-overlay1" x="-28" y="72" width="56" height="56" href="./overlay.png" opacity="0" filter="url(#outline-red)"/>
-                <text id="svg-notable-label1" x="0" y="148" font-size="9" text-anchor="middle" fill="#bbb" opacity="0"></text>
-
-                <image id="svg-notable-icon2" x="-115" y="-78" width="56" height="56" href="" opacity="0"/>
-                <image id="svg-notable-overlay2" x="-115" y="-78" width="56" height="56" href="./overlay.png" opacity="0" filter="url(#outline-green)"/>
-                <text id="svg-notable-label2" x="-87" y="-95" font-size="9" text-anchor="middle" fill="#bbb" opacity="0"></text>
-
-                <image id="svg-notable-icon3" x="59" y="-78" width="56" height="56" href="" opacity="0"/>
-                <image id="svg-notable-overlay3" x="59" y="-78" width="56" height="56" href="./overlay.png" opacity="0" filter="url(#outline-blue)"/>
-                <text id="svg-notable-label3" x="87" y="-95" font-size="9" text-anchor="middle" fill="#bbb" opacity="0"></text>
+                <!-- dynamic body injected by renderSvgLayout() in main.ts -->
+                <g id="jewel-svg-body"></g>
 
             </svg>
         </aside>

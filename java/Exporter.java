@@ -48,6 +48,8 @@ public class Exporter {
         write(Path.of("large_cluster_types.json"), buildLargeClusterTypes(jewels, modsByName, infoByName, skillByTagLarge));
         write(Path.of("medium_cluster_types.json"), buildLargeClusterTypes(jewels, modsByName, infoByName, skillByTagMedium));
         write(Path.of("small_cluster_types.json"), buildLargeClusterTypes(jewels, modsByName, infoByName, skillByTagSmall));
+
+        write(Path.of("notable_ids.json"), buildNotableIds(jewels, modsByName, infoByName));
     }
 
     private static JSONObject buildLargeClusterTypes(
@@ -116,6 +118,62 @@ public class Exporter {
 
         return root;
     }
+
+    private static JSONObject buildNotableIds(
+            ClusterParser.ClusterJewelData jewels,
+            Map<String, ModLoader.AfflictionNotable> modsByName,
+            Map<String, ClusterParser.NotableInfo> infoByName) throws JSONException {
+
+        JSONObject root = new JSONObject();
+
+        for (Map.Entry<String, Integer> e : jewels.notableSortOrder().entrySet()) {
+            String name = e.getKey();
+
+            ClusterParser.NotableInfo ni = infoByName.get(name);
+            ModLoader.AfflictionNotable mod = modsByName.get(name);
+
+            JSONObject n = new JSONObject();
+            n.put("id", e.getValue());
+            n.put("name", name);
+
+            JSONArray statsArr = new JSONArray();
+            if (ni != null) for (String s : ni.stats()) statsArr.put(s);
+            n.put("stats", statsArr);
+
+            JSONArray placementsArr = new JSONArray();
+            if (ni != null) {
+                for (ClusterParser.SkillPlacement p : ni.placements()) {
+                    JSONObject pl = new JSONObject();
+                    pl.put("size", p.size());
+                    pl.put("tag", p.tag());
+                    placementsArr.put(pl);
+                }
+            }
+            n.put("placements", placementsArr);
+
+            if (mod != null) {
+                JSONArray spawnArr = new JSONArray();
+                for (ModLoader.SpawnTag st : mod.spawnTags()) {
+                    JSONObject t = new JSONObject();
+                    t.put("tag", st.tag());
+                    t.put("weight", st.weight());
+                    spawnArr.put(t);
+                }
+                n.put("spawn_tags", spawnArr);
+
+                JSONArray implArr = new JSONArray();
+                for (String s : mod.implicitTags()) implArr.put(s);
+                n.put("implicit_tags", implArr);
+
+                n.put("required_level", mod.requiredLevel());
+            }
+
+            root.put(name, n);
+        }
+
+        return root;
+    }
+
 
     private static void write(Path path, JSONObject obj) throws IOException, JSONException {
         Files.writeString(path, obj.toString(2), StandardCharsets.UTF_8);

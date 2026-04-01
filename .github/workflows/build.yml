@@ -70,7 +70,7 @@ jobs:
       - name: Move output files
         if: steps.lua_changed.outputs.changed == 'true'
         working-directory: ${{ github.workspace }}
-        run: mv large_cluster_types.json medium_cluster_types.json small_cluster_types.json frontend/public/data/
+        run: mv notable_ids.json large_cluster_types.json medium_cluster_types.json small_cluster_types.json frontend/public/data/
 
       - name: Commit and push all artifacts
         if: steps.src_changed.outputs.changed == 'true' || steps.lua_changed.outputs.changed == 'true'
@@ -86,6 +86,7 @@ jobs:
             git add frontend/public/data/large_cluster_types.json
             git add frontend/public/data/medium_cluster_types.json
             git add frontend/public/data/small_cluster_types.json
+            git add frontend/public/data/notable_ids.json
           fi
           if git diff --cached --quiet; then
             echo "No changes to commit"
