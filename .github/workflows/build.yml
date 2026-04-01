@@ -86,7 +86,7 @@ jobs:
             git add frontend/public/data/large_cluster_types.json
             git add frontend/public/data/medium_cluster_types.json
             git add frontend/public/data/small_cluster_types.json
-            git add frontend/public/data/noteable_ids.json
+            git add frontend/public/data/notable_ids.json
           fi
           if git diff --cached --quiet; then
             echo "No changes to commit"
