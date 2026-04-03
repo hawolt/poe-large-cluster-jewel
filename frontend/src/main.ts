@@ -106,15 +106,31 @@ function setActiveSlot(i: 0 | 1 | 2): void {
 }
 
 function isFractured(i: 0 | 1 | 2): boolean {
+    if (i !== 0) return false;
     const n = slots[i];
     if (!n) return false;
     return n.clusterKey !== currentClusterKey() || n.jewelSize !== currentJewelSize;
 }
 
+function isImprinted(i: 0 | 1 | 2): boolean {
+    if (i !== 1) return false;
+    if (!hasMixedKinds()) return false;
+    const n = slots[i];
+    if (!n) return false;
+    return n.clusterKey !== currentClusterKey() || n.jewelSize !== currentJewelSize;
+}
+
+function hasMixedKinds(): boolean {
+    const s0 = slots[0];
+    const s1 = slots[1];
+    if (!s0 || !s1) return false;
+    return s0.kind !== s1.kind;
+}
+
 function updateSelectLocks(): void {
-    // clusterSelect: lock after 2nd selection (all sizes)
-    const clusterLocked = slots[1] !== null;
-    (document.getElementById('clusterSelect') as HTMLSelectElement).disabled = clusterLocked;
+    // clusterSelect: lock for large when both selected notables are prefix (no imprint possible)
+    const bothPrefix = currentJewelSize === 'large' && slots[1] !== null && !hasMixedKinds();
+    (document.getElementById('clusterSelect') as HTMLSelectElement).disabled = bothPrefix;
 
     // jewelTypeSelect: always lock after the 1st selection regardless of size
     const jewelTypeLocked = slots[0] !== null;
@@ -289,10 +305,12 @@ function renderSlotHeaders(): void {
         const available = slotAvailable(i);
         const dotColor = n ? SLOT_COLOR[i] : null;
         const fractured = isFractured(i);
+        const imprinted = isImprinted(i);
         let cls = 'slot-card';
         if (isActive) cls += ' active';
         if (!available) cls += ' locked';
         if (fractured) cls += ' fractured';
+        if (imprinted) cls += ' imprinted';
         return `<div class="${cls}" onclick="handleSlotClick(${i})">
   <div class="slot-num ${isActive ? 'active' : ''}">${i + 1}</div>
   <div class="slot-content">
@@ -305,7 +323,7 @@ function renderSlotHeaders(): void {
          </div>
          <div class="slot-text">
            <div class="slot-name">${n.name}</div>
-           <div class="slot-meta"><span class="slot-meta-text">${n.kind} &middot; ${n.id} &middot; ${prettyKey(n.clusterKey)}</span>${fractured ? '<span class="fractured-tag">fractured</span>' : ''}</div>
+           <div class="slot-meta"><span class="slot-meta-text">${n.kind} &middot; ${n.id} &middot; ${prettyKey(n.clusterKey)}</span>${fractured ? '<span class="fractured-tag">fractured</span>' : ''}${imprinted ? '<span class="imprint-tag">imprinted</span>' : ''}</div>
          </div>
          <button class="slot-clear" onclick="event.stopPropagation();handleClearSlot(${i})">✕</button>`
                 : `<span class="slot-empty">empty — click to select</span>`

@@ -545,6 +545,29 @@ select:focus { outline: none; border-color: var(--border-hi); }
     letter-spacing: 0.05em;
 }
 
+.slot-card.imprinted {
+    border-color: #5ab8b0;
+    background: rgba(90,184,176,0.08);
+}
+
+.slot-card.imprinted.active {
+    border-color: #6ac8c0;
+    background: rgba(90,184,176,0.14);
+}
+
+.imprint-tag {
+    display: inline-block;
+    flex-shrink: 0;
+    font-size: 9px;
+    padding: 1px 5px;
+    border-radius: 3px;
+    background: rgba(90,184,176,0.18);
+    color: #6ac8c0;
+    border: 0.5px solid rgba(90,184,176,0.4);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
 select:disabled {
     opacity: 0.45;
     cursor: not-allowed;

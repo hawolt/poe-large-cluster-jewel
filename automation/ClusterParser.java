@@ -25,7 +25,7 @@ public class ClusterParser {
             List<Integer> notableIndices,
             List<Integer> socketIndices,
             int totalIndices,
-            Map<String, SkillEntry> skills
+            Map<String, com.hawolt.ClusterParser.SkillEntry> skills
     ) {
     }
 
@@ -35,7 +35,7 @@ public class ClusterParser {
     public record NotableInfo(
             String name,
             int sortId,
-            List<SkillPlacement> placements,
+            List<com.hawolt.ClusterParser.SkillPlacement> placements,
             List<String> stats
     ) {
     }
@@ -44,13 +44,13 @@ public class ClusterParser {
     }
 
     public record ClusterJewelData(
-            Map<String, JewelDef> jewels,
+            Map<String, com.hawolt.ClusterParser.JewelDef> jewels,
             Map<String, Integer> notableSortOrder,
             List<String> keystones,
             Map<Integer, Map<Integer, Integer>> orbitOffsets,
-            List<NotableInfo> notableIndex,
-            Map<String, List<JewelTypeInfo>> jewelTypeIndex,
-            Map<Integer, NotableInfo> notableById
+            List<com.hawolt.ClusterParser.NotableInfo> notableIndex,
+            Map<String, List<com.hawolt.ClusterParser.JewelTypeInfo>> jewelTypeIndex,
+            Map<Integer, com.hawolt.ClusterParser.NotableInfo> notableById
     ) {
     }
 
@@ -62,15 +62,15 @@ public class ClusterParser {
         this.pos = 0;
     }
 
-    public static ClusterJewelData parseFile(Path path) throws IOException {
-        return new ClusterParser(Files.readString(path)).parse();
+    public static com.hawolt.ClusterParser.ClusterJewelData parseFile(Path path) throws IOException {
+        return new com.hawolt.ClusterParser(Files.readString(path)).parse();
     }
 
-    private ClusterJewelData parse() {
+    private com.hawolt.ClusterParser.ClusterJewelData parse() {
         skipTo("return {");
         pos += "return {".length();
 
-        Map<String, JewelDef> jewels = new LinkedHashMap<>();
+        Map<String, com.hawolt.ClusterParser.JewelDef> jewels = new LinkedHashMap<>();
         Map<String, Integer> notableSortOrder = new LinkedHashMap<>();
         List<String> keystones = new ArrayList<>();
         Map<Integer, Map<Integer, Integer>> orbitOffsets = new LinkedHashMap<>();
@@ -93,35 +93,35 @@ public class ClusterParser {
             skipComma();
         }
 
-        List<NotableInfo> notableIndex = buildNotableIndex(jewels, notableSortOrder);
-        Map<String, List<JewelTypeInfo>> jewelTypeIndex = buildJewelTypeIndex(jewels, notableSortOrder);
+        List<com.hawolt.ClusterParser.NotableInfo> notableIndex = buildNotableIndex(jewels, notableSortOrder);
+        Map<String, List<com.hawolt.ClusterParser.JewelTypeInfo>> jewelTypeIndex = buildJewelTypeIndex(jewels, notableSortOrder);
 
-        Map<Integer, NotableInfo> notableById = new LinkedHashMap<>();
-        for (NotableInfo n : notableIndex) {
+        Map<Integer, com.hawolt.ClusterParser.NotableInfo> notableById = new LinkedHashMap<>();
+        for (com.hawolt.ClusterParser.NotableInfo n : notableIndex) {
             if (n.sortId() != -1) notableById.put(n.sortId(), n);
         }
 
-        return new ClusterJewelData(jewels, notableSortOrder, keystones, orbitOffsets,
+        return new com.hawolt.ClusterParser.ClusterJewelData(jewels, notableSortOrder, keystones, orbitOffsets,
                 notableIndex, jewelTypeIndex, Collections.unmodifiableMap(notableById));
     }
 
-    private static List<NotableInfo> buildNotableIndex(
-            Map<String, JewelDef> jewels,
+    private static List<com.hawolt.ClusterParser.NotableInfo> buildNotableIndex(
+            Map<String, com.hawolt.ClusterParser.JewelDef> jewels,
             Map<String, Integer> notableSortOrder) {
 
-        Map<String, List<SkillPlacement>> placements = new LinkedHashMap<>();
+        Map<String, List<com.hawolt.ClusterParser.SkillPlacement>> placements = new LinkedHashMap<>();
         Map<String, List<String>> statsByName = new LinkedHashMap<>();
 
         jewels.forEach((jewelName, jewel) ->
                 jewel.skills().forEach((skillId, skill) -> {
                     placements.computeIfAbsent(skill.name(), k -> new ArrayList<>())
-                            .add(new SkillPlacement(jewel.size(), skill.tag()));
+                            .add(new com.hawolt.ClusterParser.SkillPlacement(jewel.size(), skill.tag()));
                     statsByName.putIfAbsent(skill.name(), skill.stats());
                 })
         );
 
         return placements.entrySet().stream()
-                .map(e -> new NotableInfo(
+                .map(e -> new com.hawolt.ClusterParser.NotableInfo(
                         e.getKey(),
                         notableSortOrder.getOrDefault(e.getKey(), -1),
                         e.getValue(),
@@ -130,8 +130,8 @@ public class ClusterParser {
                 .toList();
     }
 
-    private static Map<String, List<JewelTypeInfo>> buildJewelTypeIndex(
-            Map<String, JewelDef> jewels,
+    private static Map<String, List<com.hawolt.ClusterParser.JewelTypeInfo>> buildJewelTypeIndex(
+            Map<String, com.hawolt.ClusterParser.JewelDef> jewels,
             Map<String, Integer> notableSortOrder) {
 
         Map<String, Map<String, List<String>>> tagSizeNotables = new LinkedHashMap<>();
@@ -145,12 +145,12 @@ public class ClusterParser {
                 )
         );
 
-        Map<String, List<JewelTypeInfo>> result = new LinkedHashMap<>();
+        Map<String, List<com.hawolt.ClusterParser.JewelTypeInfo>> result = new LinkedHashMap<>();
         tagSizeNotables.forEach((tag, sizeMap) -> {
-            List<JewelTypeInfo> infos = new ArrayList<>();
+            List<com.hawolt.ClusterParser.JewelTypeInfo> infos = new ArrayList<>();
             sizeMap.forEach((size, names) -> {
                 names.sort(Comparator.comparingInt(n -> notableSortOrder.getOrDefault(n, Integer.MAX_VALUE)));
-                infos.add(new JewelTypeInfo(size, tag, Collections.unmodifiableList(names)));
+                infos.add(new com.hawolt.ClusterParser.JewelTypeInfo(size, tag, Collections.unmodifiableList(names)));
             });
             result.put(tag, Collections.unmodifiableList(infos));
         });
@@ -158,8 +158,8 @@ public class ClusterParser {
         return Collections.unmodifiableMap(result);
     }
 
-    private Map<String, JewelDef> readJewels() {
-        Map<String, JewelDef> map = new LinkedHashMap<>();
+    private Map<String, com.hawolt.ClusterParser.JewelDef> readJewels() {
+        Map<String, com.hawolt.ClusterParser.JewelDef> map = new LinkedHashMap<>();
         expect('{');
         while (true) {
             skipWhitespace();
@@ -176,12 +176,12 @@ public class ClusterParser {
         return map;
     }
 
-    private JewelDef readJewelDef(String jewelName) {
+    private com.hawolt.ClusterParser.JewelDef readJewelDef(String jewelName) {
         expect('{');
         String size = "";
         int sizeIndex = 0, minNodes = 0, maxNodes = 0, totalIndices = 0;
         List<Integer> small = new ArrayList<>(), notable = new ArrayList<>(), socket = new ArrayList<>();
-        Map<String, SkillEntry> skills = new LinkedHashMap<>();
+        Map<String, com.hawolt.ClusterParser.SkillEntry> skills = new LinkedHashMap<>();
 
         while (true) {
             skipWhitespace();
@@ -206,12 +206,12 @@ public class ClusterParser {
             }
             skipComma();
         }
-        return new JewelDef(jewelName, size, sizeIndex, minNodes, maxNodes,
+        return new com.hawolt.ClusterParser.JewelDef(jewelName, size, sizeIndex, minNodes, maxNodes,
                 small, notable, socket, totalIndices, skills);
     }
 
-    private Map<String, SkillEntry> readSkills() {
-        Map<String, SkillEntry> map = new LinkedHashMap<>();
+    private Map<String, com.hawolt.ClusterParser.SkillEntry> readSkills() {
+        Map<String, com.hawolt.ClusterParser.SkillEntry> map = new LinkedHashMap<>();
         expect('{');
         while (true) {
             skipWhitespace();
@@ -228,7 +228,7 @@ public class ClusterParser {
         return map;
     }
 
-    private SkillEntry readSkillEntry(String id) {
+    private com.hawolt.ClusterParser.SkillEntry readSkillEntry(String id) {
         expect('{');
         String name = "", icon = "", masteryIcon = null, tag = "";
         List<String> stats = new ArrayList<>(), enchants = new ArrayList<>();
@@ -253,7 +253,7 @@ public class ClusterParser {
             }
             skipComma();
         }
-        return new SkillEntry(id, name, icon, masteryIcon, tag, stats, enchants);
+        return new com.hawolt.ClusterParser.SkillEntry(id, name, icon, masteryIcon, tag, stats, enchants);
     }
 
     private Map<String, Integer> readStringIntMap() {
