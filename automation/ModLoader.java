@@ -30,14 +30,14 @@ public class ModLoader {
     public record AfflictionNotable(
             String key,
             String notableName,
-            List<com.hawolt.ModLoader.SpawnTag> spawnTags,
-            com.hawolt.ModLoader.SizeEligibility sizes,
+            List<SpawnTag> spawnTags,
+            SizeEligibility sizes,
             List<String> implicitTags,
             int requiredLevel,
             String generationType
     ) {}
 
-    public static Map<String, com.hawolt.ModLoader.AfflictionNotable> parse() throws IOException, JSONException {
+    public static Map<String, AfflictionNotable> parse() throws IOException, JSONException {
         HttpURLConnection conn = (HttpURLConnection) new URL(MODS_URL).openConnection();
         conn.setRequestProperty("Accept-Encoding", "identity");
         conn.connect();
@@ -52,7 +52,7 @@ public class ModLoader {
         if (content.startsWith("\uFEFF")) content = content.substring(1);
 
         JSONObject root = new JSONObject(content);
-        Map<String, com.hawolt.ModLoader.AfflictionNotable> result = new LinkedHashMap<>();
+        Map<String, AfflictionNotable> result = new LinkedHashMap<>();
 
         Iterator<String> keys = root.keys();
         while (keys.hasNext()) {
@@ -66,7 +66,7 @@ public class ModLoader {
 
             String notableName = text.substring(NOTABLE_PREFIX.length());
 
-            List<com.hawolt.ModLoader.SpawnTag> spawnTags = new ArrayList<>();
+            List<SpawnTag> spawnTags = new ArrayList<>();
             JSONArray sw = entry.optJSONArray("spawn_weights");
             if (sw != null) {
                 for (int i = 0; i < sw.length(); i++) {
@@ -74,7 +74,7 @@ public class ModLoader {
                     String tag = w.getString("tag");
                     int weight = w.getInt("weight");
                     if (weight > 0 && !tag.equals("default")) {
-                        spawnTags.add(new com.hawolt.ModLoader.SpawnTag(tag, weight));
+                        spawnTags.add(new SpawnTag(tag, weight));
                     }
                 }
             }
@@ -102,9 +102,9 @@ public class ModLoader {
                 for (int i = 0; i < it.length(); i++) implicitTags.add(it.getString(i));
             }
 
-            result.put(key, new com.hawolt.ModLoader.AfflictionNotable(
+            result.put(key, new AfflictionNotable(
                     key, notableName, spawnTags,
-                    new com.hawolt.ModLoader.SizeEligibility(large, medium, small),
+                    new SizeEligibility(large, medium, small),
                     implicitTags,
                     entry.optInt("required_level", 0),
                     entry.optString("generation_type", "unknown")
@@ -114,8 +114,8 @@ public class ModLoader {
         return Collections.unmodifiableMap(result);
     }
 
-    public static Map<String, com.hawolt.ModLoader.AfflictionNotable> byNotableName(Map<String, com.hawolt.ModLoader.AfflictionNotable> notables) {
-        Map<String, com.hawolt.ModLoader.AfflictionNotable> map = new LinkedHashMap<>();
+    public static Map<String, AfflictionNotable> byNotableName(Map<String, AfflictionNotable> notables) {
+        Map<String, AfflictionNotable> map = new LinkedHashMap<>();
         notables.values().forEach(n -> map.put(n.notableName(), n));
         return Collections.unmodifiableMap(map);
     }
