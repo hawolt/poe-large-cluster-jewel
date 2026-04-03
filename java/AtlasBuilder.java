@@ -1,9 +1,11 @@
+import com.googlecode.pngtastic.core.PngImage;
+import com.googlecode.pngtastic.core.PngOptimizer;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import javax.imageio.ImageIO;
 import java.awt.*;
-import java.awt.image.BufferedImage;
+import java.awt.image.*;
 import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
@@ -15,7 +17,7 @@ import java.util.List;
 public class AtlasBuilder {
     private static final String IMAGE_BASE = "https://image.ggpk.exposed/poe1/";
     private static final Path DATA_DIR = Path.of("frontend/public/data");
-    private static final Path OUT_ATLAS = Path.of("frontend/public/atlas.webp");
+    private static final Path OUT_ATLAS = Path.of("frontend/public/media/atlas.png");
     private static final int SPRITE_SIZE = 64;
     private static final int PADDING = 1;
     private static final String[] JSON_FILES = {
@@ -84,14 +86,10 @@ public class AtlasBuilder {
         }
         g.dispose();
         OUT_ATLAS.getParent().toFile().mkdirs();
-        boolean wroteWebp = writeWebp(atlas, OUT_ATLAS);
-        if (!wroteWebp) {
-            Path pngOut = Path.of(OUT_ATLAS.toString().replaceAll("\\.webp$", ".png"));
-            ImageIO.write(atlas, "png", pngOut.toFile());
-            System.out.printf("[atlas] WebP writer not available - saved PNG: %s%n", pngOut);
-        } else {
-            System.out.printf("[atlas] Atlas saved -> %s  (%dx%d)%n", OUT_ATLAS, atlasW, atlasH);
-        }
+        BufferedImage quantized = quantize(atlas, 256);
+        writePng(quantized, OUT_ATLAS);
+        long size = Files.size(OUT_ATLAS);
+        System.out.printf("[atlas] Atlas saved -> %s  (%dx%d, %d bytes)%n", OUT_ATLAS, atlasW, atlasH, size);
         System.out.println("[atlas] Rewriting JSON files...");
         for (Map.Entry<String, JSONObject> entry : datasets.entrySet()) {
             JSONObject data = entry.getValue();
@@ -117,6 +115,168 @@ public class AtlasBuilder {
         System.out.println("[atlas] Done.");
     }
 
+    // -------------------------------------------------------------------------
+    // Median-cut RGBA quantizer — reduces to maxColors palette entries
+    // preserving alpha. Produces an IndexColorModel PNG.
+    // -------------------------------------------------------------------------
+    private static BufferedImage quantize(BufferedImage src, int maxColors) {
+        int w = src.getWidth();
+        int h = src.getHeight();
+        int[] pixels = src.getRGB(0, 0, w, h, null, 0, w);
+
+        // Collect all unique RGBA values
+        List<int[]> cubes = new ArrayList<>();
+        cubes.add(pixels.clone());
+
+        // Median-cut: split the largest cube along its widest channel until we have maxColors cubes
+        while (cubes.size() < maxColors) {
+            // Find cube with most pixels (largest volume by range)
+            int splitIdx = 0;
+            int maxRange = 0;
+            for (int ci = 0; ci < cubes.size(); ci++) {
+                int range = cubeRange(cubes.get(ci));
+                if (range > maxRange) {
+                    maxRange = range;
+                    splitIdx = ci;
+                }
+            }
+            if (maxRange == 0) break;
+            int[] cube = cubes.remove(splitIdx);
+            int[][] halves = splitCube(cube);
+            cubes.add(halves[0]);
+            cubes.add(halves[1]);
+        }
+
+        // Build palette: average color in each cube
+        int paletteSize = cubes.size();
+        byte[] reds = new byte[paletteSize];
+        byte[] greens = new byte[paletteSize];
+        byte[] blues = new byte[paletteSize];
+        byte[] alphas = new byte[paletteSize];
+        for (int ci = 0; ci < paletteSize; ci++) {
+            long r = 0, g = 0, b = 0, a = 0;
+            for (int px : cubes.get(ci)) {
+                a += (px >> 24) & 0xFF;
+                r += (px >> 16) & 0xFF;
+                g += (px >> 8) & 0xFF;
+                b += px & 0xFF;
+            }
+            int n = cubes.get(ci).length;
+            reds[ci] = (byte) (r / n);
+            greens[ci] = (byte) (g / n);
+            blues[ci] = (byte) (b / n);
+            alphas[ci] = (byte) (a / n);
+        }
+
+        IndexColorModel icm = new IndexColorModel(8, paletteSize, reds, greens, blues, alphas);
+        BufferedImage indexed = new BufferedImage(w, h, BufferedImage.TYPE_BYTE_INDEXED, icm);
+
+        // Map each pixel to nearest palette entry
+        WritableRaster raster = indexed.getRaster();
+        for (int y = 0; y < h; y++) {
+            for (int x = 0; x < w; x++) {
+                raster.setSample(x, y, 0, nearestPalette(pixels[y * w + x], reds, greens, blues, alphas, paletteSize));
+            }
+        }
+        return indexed;
+    }
+
+    private static int cubeRange(int[] cube) {
+        int minR = 255, maxR = 0, minG = 255, maxG = 0, minB = 255, maxB = 0, minA = 255, maxA = 0;
+        for (int px : cube) {
+            int a = (px >> 24) & 0xFF, r = (px >> 16) & 0xFF, g = (px >> 8) & 0xFF, b = px & 0xFF;
+            if (r < minR) minR = r;
+            if (r > maxR) maxR = r;
+            if (g < minG) minG = g;
+            if (g > maxG) maxG = g;
+            if (b < minB) minB = b;
+            if (b > maxB) maxB = b;
+            if (a < minA) minA = a;
+            if (a > maxA) maxA = a;
+        }
+        return Math.max(Math.max(maxR - minR, maxG - minG), Math.max(maxB - minB, maxA - minA));
+    }
+
+    private static int[][] splitCube(int[] cube) {
+        // Find widest channel
+        int minR = 255, maxR = 0, minG = 255, maxG = 0, minB = 255, maxB = 0, minA = 255, maxA = 0;
+        for (int px : cube) {
+            int a = (px >> 24) & 0xFF, r = (px >> 16) & 0xFF, g = (px >> 8) & 0xFF, b = px & 0xFF;
+            if (r < minR) minR = r;
+            if (r > maxR) maxR = r;
+            if (g < minG) minG = g;
+            if (g > maxG) maxG = g;
+            if (b < minB) minB = b;
+            if (b > maxB) maxB = b;
+            if (a < minA) minA = a;
+            if (a > maxA) maxA = a;
+        }
+        int rRange = maxR - minR, gRange = maxG - minG, bRange = maxB - minB, aRange = maxA - minA;
+        int maxRange = Math.max(Math.max(rRange, gRange), Math.max(bRange, aRange));
+
+        final int channel;
+        if (maxRange == rRange) channel = 0;
+        else if (maxRange == gRange) channel = 1;
+        else if (maxRange == bRange) channel = 2;
+        else channel = 3;
+
+        // Sort by that channel and split at median
+        Integer[] boxed = new Integer[cube.length];
+        for (int i = 0; i < cube.length; i++) boxed[i] = cube[i];
+        Arrays.sort(boxed, (a, b) -> {
+            int ca = switch (channel) {
+                case 0 -> (a >> 16) & 0xFF;
+                case 1 -> (a >> 8) & 0xFF;
+                case 2 -> a & 0xFF;
+                default -> (a >> 24) & 0xFF;
+            };
+            int cb = switch (channel) {
+                case 0 -> (b >> 16) & 0xFF;
+                case 1 -> (b >> 8) & 0xFF;
+                case 2 -> b & 0xFF;
+                default -> (b >> 24) & 0xFF;
+            };
+            return Integer.compare(ca, cb);
+        });
+        int mid = boxed.length / 2;
+        int[] half1 = new int[mid];
+        int[] half2 = new int[boxed.length - mid];
+        for (int i = 0; i < mid; i++) half1[i] = boxed[i];
+        for (int i = mid; i < boxed.length; i++) half2[i - mid] = boxed[i];
+        return new int[][]{half1, half2};
+    }
+
+    private static int nearestPalette(int px, byte[] r, byte[] g, byte[] b, byte[] a, int size) {
+        int pa = (px >> 24) & 0xFF, pr = (px >> 16) & 0xFF, pg = (px >> 8) & 0xFF, pb = px & 0xFF;
+        int best = 0, bestDist = Integer.MAX_VALUE;
+        for (int i = 0; i < size; i++) {
+            int da = pa - (a[i] & 0xFF), dr = pr - (r[i] & 0xFF), dg = pg - (g[i] & 0xFF), db = pb - (b[i] & 0xFF);
+            int dist = da * da + dr * dr + dg * dg + db * db;
+            if (dist < bestDist) {
+                bestDist = dist;
+                best = i;
+            }
+        }
+        return best;
+    }
+
+    private static void writePng(BufferedImage img, Path out) throws IOException {
+        long before = img.getWidth() * img.getHeight() * 4L;
+        PngImage image = new PngImage(toInputStream(img));
+        PngOptimizer optimizer = new PngOptimizer();
+        PngImage optimized = optimizer.optimize(image, false, 9);
+        ByteArrayOutputStream baos = new ByteArrayOutputStream();
+        optimized.writeDataOutputStream(baos);
+        optimized.export(out.toString(), baos.toByteArray());
+        System.out.printf("[atlas] Compressed: %d raw -> %d bytes%n", before, Files.size(out));
+    }
+
+    private static InputStream toInputStream(BufferedImage img) throws IOException {
+        ByteArrayOutputStream baos = new ByteArrayOutputStream();
+        ImageIO.write(img, "png", baos);
+        return new ByteArrayInputStream(baos.toByteArray());
+    }
+
     private static byte[] download(String urlStr) {
         for (int attempt = 0; attempt < 3; attempt++) {
             try {
@@ -137,7 +297,10 @@ public class AtlasBuilder {
                 }
             } catch (Exception e) {
                 if (attempt < 2) {
-                    try { Thread.sleep(2000); } catch (InterruptedException ignored) {}
+                    try {
+                        Thread.sleep(2000);
+                    } catch (InterruptedException ignored) {
+                    }
                 } else {
                     System.err.printf("[atlas]   FAILED %s: %s%n", urlStr, e.getMessage());
                 }
@@ -170,29 +333,5 @@ public class AtlasBuilder {
         g.drawImage(src, 0, 0, w, h, null);
         g.dispose();
         return dst;
-    }
-
-    private static boolean writeWebp(BufferedImage img, Path out) {
-        try {
-            Iterator<javax.imageio.ImageWriter> writers =
-                    ImageIO.getImageWritersByMIMEType("image/webp");
-            if (!writers.hasNext()) return false;
-            javax.imageio.ImageWriter writer = writers.next();
-            javax.imageio.ImageWriteParam param = writer.getDefaultWriteParam();
-            try {
-                param.setCompressionMode(javax.imageio.ImageWriteParam.MODE_EXPLICIT);
-                param.setCompressionQuality(0.90f);
-            } catch (Exception ignored) {}
-            try (javax.imageio.stream.ImageOutputStream ios =
-                         ImageIO.createImageOutputStream(out.toFile())) {
-                writer.setOutput(ios);
-                writer.write(null, new javax.imageio.IIOImage(img, null, null), param);
-            }
-            writer.dispose();
-            return true;
-        } catch (Exception e) {
-            System.err.println("[atlas] WebP write error: " + e.getMessage());
-            return false;
-        }
     }
 }

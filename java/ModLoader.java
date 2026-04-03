@@ -15,14 +15,15 @@ public class ModLoader {
     private static final String NOTABLE_PREFIX = "1 Added Passive Skill is ";
     private static final String AFFLICTION_DOMAIN = "affliction_jewel";
 
-    public record SpawnTag(String tag, int weight) {}
+    public record SpawnTag(String tag, int weight) {
+    }
 
     public record SizeEligibility(boolean large, boolean medium, boolean small) {
         public List<String> asList() {
             List<String> out = new ArrayList<>();
-            if (large)  out.add("Large");
+            if (large) out.add("Large");
             if (medium) out.add("Medium");
-            if (small)  out.add("Small");
+            if (small) out.add("Small");
             return out;
         }
     }
@@ -35,7 +36,8 @@ public class ModLoader {
             List<String> implicitTags,
             int requiredLevel,
             String generationType
-    ) {}
+    ) {
+    }
 
     public static Map<String, AfflictionNotable> parse() throws IOException, JSONException {
         HttpURLConnection conn = (HttpURLConnection) new URL(MODS_URL).openConnection();
@@ -88,9 +90,9 @@ public class ModLoader {
                     int weight = w.getInt("weight");
                     if (weight > 0) {
                         switch (tag) {
-                            case "expansion_jewel_large"  -> large  = true;
+                            case "expansion_jewel_large" -> large = true;
                             case "expansion_jewel_medium" -> medium = true;
-                            case "expansion_jewel_small"  -> small  = true;
+                            case "expansion_jewel_small" -> small = true;
                         }
                     }
                 }

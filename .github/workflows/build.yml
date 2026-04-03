@@ -54,24 +54,18 @@ jobs:
       - name: Compile Java
         working-directory: ${{ github.workspace }}
         run: |
-          javac -cp org.json.jar \
-            java/AtlasBuilder.java \
-            java/ClusterParser.java \
-            java/ModLoader.java \
-            java/Exporter.java \
-            -d java/out
-
+          javac -cp org.json.jar:pngj.jar \
+            automation/AtlasBuilder.java \
+            automation/ClusterParser.java \
+            automation/ModLoader.java \
+            automation/Exporter.java \
+            -d automation/out
+      
       - name: Run Exporter
         working-directory: ${{ github.workspace }}
         run: |
-          cp java/ClusterJewels.lua .
-          java -cp java/out:org.json.jar Exporter
-
-      - name: Crush atlas PNG
-        working-directory: ${{ github.workspace }}
-        run: |
-          sudo apt-get install -y --no-install-recommends pngquant
-          pngquant --force --quality=45-85 --output frontend/public/media/atlas.png frontend/public/media/atlas.png || true
+          cp automation/ClusterJewels.lua .
+          java -cp automation/out:org.json.jar:pngj.jar Exporter
 
       - name: Commit and push all artifacts
         working-directory: ${{ github.workspace }}

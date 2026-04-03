@@ -31,9 +31,9 @@ public class Exporter {
         Map<String, List<String>> statsByName = fetchSkillTreeStats();
         System.out.printf("[exporter] Loaded stats for %d notables.%n", statsByName.size());
 
-        Map<String, ClusterParser.SkillEntry> skillByTagSmall  = new LinkedHashMap<>();
+        Map<String, ClusterParser.SkillEntry> skillByTagSmall = new LinkedHashMap<>();
         Map<String, ClusterParser.SkillEntry> skillByTagMedium = new LinkedHashMap<>();
-        Map<String, ClusterParser.SkillEntry> skillByTagLarge  = new LinkedHashMap<>();
+        Map<String, ClusterParser.SkillEntry> skillByTagLarge = new LinkedHashMap<>();
 
         ClusterParser.JewelDef smallDef = jewels.jewels().get("Small Cluster Jewel");
         if (smallDef != null)
@@ -136,7 +136,7 @@ public class Exporter {
                 int sortId = jewels.notableSortOrder().getOrDefault(mod.notableName(), -1);
 
                 JSONObject entry = new JSONObject();
-                entry.put("id",   sortId);
+                entry.put("id", sortId);
                 entry.put("name", mod.notableName());
 
                 JSONArray statsArr = new JSONArray();
@@ -150,7 +150,11 @@ public class Exporter {
         }
 
         Comparator<JSONObject> byId = Comparator.comparingInt(n -> {
-            try { return n.getInt("id"); } catch (JSONException ex) { return Integer.MAX_VALUE; }
+            try {
+                return n.getInt("id");
+            } catch (JSONException ex) {
+                return Integer.MAX_VALUE;
+            }
         });
 
         JSONObject root = new JSONObject();
