@@ -65,7 +65,7 @@ jobs:
         working-directory: ${{ github.workspace }}
         run: |
           cp java/ClusterJewels.lua .
-          java -cp java/out:org.json.jar com.hawolt.Exporter
+          java -cp java/out:org.json.jar Exporter
 
       - name: Commit and push all artifacts
         working-directory: ${{ github.workspace }}
