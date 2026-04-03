@@ -5,7 +5,6 @@
       "life",
       "minion"
     ],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [{
       "weight": 269,
@@ -22,7 +21,6 @@
       "life",
       "defences"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [{
       "weight": 375,
@@ -38,7 +36,6 @@
       "attack",
       "speed"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [{
       "weight": 312,
@@ -50,7 +47,6 @@
   },
   "Seal Mender": {
     "implicit_tags": [],
-    "stats": [],
     "required_level": 75,
     "spawn_tags": [{
       "weight": 94,
@@ -66,7 +62,6 @@
       "life",
       "minion"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [{
       "weight": 716,
@@ -81,7 +76,6 @@
       "damage",
       "critical"
     ],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [{
       "weight": 171,
@@ -96,7 +90,6 @@
       "damage",
       "attack"
     ],
-    "stats": [],
     "required_level": 1,
     "spawn_tags": [{
       "weight": 604,
@@ -111,7 +104,6 @@
       "resource",
       "mana"
     ],
-    "stats": [],
     "required_level": 1,
     "spawn_tags": [{
       "weight": 932,
@@ -127,7 +119,6 @@
       "damage",
       "physical"
     ],
-    "stats": [],
     "required_level": 1,
     "spawn_tags": [{
       "weight": 464,
@@ -143,7 +134,6 @@
       "life",
       "mana"
     ],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [
       {
@@ -167,7 +157,6 @@
       "fire",
       "ailment"
     ],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [{
       "weight": 137,
@@ -184,7 +173,6 @@
       "speed",
       "aura"
     ],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [
       {
@@ -202,7 +190,6 @@
   },
   "Ancestral Might": {
     "implicit_tags": ["damage"],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [{
       "weight": 738,
@@ -218,7 +205,6 @@
       "defences",
       "armour"
     ],
-    "stats": [],
     "required_level": 1,
     "spawn_tags": [
       {
@@ -243,7 +229,6 @@
       "caster",
       "curse"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [
       {
@@ -261,7 +246,6 @@
   },
   "Arcane Heroism": {
     "implicit_tags": [],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [{
       "weight": 281,
@@ -273,7 +257,6 @@
   },
   "Snaring Spirits": {
     "implicit_tags": ["damage"],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [{
       "weight": 738,
@@ -288,7 +271,6 @@
       "damage",
       "critical"
     ],
-    "stats": [],
     "required_level": 1,
     "spawn_tags": [{
       "weight": 914,
@@ -300,7 +282,6 @@
   },
   "Expert Sabotage": {
     "implicit_tags": ["speed"],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [{
       "weight": 980,
@@ -315,7 +296,6 @@
       "damage",
       "speed"
     ],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [{
       "weight": 333,
@@ -332,7 +312,6 @@
       "physical",
       "attack"
     ],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [{
       "weight": 141,
@@ -347,7 +326,6 @@
       "damage",
       "attack"
     ],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [{
       "weight": 113,
@@ -362,7 +340,6 @@
       "chaos",
       "resistance"
     ],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [{
       "weight": 439,
@@ -378,7 +355,6 @@
       "damage",
       "chaos"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [{
       "weight": 348,
@@ -390,7 +366,6 @@
   },
   "Follow-Through": {
     "implicit_tags": ["damage"],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [{
       "weight": 333,
@@ -405,7 +380,6 @@
       "damage",
       "speed"
     ],
-    "stats": [],
     "required_level": 1,
     "spawn_tags": [{
       "weight": 1959,
@@ -424,7 +398,6 @@
       "aura",
       "ailment"
     ],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [
       {
@@ -447,7 +420,6 @@
       "damage",
       "minion"
     ],
-    "stats": [],
     "required_level": 1,
     "spawn_tags": [
       {
@@ -470,7 +442,6 @@
       "caster",
       "curse"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [
       {
@@ -491,7 +462,6 @@
       "damage",
       "attack"
     ],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [
       {
@@ -513,7 +483,6 @@
       "damage",
       "elemental"
     ],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [
       {
@@ -544,7 +513,6 @@
       "defences",
       "armour"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [{
       "weight": 390,
@@ -559,7 +527,6 @@
       "damage",
       "critical"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [
       {
@@ -577,7 +544,6 @@
   },
   "Broadside": {
     "implicit_tags": ["attack"],
-    "stats": [],
     "required_level": 1,
     "spawn_tags": [{
       "weight": 774,
@@ -594,7 +560,6 @@
       "elemental",
       "critical"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [{
       "weight": 980,
@@ -610,7 +575,6 @@
       "defences",
       "armour"
     ],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [{
       "weight": 261,
@@ -625,7 +589,6 @@
       "caster",
       "curse"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [
       {
@@ -648,7 +611,6 @@
       "elemental",
       "resistance"
     ],
-    "stats": [],
     "required_level": 75,
     "spawn_tags": [
       {
@@ -679,7 +641,6 @@
       "critical",
       "attribute"
     ],
-    "stats": [],
     "required_level": 1,
     "spawn_tags": [{
       "weight": 604,
@@ -691,7 +652,6 @@
   },
   "Master of Fire": {
     "implicit_tags": [],
-    "stats": [],
     "required_level": 75,
     "spawn_tags": [
       {
@@ -712,7 +672,6 @@
       "resource",
       "mana"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [
       {
@@ -737,7 +696,6 @@
       "damage",
       "speed"
     ],
-    "stats": [],
     "required_level": 1,
     "spawn_tags": [{
       "weight": 1778,
@@ -752,7 +710,6 @@
       "block",
       "endurance_charge"
     ],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [{
       "weight": 141,
@@ -772,7 +729,6 @@
       "caster",
       "speed"
     ],
-    "stats": [],
     "required_level": 1,
     "spawn_tags": [{
       "weight": 1371,
@@ -792,7 +748,6 @@
       "damage",
       "caster"
     ],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [{
       "weight": 281,
@@ -808,7 +763,6 @@
       "mana",
       "aura"
     ],
-    "stats": [],
     "required_level": 1,
     "spawn_tags": [
       {
@@ -831,7 +785,6 @@
       "evasion",
       "physical"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [
       {
@@ -857,7 +810,6 @@
       "life",
       "damage"
     ],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [
       {
@@ -897,7 +849,6 @@
       "damage",
       "caster"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [{
       "weight": 750,
@@ -915,7 +866,6 @@
       "damage",
       "attack"
     ],
-    "stats": [],
     "required_level": 75,
     "spawn_tags": [{
       "weight": 109,
@@ -933,7 +883,6 @@
       "physical",
       "chaos"
     ],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [
       {
@@ -954,7 +903,6 @@
       "resource",
       "life"
     ],
-    "stats": [],
     "required_level": 75,
     "spawn_tags": [{
       "weight": 49,
@@ -971,7 +919,6 @@
       "elemental",
       "cold"
     ],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [{
       "weight": 95,
@@ -987,7 +934,6 @@
       "mana",
       "attack"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [{
       "weight": 466,
@@ -1002,7 +948,6 @@
       "block",
       "damage"
     ],
-    "stats": [],
     "required_level": 1,
     "spawn_tags": [
       {
@@ -1024,7 +969,6 @@
       "damage",
       "elemental"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [
       {
@@ -1058,7 +1002,6 @@
       "chaos",
       "resistance"
     ],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [{
       "weight": 439,
@@ -1070,7 +1013,6 @@
   },
   "Bloodscent": {
     "implicit_tags": ["attack"],
-    "stats": [],
     "required_level": 75,
     "spawn_tags": [{
       "weight": 47,
@@ -1086,7 +1028,6 @@
       "minion",
       "critical"
     ],
-    "stats": [],
     "required_level": 75,
     "spawn_tags": [{
       "weight": 63,
@@ -1103,7 +1044,6 @@
       "resistance",
       "speed"
     ],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [{
       "weight": 257,
@@ -1115,7 +1055,6 @@
   },
   "Overwhelming Malice": {
     "implicit_tags": [],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [
       {
@@ -1136,7 +1075,6 @@
       "caster",
       "speed"
     ],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [{
       "weight": 439,
@@ -1155,7 +1093,6 @@
       "chaos",
       "minion"
     ],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [{
       "weight": 188,
@@ -1170,7 +1107,6 @@
       "damage",
       "attack"
     ],
-    "stats": [],
     "required_level": 75,
     "spawn_tags": [{
       "weight": 51,
@@ -1182,7 +1118,6 @@
   },
   "Set and Forget": {
     "implicit_tags": ["damage"],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [{
       "weight": 980,
@@ -1200,7 +1135,6 @@
       "caster",
       "speed"
     ],
-    "stats": [],
     "required_level": 1,
     "spawn_tags": [{
       "weight": 1778,
@@ -1216,7 +1150,6 @@
       "critical",
       "curse"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [
       {
@@ -1234,7 +1167,6 @@
   },
   "Vast Power": {
     "implicit_tags": ["damage"],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [{
       "weight": 980,
@@ -1253,7 +1185,6 @@
       "elemental",
       "ailment"
     ],
-    "stats": [],
     "required_level": 75,
     "spawn_tags": [
       {
@@ -1282,7 +1213,6 @@
       "block",
       "ailment"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [
       {
@@ -1313,7 +1243,6 @@
       "speed",
       "curse"
     ],
-    "stats": [],
     "required_level": 75,
     "spawn_tags": [{
       "weight": 113,
@@ -1328,7 +1257,6 @@
       "damage",
       "speed"
     ],
-    "stats": [],
     "required_level": 1,
     "spawn_tags": [{
       "weight": 1477,
@@ -1343,7 +1271,6 @@
       "damage",
       "minion"
     ],
-    "stats": [],
     "required_level": 1,
     "spawn_tags": [{
       "weight": 2526,
@@ -1358,7 +1285,6 @@
       "damage",
       "attack"
     ],
-    "stats": [],
     "required_level": 75,
     "spawn_tags": [{
       "weight": 47,
@@ -1375,7 +1301,6 @@
       "attack",
       "speed"
     ],
-    "stats": [],
     "required_level": 1,
     "spawn_tags": [
       {
@@ -1429,7 +1354,6 @@
       "caster",
       "speed"
     ],
-    "stats": [],
     "required_level": 1,
     "spawn_tags": [{
       "weight": 519,
@@ -1441,7 +1365,6 @@
   },
   "Shrieking Bolts": {
     "implicit_tags": ["damage"],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [{
       "weight": 889,
@@ -1458,7 +1381,6 @@
       "speed",
       "critical"
     ],
-    "stats": [],
     "required_level": 1,
     "spawn_tags": [{
       "weight": 914,
@@ -1475,7 +1397,6 @@
       "caster",
       "speed"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [
       {
@@ -1496,7 +1417,6 @@
       "caster",
       "speed"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [{
       "weight": 1171,
@@ -1514,7 +1434,6 @@
       "energy_shield",
       "attribute"
     ],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [
       {
@@ -1546,7 +1465,6 @@
       "minion",
       "ailment"
     ],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [{
       "weight": 188,
@@ -1563,7 +1481,6 @@
       "caster",
       "curse"
     ],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [],
     "name": "Forbidden Words",
@@ -1579,7 +1496,6 @@
       "attack",
       "ailment"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [{
       "weight": 343,
@@ -1594,7 +1510,6 @@
       "damage",
       "critical"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [
       {
@@ -1616,7 +1531,6 @@
       "damage",
       "elemental"
     ],
-    "stats": [],
     "required_level": 75,
     "spawn_tags": [
       {
@@ -1646,7 +1560,6 @@
       "damage",
       "attack"
     ],
-    "stats": [],
     "required_level": 1,
     "spawn_tags": [
       {
@@ -1664,7 +1577,6 @@
   },
   "Dark Messenger": {
     "implicit_tags": ["damage"],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [{
       "weight": 941,
@@ -1682,7 +1594,6 @@
       "lightning",
       "resistance"
     ],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [
       {
@@ -1703,7 +1614,6 @@
       "block",
       "power_charge"
     ],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [{
       "weight": 141,
@@ -1720,7 +1630,6 @@
       "chaos",
       "resistance"
     ],
-    "stats": [],
     "required_level": 1,
     "spawn_tags": [
       {
@@ -1754,7 +1663,6 @@
   },
   "Arcane Pyrotechnics": {
     "implicit_tags": ["damage"],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [{
       "weight": 367,
@@ -1769,7 +1677,6 @@
       "endurance_charge",
       "damage"
     ],
-    "stats": [],
     "required_level": 75,
     "spawn_tags": [{
       "weight": 113,
@@ -1785,7 +1692,6 @@
       "attack",
       "attribute"
     ],
-    "stats": [],
     "required_level": 1,
     "spawn_tags": [{
       "weight": 1745,
@@ -1802,7 +1708,6 @@
       "resource",
       "life"
     ],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [
       {
@@ -1823,7 +1728,6 @@
       "defences",
       "armour"
     ],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [{
       "weight": 327,
@@ -1840,7 +1744,6 @@
       "caster",
       "speed"
     ],
-    "stats": [],
     "required_level": 1,
     "spawn_tags": [{
       "weight": 1500,
@@ -1856,7 +1759,6 @@
       "damage",
       "chaos"
     ],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [
       {
@@ -1879,7 +1781,6 @@
       "damage",
       "caster"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [{
       "weight": 750,
@@ -1899,7 +1800,6 @@
       "lightning",
       "attack"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [{
       "weight": 403,
@@ -1917,7 +1817,6 @@
       "damage",
       "elemental"
     ],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [
       {
@@ -1949,7 +1848,6 @@
       "lightning",
       "critical"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [{
       "weight": 364,
@@ -1965,7 +1863,6 @@
       "critical",
       "ailment"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [
       {
@@ -2004,7 +1901,6 @@
       "lightning",
       "ailment"
     ],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [{
       "weight": 305,
@@ -2020,7 +1916,6 @@
       "speed",
       "curse"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [
       {
@@ -2046,7 +1941,6 @@
       "attack",
       "caster"
     ],
-    "stats": [],
     "required_level": 1,
     "spawn_tags": [{
       "weight": 464,
@@ -2058,7 +1952,6 @@
   },
   "Expendability": {
     "implicit_tags": [],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [{
       "weight": 367,
@@ -2074,7 +1967,6 @@
       "mana",
       "attribute"
     ],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [
       {
@@ -2100,7 +1992,6 @@
       "attack",
       "critical"
     ],
-    "stats": [],
     "required_level": 1,
     "spawn_tags": [{
       "weight": 807,
@@ -2115,7 +2006,6 @@
       "elemental",
       "fire"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [{
       "weight": 750,
@@ -2127,7 +2017,6 @@
   },
   "Ancestral Inspiration": {
     "implicit_tags": ["caster"],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [
       {
@@ -2145,7 +2034,6 @@
   },
   "Lead By Example": {
     "implicit_tags": ["attribute"],
-    "stats": [],
     "required_level": 1,
     "spawn_tags": [{
       "weight": 1745,
@@ -2161,7 +2049,6 @@
       "damage",
       "chaos"
     ],
-    "stats": [],
     "required_level": 1,
     "spawn_tags": [
       {
@@ -2182,7 +2069,6 @@
       "caster",
       "curse"
     ],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [
       {
@@ -2200,7 +2086,6 @@
   },
   "Elegant Form": {
     "implicit_tags": ["ailment"],
-    "stats": [],
     "required_level": 1,
     "spawn_tags": [{
       "weight": 1477,
@@ -2215,7 +2100,6 @@
       "damage",
       "critical"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [{
       "weight": 457,
@@ -2231,7 +2115,6 @@
       "damage",
       "chaos"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [
       {
@@ -2252,7 +2135,6 @@
       "damage",
       "minion"
     ],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [{
       "weight": 474,
@@ -2270,7 +2152,6 @@
       "energy_shield",
       "damage"
     ],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [
       {
@@ -2313,7 +2194,6 @@
       "physical",
       "attack"
     ],
-    "stats": [],
     "required_level": 1,
     "spawn_tags": [
       {
@@ -2335,7 +2215,6 @@
       "lightning",
       "ailment"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [
       {
@@ -2356,7 +2235,6 @@
       "flask",
       "speed"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [
       {
@@ -2377,7 +2255,6 @@
       "damage",
       "attack"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [{
       "weight": 302,
@@ -2392,7 +2269,6 @@
       "resource",
       "life"
     ],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [{
       "weight": 146,
@@ -2408,7 +2284,6 @@
       "life",
       "minion"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [{
       "weight": 716,
@@ -2423,7 +2298,6 @@
       "damage",
       "attack"
     ],
-    "stats": [],
     "required_level": 1,
     "spawn_tags": [
       {
@@ -2447,7 +2321,6 @@
       "fire",
       "ailment"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [{
       "weight": 366,
@@ -2462,7 +2335,6 @@
       "caster",
       "speed"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [{
       "weight": 1171,
@@ -2474,7 +2346,6 @@
   },
   "No Witnesses": {
     "implicit_tags": [],
-    "stats": [],
     "required_level": 75,
     "spawn_tags": [],
     "name": "No Witnesses",
@@ -2486,7 +2357,6 @@
       "resource",
       "mana"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [
       {
@@ -2511,7 +2381,6 @@
       "damage",
       "critical"
     ],
-    "stats": [],
     "required_level": 1,
     "spawn_tags": [
       {
@@ -2535,7 +2404,6 @@
       "resistance",
       "aura"
     ],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [
       {
@@ -2557,7 +2425,6 @@
       "fire",
       "ailment"
     ],
-    "stats": [],
     "required_level": 1,
     "spawn_tags": [{
       "weight": 1315,
@@ -2574,7 +2441,6 @@
       "elemental",
       "cold"
     ],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [{
       "weight": 95,
@@ -2591,7 +2457,6 @@
       "defences",
       "armour"
     ],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [
       {
@@ -2613,7 +2478,6 @@
       "evasion",
       "attribute"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [{
       "weight": 658,
@@ -2628,7 +2492,6 @@
       "damage",
       "critical"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [{
       "weight": 906,
@@ -2644,7 +2507,6 @@
       "damage",
       "caster"
     ],
-    "stats": [],
     "required_level": 1,
     "spawn_tags": [{
       "weight": 2341,
@@ -2659,7 +2521,6 @@
       "defences",
       "energy_shield"
     ],
-    "stats": [],
     "required_level": 75,
     "spawn_tags": [
       {
@@ -2681,7 +2542,6 @@
       "energy_shield",
       "caster"
     ],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [{
       "weight": 189,
@@ -2697,7 +2557,6 @@
       "damage",
       "chaos"
     ],
-    "stats": [],
     "required_level": 1,
     "spawn_tags": [{
       "weight": 519,
@@ -2712,7 +2571,6 @@
       "physical",
       "attack"
     ],
-    "stats": [],
     "required_level": 75,
     "spawn_tags": [],
     "name": "Deep Cuts",
@@ -2727,7 +2585,6 @@
       "fire",
       "resistance"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [
       {
@@ -2749,7 +2606,6 @@
       "damage",
       "attack"
     ],
-    "stats": [],
     "required_level": 1,
     "spawn_tags": [
       {
@@ -2774,7 +2630,6 @@
       "elemental",
       "lightning"
     ],
-    "stats": [],
     "required_level": 1,
     "spawn_tags": [{
       "weight": 727,
@@ -2790,7 +2645,6 @@
       "attack",
       "speed"
     ],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [{
       "weight": 117,
@@ -2806,7 +2660,6 @@
       "damage",
       "physical"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [{
       "weight": 232,
@@ -2818,7 +2671,6 @@
   },
   "Introspection": {
     "implicit_tags": ["aura"],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [
       {
@@ -2841,7 +2693,6 @@
       "damage",
       "minion"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [
       {
@@ -2865,7 +2716,6 @@
       "cold",
       "ailment"
     ],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [
       {
@@ -2892,7 +2742,6 @@
       "resistance",
       "ailment"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [{
       "weight": 686,
@@ -2908,7 +2757,6 @@
       "resource",
       "life"
     ],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [
       {
@@ -2931,7 +2779,6 @@
       "elemental",
       "lightning"
     ],
-    "stats": [],
     "required_level": 75,
     "spawn_tags": [],
     "name": "Supercharge",
@@ -2947,7 +2794,6 @@
       "aura",
       "ailment"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [
       {
@@ -2970,7 +2816,6 @@
       "physical",
       "attack"
     ],
-    "stats": [],
     "required_level": 75,
     "spawn_tags": [
       {
@@ -3020,7 +2865,6 @@
       "attack",
       "critical"
     ],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [],
     "name": "Gladiatorial Combat",
@@ -3033,7 +2877,6 @@
       "cold",
       "ailment"
     ],
-    "stats": [],
     "required_level": 75,
     "spawn_tags": [
       {
@@ -3054,7 +2897,6 @@
       "damage",
       "critical"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [{
       "weight": 457,
@@ -3070,7 +2912,6 @@
       "mana",
       "damage"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [{
       "weight": 906,
@@ -3086,7 +2927,6 @@
       "speed",
       "minion"
     ],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [{
       "weight": 474,
@@ -3103,7 +2943,6 @@
       "elemental",
       "resistance"
     ],
-    "stats": [],
     "required_level": 75,
     "spawn_tags": [
       {
@@ -3134,7 +2973,6 @@
       "life",
       "mana"
     ],
-    "stats": [],
     "required_level": 1,
     "spawn_tags": [
       {
@@ -3159,7 +2997,6 @@
       "cold",
       "lightning"
     ],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [
       {
@@ -3186,7 +3023,6 @@
       "defences",
       "armour"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [{
       "weight": 696,
@@ -3198,7 +3034,6 @@
   },
   "Intensity": {
     "implicit_tags": ["damage"],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [],
     "name": "Intensity",
@@ -3212,7 +3047,6 @@
       "attack",
       "critical"
     ],
-    "stats": [],
     "required_level": 1,
     "spawn_tags": [{
       "weight": 623,
@@ -3227,7 +3061,6 @@
       "defences",
       "energy_shield"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [{
       "weight": 505,
@@ -3242,7 +3075,6 @@
       "caster",
       "curse"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [
       {
@@ -3265,7 +3097,6 @@
       "elemental",
       "fire"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [
       {
@@ -3286,7 +3117,6 @@
       "damage",
       "attack"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [
       {
@@ -3313,7 +3143,6 @@
       "speed",
       "ailment"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [{
       "weight": 348,
@@ -3329,7 +3158,6 @@
       "energy_shield",
       "damage"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [
       {
@@ -3366,7 +3194,6 @@
       "attack",
       "speed"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [{
       "weight": 312,
@@ -3384,7 +3211,6 @@
       "damage",
       "chaos"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [
       {
@@ -3407,7 +3233,6 @@
       "chaos",
       "resistance"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [
       {
@@ -3441,7 +3266,6 @@
       "cold",
       "ailment"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [{
       "weight": 686,
@@ -3457,7 +3281,6 @@
       "mana",
       "attribute"
     ],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [
       {
@@ -3484,7 +3307,6 @@
       "resistance",
       "ailment"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [{
       "weight": 1171,
@@ -3503,7 +3325,6 @@
       "speed",
       "minion"
     ],
-    "stats": [],
     "required_level": 1,
     "spawn_tags": [{
       "weight": 1000,
@@ -3520,7 +3341,6 @@
       "caster",
       "curse"
     ],
-    "stats": [],
     "required_level": 1,
     "spawn_tags": [
       {
@@ -3541,7 +3361,6 @@
       "damage",
       "attack"
     ],
-    "stats": [],
     "required_level": 1,
     "spawn_tags": [
       {
@@ -3563,7 +3382,6 @@
   },
   "Darting Movements": {
     "implicit_tags": ["speed"],
-    "stats": [],
     "required_level": 1,
     "spawn_tags": [{
       "weight": 1477,
@@ -3575,7 +3393,6 @@
   },
   "Eye to Eye": {
     "implicit_tags": ["damage"],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [{
       "weight": 889,
@@ -3591,7 +3408,6 @@
       "caster",
       "speed"
     ],
-    "stats": [],
     "required_level": 1,
     "spawn_tags": [{
       "weight": 1477,
@@ -3609,7 +3425,6 @@
       "cold",
       "lightning"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [
       {
@@ -3632,7 +3447,6 @@
       "attack",
       "ailment"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [{
       "weight": 343,
@@ -3651,7 +3465,6 @@
       "attack",
       "ailment"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [
       {
@@ -3701,7 +3514,6 @@
       "speed",
       "minion"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [{
       "weight": 1263,
@@ -3713,7 +3525,6 @@
   },
   "Assert Dominance": {
     "implicit_tags": [],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [{
       "weight": 367,
@@ -3730,7 +3541,6 @@
       "ailment",
       "curse"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [
       {
@@ -3753,7 +3563,6 @@
       "caster",
       "speed"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [{
       "weight": 750,
@@ -3772,7 +3581,6 @@
       "chaos",
       "attack"
     ],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [{
       "weight": 151,
@@ -3788,7 +3596,6 @@
       "damage",
       "elemental"
     ],
-    "stats": [],
     "required_level": 1,
     "spawn_tags": [
       {
@@ -3819,7 +3626,6 @@
       "caster",
       "curse"
     ],
-    "stats": [],
     "required_level": 1,
     "spawn_tags": [
       {
@@ -3837,7 +3643,6 @@
   },
   "Riot Queller": {
     "implicit_tags": ["block"],
-    "stats": [],
     "required_level": 75,
     "spawn_tags": [
       {
@@ -3860,7 +3665,6 @@
       "elemental",
       "fire"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [
       {
@@ -3882,7 +3686,6 @@
       "speed",
       "attribute"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [{
       "weight": 302,
@@ -3899,7 +3702,6 @@
       "damage",
       "attack"
     ],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [
       {
@@ -3917,7 +3719,6 @@
   },
   "Endbringer": {
     "implicit_tags": ["damage"],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [
       {
@@ -3938,7 +3739,6 @@
       "defences",
       "energy_shield"
     ],
-    "stats": [],
     "required_level": 1,
     "spawn_tags": [{
       "weight": 1011,
@@ -3950,7 +3750,6 @@
   },
   "Haunting Shout": {
     "implicit_tags": [],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [{
       "weight": 873,
@@ -3965,7 +3764,6 @@
       "resource",
       "mana"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [{
       "weight": 466,
@@ -3981,7 +3779,6 @@
       "attack",
       "speed"
     ],
-    "stats": [],
     "required_level": 1,
     "spawn_tags": [
       {
@@ -4030,7 +3827,6 @@
       "resource",
       "mana"
     ],
-    "stats": [],
     "required_level": 1,
     "spawn_tags": [{
       "weight": 932,
@@ -4048,7 +3844,6 @@
       "chaos",
       "ailment"
     ],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [{
       "weight": 130,
@@ -4065,7 +3860,6 @@
       "attack",
       "ailment"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [{
       "weight": 343,
@@ -4082,7 +3876,6 @@
       "mana",
       "damage"
     ],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [
       {
@@ -4104,7 +3897,6 @@
   },
   "Powerful Assault": {
     "implicit_tags": ["damage"],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [{
       "weight": 980,
@@ -4119,7 +3911,6 @@
       "caster",
       "curse"
     ],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [],
     "name": "Master of Fear",
@@ -4132,7 +3923,6 @@
       "life",
       "minion"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [{
       "weight": 716,
@@ -4149,7 +3939,6 @@
       "elemental",
       "fire"
     ],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [{
       "weight": 137,
@@ -4168,7 +3957,6 @@
       "aura",
       "ailment"
     ],
-    "stats": [],
     "required_level": 1,
     "spawn_tags": [
       {
@@ -4190,7 +3978,6 @@
       "defences",
       "energy_shield"
     ],
-    "stats": [],
     "required_level": 1,
     "spawn_tags": [
       {
@@ -4213,7 +4000,6 @@
       "damage",
       "attack"
     ],
-    "stats": [],
     "required_level": 1,
     "spawn_tags": [
       {
@@ -4264,7 +4050,6 @@
       "resistance",
       "attribute"
     ],
-    "stats": [],
     "required_level": 1,
     "spawn_tags": [{
       "weight": 600,
@@ -4280,7 +4065,6 @@
       "mana",
       "attribute"
     ],
-    "stats": [],
     "required_level": 75,
     "spawn_tags": [{
       "weight": 58,
@@ -4298,7 +4082,6 @@
       "cold",
       "ailment"
     ],
-    "stats": [],
     "required_level": 1,
     "spawn_tags": [
       {
@@ -4324,7 +4107,6 @@
       "attack",
       "speed"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [{
       "weight": 312,
@@ -4340,7 +4122,6 @@
       "damage",
       "chaos"
     ],
-    "stats": [],
     "required_level": 75,
     "spawn_tags": [{
       "weight": 32,
@@ -4356,7 +4137,6 @@
       "mana",
       "attack"
     ],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [{
       "weight": 175,
@@ -4379,7 +4159,6 @@
       "ailment",
       "ailment"
     ],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [
       {
@@ -4403,7 +4182,6 @@
       "fire",
       "resistance"
     ],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [{
       "weight": 247,
@@ -4422,7 +4200,6 @@
       "elemental",
       "cold"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [
       {
@@ -4445,7 +4222,6 @@
       "resource",
       "mana"
     ],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [
       {
@@ -4467,7 +4243,6 @@
       "attack",
       "attribute"
     ],
-    "stats": [],
     "required_level": 1,
     "spawn_tags": [{
       "weight": 750,
@@ -4484,7 +4259,6 @@
       "elemental",
       "resistance"
     ],
-    "stats": [],
     "required_level": 1,
     "spawn_tags": [
       {
@@ -4527,7 +4301,6 @@
       "defences",
       "evasion"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [
       {
@@ -4550,7 +4323,6 @@
       "resistance",
       "ailment"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [{
       "weight": 686,
@@ -4565,7 +4337,6 @@
       "damage",
       "ailment"
     ],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [
       {
@@ -4599,7 +4370,6 @@
       "life",
       "attribute"
     ],
-    "stats": [],
     "required_level": 75,
     "spawn_tags": [{
       "weight": 49,
@@ -4616,7 +4386,6 @@
       "elemental",
       "resistance"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [
       {
@@ -4642,7 +4411,6 @@
       "life",
       "damage"
     ],
-    "stats": [],
     "required_level": 1,
     "spawn_tags": [{
       "weight": 1811,
@@ -4654,7 +4422,6 @@
   },
   "Aerialist": {
     "implicit_tags": ["attribute"],
-    "stats": [],
     "required_level": 75,
     "spawn_tags": [{
       "weight": 92,
@@ -4673,7 +4440,6 @@
       "elemental",
       "lightning"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [
       {
@@ -4691,7 +4457,6 @@
   },
   "Confident Combatant": {
     "implicit_tags": ["damage"],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [],
     "name": "Confident Combatant",
@@ -4704,7 +4469,6 @@
       "mana",
       "aura"
     ],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [
       {
@@ -4725,7 +4489,6 @@
       "damage",
       "critical"
     ],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [{
       "weight": 353,
@@ -4741,7 +4504,6 @@
       "physical",
       "ailment"
     ],
-    "stats": [],
     "required_level": 75,
     "spawn_tags": [{
       "weight": 129,
@@ -4760,7 +4522,6 @@
       "elemental",
       "resistance"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [{
       "weight": 232,
@@ -4777,7 +4538,6 @@
       "damage",
       "minion"
     ],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [{
       "weight": 188,
@@ -4793,7 +4553,6 @@
       "attack",
       "ailment"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [{
       "weight": 387,
@@ -4810,7 +4569,6 @@
       "attack",
       "ailment"
     ],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [
       {
@@ -4860,7 +4618,6 @@
       "attack",
       "minion"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [{
       "weight": 500,
@@ -4877,7 +4634,6 @@
       "critical",
       "ailment"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [{
       "weight": 343,
@@ -4893,7 +4649,6 @@
       "damage",
       "caster"
     ],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [{
       "weight": 439,
@@ -4905,7 +4660,6 @@
   },
   "Lasting Impression": {
     "implicit_tags": ["damage"],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [
       {
@@ -4926,7 +4680,6 @@
       "damage",
       "attack"
     ],
-    "stats": [],
     "required_level": 1,
     "spawn_tags": [
       {
@@ -4978,7 +4731,6 @@
       "damage",
       "caster"
     ],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [
       {
@@ -4999,7 +4751,6 @@
       "defences",
       "armour"
     ],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [
       {
@@ -5020,7 +4771,6 @@
       "resource",
       "life"
     ],
-    "stats": [],
     "required_level": 1,
     "spawn_tags": [{
       "weight": 780,
@@ -5036,7 +4786,6 @@
       "mana",
       "aura"
     ],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [
       {
@@ -5059,7 +4808,6 @@
       "elemental",
       "fire"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [
       {
@@ -5080,7 +4828,6 @@
       "defences",
       "evasion"
     ],
-    "stats": [],
     "required_level": 1,
     "spawn_tags": [
       {
@@ -5101,7 +4848,6 @@
       "caster",
       "curse"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [
       {
@@ -5123,7 +4869,6 @@
       "attack",
       "speed"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [{
       "weight": 300,
@@ -5135,7 +4880,6 @@
   },
   "Unrestrained Focus": {
     "implicit_tags": ["speed"],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [{
       "weight": 340,
@@ -5151,7 +4895,6 @@
       "life",
       "attack"
     ],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [{
       "weight": 146,
@@ -5166,7 +4909,6 @@
       "defences",
       "energy_shield"
     ],
-    "stats": [],
     "required_level": 1,
     "spawn_tags": [{
       "weight": 1011,
@@ -5183,7 +4925,6 @@
       "life",
       "attack"
     ],
-    "stats": [],
     "required_level": 1,
     "spawn_tags": [
       {
@@ -5204,7 +4945,6 @@
       "damage",
       "ailment"
     ],
-    "stats": [],
     "required_level": 1,
     "spawn_tags": [
       {
@@ -5238,7 +4978,6 @@
       "lightning",
       "ailment"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [{
       "weight": 686,
@@ -5253,7 +4992,6 @@
       "elemental",
       "fire"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [{
       "weight": 873,
@@ -5273,7 +5011,6 @@
       "caster",
       "speed"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [{
       "weight": 750,
@@ -5293,7 +5030,6 @@
       "fire",
       "resistance"
     ],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [
       {
@@ -5314,7 +5050,6 @@
       "damage",
       "ailment"
     ],
-    "stats": [],
     "required_level": 1,
     "spawn_tags": [{
       "weight": 1627,
@@ -5329,7 +5064,6 @@
       "caster",
       "speed"
     ],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [{
       "weight": 439,
@@ -5346,7 +5080,6 @@
       "life",
       "damage"
     ],
-    "stats": [],
     "required_level": 1,
     "spawn_tags": [
       {
@@ -5369,7 +5102,6 @@
       "attack",
       "critical"
     ],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [{
       "weight": 151,
@@ -5384,7 +5116,6 @@
       "damage",
       "attack"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [
       {
@@ -5430,7 +5161,6 @@
   },
   "Sleepless Sentries": {
     "implicit_tags": [],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [{
       "weight": 277,
@@ -5445,7 +5175,6 @@
       "resource",
       "life"
     ],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [
       {
@@ -5468,7 +5197,6 @@
       "chaos",
       "resistance"
     ],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [{
       "weight": 277,
@@ -5486,7 +5214,6 @@
       "chaos",
       "resistance"
     ],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [
       {
@@ -5511,7 +5238,6 @@
       "damage",
       "attack"
     ],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [{
       "weight": 327,
@@ -5526,7 +5252,6 @@
       "caster",
       "curse"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [],
     "name": "Wish for Death",
@@ -5542,7 +5267,6 @@
       "attack",
       "ailment"
     ],
-    "stats": [],
     "required_level": 1,
     "spawn_tags": [{
       "weight": 1315,
@@ -5560,7 +5284,6 @@
       "attack",
       "speed"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [
       {
@@ -5611,7 +5334,6 @@
       "elemental",
       "lightning"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [{
       "weight": 364,
@@ -5627,7 +5349,6 @@
       "speed",
       "curse"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [
       {
@@ -5650,7 +5371,6 @@
       "damage",
       "attack"
     ],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [
       {
@@ -5672,7 +5392,6 @@
       "mana",
       "aura"
     ],
-    "stats": [],
     "required_level": 75,
     "spawn_tags": [
       {
@@ -5702,7 +5421,6 @@
       "resource",
       "life"
     ],
-    "stats": [],
     "required_level": 1,
     "spawn_tags": [
       {
@@ -5720,7 +5438,6 @@
   },
   "Replenishing Presence": {
     "implicit_tags": ["aura"],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [
       {
@@ -5743,7 +5460,6 @@
       "defences",
       "energy_shield"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [
       {
@@ -5765,7 +5481,6 @@
       "fire",
       "ailment"
     ],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [{
       "weight": 137,
@@ -5784,7 +5499,6 @@
       "speed",
       "minion"
     ],
-    "stats": [],
     "required_level": 1,
     "spawn_tags": [{
       "weight": 1433,
@@ -5802,7 +5516,6 @@
       "mana",
       "damage"
     ],
-    "stats": [],
     "required_level": 1,
     "spawn_tags": [
       {
@@ -5841,7 +5554,6 @@
       "resistance",
       "ailment"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [{
       "weight": 658,
@@ -5860,7 +5572,6 @@
       "lightning",
       "resistance"
     ],
-    "stats": [],
     "required_level": 1,
     "spawn_tags": [
       {
@@ -5891,7 +5602,6 @@
       "critical",
       "ailment"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [
       {
@@ -5919,7 +5629,6 @@
       "caster",
       "speed"
     ],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [{
       "weight": 281,
@@ -5931,7 +5640,6 @@
   },
   "Heraldry": {
     "implicit_tags": [],
-    "stats": [],
     "required_level": 75,
     "spawn_tags": [
       {
@@ -5953,7 +5661,6 @@
       "attack",
       "critical"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [{
       "weight": 302,
@@ -5970,7 +5677,6 @@
       "ailment",
       "curse"
     ],
-    "stats": [],
     "required_level": 68,
     "spawn_tags": [
       {
@@ -5992,7 +5698,6 @@
       "attack",
       "critical"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [{
       "weight": 387,
@@ -6010,7 +5715,6 @@
       "chaos",
       "ailment"
     ],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [{
       "weight": 404,
@@ -6027,7 +5731,6 @@
       "attack",
       "ailment"
     ],
-    "stats": [],
     "required_level": 1,
     "spawn_tags": [{
       "weight": 686,
@@ -6047,7 +5750,6 @@
       "lightning",
       "ailment"
     ],
-    "stats": [],
     "required_level": 1,
     "spawn_tags": [{
       "weight": 1882,
@@ -6059,7 +5761,6 @@
   },
   "Ancestral Guidance": {
     "implicit_tags": ["speed"],
-    "stats": [],
     "required_level": 50,
     "spawn_tags": [{
       "weight": 738,
@@ -6071,7 +5772,6 @@
   },
   "Empowered Envoy": {
     "implicit_tags": ["damage"],
-    "stats": [],
     "required_level": 1,
     "spawn_tags": [{
       "weight": 1882,
