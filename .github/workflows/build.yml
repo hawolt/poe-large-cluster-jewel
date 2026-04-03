@@ -67,6 +67,11 @@ jobs:
           cp java/ClusterJewels.lua .
           java -cp java/out:org.json.jar Exporter
 
+      - name: Crush atlas PNG
+        working-directory: ${{ github.workspace }}
+        run: |
+          pngquant --force --quality=65-85 --output frontend/public/media/atlas.png frontend/public/media/atlas.png
+
       - name: Commit and push all artifacts
         working-directory: ${{ github.workspace }}
         run: |
