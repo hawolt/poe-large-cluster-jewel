@@ -43,7 +43,7 @@ jobs:
         run: npm run build
 
       # -----------------------------------------------------------------------
-      # Java exporter — always runs
+      # Java exporter + atlas — always runs
       # -----------------------------------------------------------------------
       - name: Set up Java
         uses: actions/setup-java@v3
@@ -51,42 +51,29 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: Download org.json dependency
+      - name: Download Java dependencies
         working-directory: ${{ github.workspace }}
-        run: curl -L -o org.json.jar https://repo1.maven.org/maven2/org/json/json/20240303/json-20240303.jar
+        run: |
+          curl -L -o org.json.jar \
+            https://repo1.maven.org/maven2/org/json/json/20240303/json-20240303.jar
+          curl -L -o webp-imageio.jar \
+            https://repo1.maven.org/maven2/com/github/usefulness/webp-imageio/0.8.0/webp-imageio-0.8.0.jar
 
       - name: Compile Java
         working-directory: ${{ github.workspace }}
-        run: javac -cp org.json.jar automation/Exporter.java automation/ModLoader.java automation/ClusterParser.java -d automation/out
+        run: |
+          javac -cp org.json.jar:webp-imageio.jar \
+            automation/AtlasBuilder.java \
+            automation/ClusterParser.java \
+            automation/ModLoader.java \
+            automation/Exporter.java \
+            -d automation/out
 
       - name: Run Exporter
         working-directory: ${{ github.workspace }}
         run: |
           cp automation/ClusterJewels.lua .
-          java -cp automation/out:org.json.jar Exporter
-
-      - name: Move JSON output files
-        working-directory: ${{ github.workspace }}
-        run: mv large_cluster_types.json medium_cluster_types.json small_cluster_types.json notable_ids.json frontend/public/data/
-
-      # -----------------------------------------------------------------------
-      # Atlas builder — always runs
-      # -----------------------------------------------------------------------
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-
-      - name: Install Python dependencies
-        working-directory: ${{ github.workspace }}
-        run: |
-          sudo apt-get update -qq
-          sudo apt-get install -y --no-install-recommends imagemagick libmagickwand-dev
-          pip install pillow wand
-
-      - name: Build icon atlas
-        working-directory: ${{ github.workspace }}
-        run: python automation/build_atlas.py
+          java -cp automation/out:org.json.jar:webp-imageio.jar Exporter
 
       # -----------------------------------------------------------------------
       # Commit all generated artifacts back to dev

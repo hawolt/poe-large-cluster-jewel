@@ -27,11 +27,13 @@ public class Exporter {
             infoByName.put(ni.name(), ni);
         }
 
-        Map<String, List<String>> statsBySkillId = fetchSkillTreeStats();
+        System.out.println("[exporter] Fetching skilltree data.json...");
+        Map<String, List<String>> statsByName = fetchSkillTreeStats();
+        System.out.printf("[exporter] Loaded stats for %d notables.%n", statsByName.size());
 
-        Map<String, ClusterParser.SkillEntry> skillByTagSmall = new LinkedHashMap<>();
+        Map<String, ClusterParser.SkillEntry> skillByTagSmall  = new LinkedHashMap<>();
         Map<String, ClusterParser.SkillEntry> skillByTagMedium = new LinkedHashMap<>();
-        Map<String, ClusterParser.SkillEntry> skillByTagLarge = new LinkedHashMap<>();
+        Map<String, ClusterParser.SkillEntry> skillByTagLarge  = new LinkedHashMap<>();
 
         ClusterParser.JewelDef smallDef = jewels.jewels().get("Small Cluster Jewel");
         if (smallDef != null)
@@ -49,18 +51,37 @@ public class Exporter {
                 skillByTagLarge.put(skill.tag(), skill);
 
         write(Path.of("large_cluster_types.json"),
-                buildClusterTypes(jewels, modsByName, infoByName, skillByTagLarge, statsBySkillId));
+                buildClusterTypes(jewels, modsByName, skillByTagLarge, statsByName));
         write(Path.of("medium_cluster_types.json"),
-                buildClusterTypes(jewels, modsByName, infoByName, skillByTagMedium, statsBySkillId));
+                buildClusterTypes(jewels, modsByName, skillByTagMedium, statsByName));
         write(Path.of("small_cluster_types.json"),
-                buildClusterTypes(jewels, modsByName, infoByName, skillByTagSmall, statsBySkillId));
+                buildClusterTypes(jewels, modsByName, skillByTagSmall, statsByName));
 
         write(Path.of("notable_ids.json"), buildNotableIds(jewels, modsByName, infoByName));
+
+        moveJsonFiles();
+
+        System.out.println("[exporter] Starting atlas build...");
+        AtlasBuilder.run();
+    }
+
+    private static void moveJsonFiles() throws IOException {
+        Path dest = Path.of("frontend/public/data");
+        Files.createDirectories(dest);
+        for (String fname : new String[]{
+                "large_cluster_types.json",
+                "medium_cluster_types.json",
+                "small_cluster_types.json",
+                "notable_ids.json"}) {
+            Files.move(Path.of(fname), dest.resolve(fname), StandardCopyOption.REPLACE_EXISTING);
+        }
     }
 
     private static Map<String, List<String>> fetchSkillTreeStats() throws IOException, JSONException {
         HttpURLConnection conn = (HttpURLConnection) new URL(SKILLTREE_URL).openConnection();
         conn.setRequestProperty("Accept-Encoding", "identity");
+        conn.setConnectTimeout(15_000);
+        conn.setReadTimeout(30_000);
         conn.connect();
 
         String content;
@@ -69,17 +90,10 @@ public class Exporter {
         } finally {
             conn.disconnect();
         }
-
         if (content.startsWith("\uFEFF")) content = content.substring(1);
 
         JSONObject root = new JSONObject(content);
-
-        JSONObject nodes;
-        if (root.has("nodes")) {
-            nodes = root.getJSONObject("nodes");
-        } else {
-            nodes = root;
-        }
+        JSONObject nodes = root.has("nodes") ? root.getJSONObject("nodes") : root;
 
         Map<String, List<String>> result = new LinkedHashMap<>();
         Iterator<String> keys = nodes.keys();
@@ -87,17 +101,14 @@ public class Exporter {
             String key = keys.next();
             Object val = nodes.get(key);
             if (!(val instanceof JSONObject entry)) continue;
-
             if (!entry.optBoolean("isNotable", false)) continue;
 
             String name = entry.optString("name", null);
             if (name == null || name.isBlank()) continue;
 
-            JSONArray statsArr = entry.optJSONArray("stats");
+            JSONArray arr = entry.optJSONArray("stats");
             List<String> stats = new ArrayList<>();
-            if (statsArr != null) {
-                for (int i = 0; i < statsArr.length(); i++) stats.add(statsArr.getString(i));
-            }
+            if (arr != null) for (int i = 0; i < arr.length(); i++) stats.add(arr.getString(i));
             result.put(name, stats);
         }
         return result;
@@ -106,7 +117,6 @@ public class Exporter {
     private static JSONObject buildClusterTypes(
             ClusterParser.ClusterJewelData jewels,
             Map<String, ModLoader.AfflictionNotable> modsByName,
-            Map<String, ClusterParser.NotableInfo> infoByName,
             Map<String, ClusterParser.SkillEntry> skillByTag,
             Map<String, List<String>> statsByName) throws JSONException {
 
@@ -126,7 +136,7 @@ public class Exporter {
                 int sortId = jewels.notableSortOrder().getOrDefault(mod.notableName(), -1);
 
                 JSONObject entry = new JSONObject();
-                entry.put("id", sortId);
+                entry.put("id",   sortId);
                 entry.put("name", mod.notableName());
 
                 JSONArray statsArr = new JSONArray();
@@ -140,11 +150,7 @@ public class Exporter {
         }
 
         Comparator<JSONObject> byId = Comparator.comparingInt(n -> {
-            try {
-                return n.getInt("id");
-            } catch (JSONException ex) {
-                return Integer.MAX_VALUE;
-            }
+            try { return n.getInt("id"); } catch (JSONException ex) { return Integer.MAX_VALUE; }
         });
 
         JSONObject root = new JSONObject();
@@ -179,8 +185,7 @@ public class Exporter {
     private static JSONObject buildNotableIds(
             ClusterParser.ClusterJewelData jewels,
             Map<String, ModLoader.AfflictionNotable> modsByName,
-            Map<String, ClusterParser.NotableInfo> infoByName
-    ) throws JSONException {
+            Map<String, ClusterParser.NotableInfo> infoByName) throws JSONException {
 
         JSONObject root = new JSONObject();
 
@@ -229,6 +234,6 @@ public class Exporter {
     }
 
     private static void write(Path path, JSONObject obj) throws IOException, JSONException {
-        Files.writeString(path, obj.toString(2), StandardCharsets.UTF_8);
+        Files.writeString(path, obj.toString(), StandardCharsets.UTF_8);
     }
 }
