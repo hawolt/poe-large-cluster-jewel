@@ -27,10 +27,8 @@ public class Exporter {
             infoByName.put(ni.name(), ni);
         }
 
-        // Fetch skilltree data.json and build id -> stats[] lookup
         Map<String, List<String>> statsBySkillId = fetchSkillTreeStats();
 
-        // Build tag -> skill maps for each jewel size
         Map<String, ClusterParser.SkillEntry> skillByTagSmall = new LinkedHashMap<>();
         Map<String, ClusterParser.SkillEntry> skillByTagMedium = new LinkedHashMap<>();
         Map<String, ClusterParser.SkillEntry> skillByTagLarge = new LinkedHashMap<>();
@@ -56,12 +54,10 @@ public class Exporter {
                 buildClusterTypes(jewels, modsByName, infoByName, skillByTagMedium, statsBySkillId));
         write(Path.of("small_cluster_types.json"),
                 buildClusterTypes(jewels, modsByName, infoByName, skillByTagSmall, statsBySkillId));
+
+        write(Path.of("notable_ids.json"), buildNotableIds(jewels, modsByName, infoByName));
     }
 
-    // -------------------------------------------------------------------------
-    // Fetch https://raw.githubusercontent.com/…/data.json
-    // Returns Map<skillId, List<statString>>
-    // -------------------------------------------------------------------------
     private static Map<String, List<String>> fetchSkillTreeStats() throws IOException, JSONException {
         HttpURLConnection conn = (HttpURLConnection) new URL(SKILLTREE_URL).openConnection();
         conn.setRequestProperty("Accept-Encoding", "identity");
@@ -92,10 +88,10 @@ public class Exporter {
             Object val = nodes.get(key);
             if (!(val instanceof JSONObject entry)) continue;
 
-            // Only notables are relevant
             if (!entry.optBoolean("isNotable", false)) continue;
 
-            String name = entry.getString("name");
+            String name = entry.optString("name", null);
+            if (name == null || name.isBlank()) continue;
 
             JSONArray statsArr = entry.optJSONArray("stats");
             List<String> stats = new ArrayList<>();
@@ -107,15 +103,12 @@ public class Exporter {
         return result;
     }
 
-    // -------------------------------------------------------------------------
-    // Build one cluster-types JSON (large / medium / small)
-    // -------------------------------------------------------------------------
     private static JSONObject buildClusterTypes(
             ClusterParser.ClusterJewelData jewels,
             Map<String, ModLoader.AfflictionNotable> modsByName,
             Map<String, ClusterParser.NotableInfo> infoByName,
             Map<String, ClusterParser.SkillEntry> skillByTag,
-            Map<String, List<String>> statsBySkillId) throws JSONException {
+            Map<String, List<String>> statsByName) throws JSONException {
 
         Set<String> clusterTags = skillByTag.keySet();
 
@@ -136,9 +129,8 @@ public class Exporter {
                 entry.put("id", sortId);
                 entry.put("name", mod.notableName());
 
-                // Inject stats from skilltree data.json if available
                 JSONArray statsArr = new JSONArray();
-                List<String> stats = statsBySkillId.get(mod.notableName());
+                List<String> stats = statsByName.get(mod.notableName());
                 if (stats != null) for (String s : stats) statsArr.put(s);
                 entry.put("stats", statsArr);
 
@@ -179,6 +171,58 @@ public class Exporter {
             typeObj.put("prefix_notables", prefixArr);
             typeObj.put("suffix_notables", suffixArr);
             root.put(tag, typeObj);
+        }
+
+        return root;
+    }
+
+    private static JSONObject buildNotableIds(
+            ClusterParser.ClusterJewelData jewels,
+            Map<String, ModLoader.AfflictionNotable> modsByName,
+            Map<String, ClusterParser.NotableInfo> infoByName
+    ) throws JSONException {
+
+        JSONObject root = new JSONObject();
+
+        for (Map.Entry<String, Integer> e : jewels.notableSortOrder().entrySet()) {
+            String name = e.getKey();
+
+            ClusterParser.NotableInfo ni = infoByName.get(name);
+            ModLoader.AfflictionNotable mod = modsByName.get(name);
+
+            JSONObject n = new JSONObject();
+            n.put("id", e.getValue());
+            n.put("name", name);
+
+            JSONArray placementsArr = new JSONArray();
+            if (ni != null) {
+                for (ClusterParser.SkillPlacement p : ni.placements()) {
+                    JSONObject pl = new JSONObject();
+                    pl.put("size", p.size());
+                    pl.put("tag", p.tag());
+                    placementsArr.put(pl);
+                }
+            }
+            n.put("placements", placementsArr);
+
+            if (mod != null) {
+                JSONArray spawnArr = new JSONArray();
+                for (ModLoader.SpawnTag st : mod.spawnTags()) {
+                    JSONObject t = new JSONObject();
+                    t.put("tag", st.tag());
+                    t.put("weight", st.weight());
+                    spawnArr.put(t);
+                }
+                n.put("spawn_tags", spawnArr);
+
+                JSONArray implArr = new JSONArray();
+                for (String s : mod.implicitTags()) implArr.put(s);
+                n.put("implicit_tags", implArr);
+
+                n.put("required_level", mod.requiredLevel());
+            }
+
+            root.put(name, n);
         }
 
         return root;

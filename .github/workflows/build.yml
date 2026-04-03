@@ -15,16 +15,6 @@ jobs:
         with:
           fetch-depth: 2
 
-      - name: Check if ClusterJewels.lua changed
-        id: lua_changed
-        working-directory: ${{ github.workspace }}
-        run: |
-          if git diff --name-only HEAD~1 HEAD | grep -q 'automation/ClusterJewels.lua'; then
-            echo "changed=true" >> $GITHUB_OUTPUT
-          else
-            echo "changed=false" >> $GITHUB_OUTPUT
-          fi
-
       - name: Check if frontend/src changed
         id: src_changed
         working-directory: ${{ github.workspace }}
@@ -53,57 +43,48 @@ jobs:
         run: npm run build
 
       # -----------------------------------------------------------------------
-      # Java exporter — generates the three cluster-type JSON files
+      # Java exporter — always runs
       # -----------------------------------------------------------------------
       - name: Set up Java
-        if: steps.lua_changed.outputs.changed == 'true'
         uses: actions/setup-java@v3
         with:
           java-version: '17'
           distribution: 'temurin'
 
       - name: Download org.json dependency
-        if: steps.lua_changed.outputs.changed == 'true'
         working-directory: ${{ github.workspace }}
         run: curl -L -o org.json.jar https://repo1.maven.org/maven2/org/json/json/20240303/json-20240303.jar
 
       - name: Compile Java
-        if: steps.lua_changed.outputs.changed == 'true'
         working-directory: ${{ github.workspace }}
-        run: javac -cp org.json.jar automation/Exporter.java automation/ModLoader.java automation/ClusterParser.java -d java/out
+        run: javac -cp org.json.jar automation/Exporter.java automation/ModLoader.java automation/ClusterParser.java -d automation/out
 
       - name: Run Exporter
-        if: steps.lua_changed.outputs.changed == 'true'
         working-directory: ${{ github.workspace }}
         run: |
           cp automation/ClusterJewels.lua .
           java -cp automation/out:org.json.jar Exporter
 
       - name: Move JSON output files
-        if: steps.lua_changed.outputs.changed == 'true'
         working-directory: ${{ github.workspace }}
-        run: mv large_cluster_types.json medium_cluster_types.json small_cluster_types.json frontend/public/data/
+        run: mv large_cluster_types.json medium_cluster_types.json small_cluster_types.json notable_ids.json frontend/public/data/
 
       # -----------------------------------------------------------------------
-      # Atlas builder — downloads DDS icons, packs WebP atlas, rewrites JSONs
+      # Atlas builder — always runs
       # -----------------------------------------------------------------------
       - name: Set up Python
-        if: steps.lua_changed.outputs.changed == 'true'
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
 
       - name: Install Python dependencies
-        if: steps.lua_changed.outputs.changed == 'true'
         working-directory: ${{ github.workspace }}
         run: |
-          # ImageMagick system library (needed by wand for DDS decoding)
           sudo apt-get update -qq
           sudo apt-get install -y --no-install-recommends libmagickwand-dev
           pip install pillow wand
 
       - name: Build icon atlas
-        if: steps.lua_changed.outputs.changed == 'true'
         working-directory: ${{ github.workspace }}
         run: python automation/build_atlas.py
 
@@ -111,7 +92,6 @@ jobs:
       # Commit all generated artifacts back to dev
       # -----------------------------------------------------------------------
       - name: Commit and push all artifacts
-        if: steps.src_changed.outputs.changed == 'true' || steps.lua_changed.outputs.changed == 'true'
         working-directory: ${{ github.workspace }}
         run: |
           git checkout dev
@@ -122,12 +102,11 @@ jobs:
             git add frontend/public/bundle.js
           fi
 
-          if [ "${{ steps.lua_changed.outputs.changed }}" == "true" ]; then
-            git add frontend/public/data/large_cluster_types.json
-            git add frontend/public/data/medium_cluster_types.json
-            git add frontend/public/data/small_cluster_types.json
-            git add frontend/public/atlas.webp
-          fi
+          git add frontend/public/data/large_cluster_types.json
+          git add frontend/public/data/medium_cluster_types.json
+          git add frontend/public/data/small_cluster_types.json
+          git add frontend/public/data/notable_ids.json
+          git add frontend/public/atlas.webp
 
           if git diff --cached --quiet; then
             echo "No changes to commit"
