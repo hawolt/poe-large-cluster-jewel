@@ -615,6 +615,10 @@ function renderNotablePane(kind: 'prefix' | 'suffix'): void {
         const notableTags = renderNotableTags(n.name);
         const statsEncoded = encodeURIComponent(JSON.stringify(n.stats));
 
+        const clusterRow = advancedMode
+            ? `<div class="ni-cluster-row">${prettyKey(n.clusterKey)}</div>`
+            : '';
+
         return `<div class="${cls}" ${clickable ? `onclick="handleNotableClick('${n.clusterKey}',${n.id})"` : ''} data-stats="${statsEncoded}" onmouseenter="handleNotableHover(event)" onmouseleave="handleNotableLeave()">
   <div class="ni-main">
     <div class="ni-top-row">
@@ -626,6 +630,7 @@ function renderNotablePane(kind: 'prefix' | 'suffix'): void {
         <span class="ni-id">${n.id}</span>
       </div>
     </div>
+    ${clusterRow}
     ${notableTags ? `<div class="ni-bottom-row">${notableTags}</div>` : ''}
   </div>
 </div>`;

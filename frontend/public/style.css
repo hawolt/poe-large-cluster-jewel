@@ -471,6 +471,17 @@ select:focus { outline: none; border-color: var(--border-hi); }
 }
 
 
+/* Advanced-mode cluster type row — between name and tags */
+.ni-cluster-row {
+    font-size: 11px;
+    font-family: var(--mono);
+    color: var(--text-faint);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.3;
+}
+
 .ni-bottom-row {
     display: flex;
     flex-wrap: wrap;
