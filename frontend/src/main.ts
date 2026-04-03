@@ -227,10 +227,27 @@ function hideTooltip(): void {
 // ---------------------------------------------------------------------------
 
 /**
- * Build a matcher for a raw query string.
- * Tries to compile it as a regex; on failure falls back to case-insensitive
- * substring. Returns a function that tests a notable.
+ * Compute the status labels for a notable given current slot state.
+ * Returns a list of whichever of "optimal", "2-notable variant", "undesired"
+ * apply — the same labels shown visually in the list.
  */
+function notableStatusLabels(n: Notable): string[] {
+    if (currentJewelSize !== 'large') return [];
+    const placedIds = slots.filter((s): s is Notable => s !== null).map(s => s.id).sort((a, b) => a - b);
+    const sorted2 = [slots[0], slots[1]].filter((s): s is Notable => s !== null).map(s => s.id).sort((a, b) => a - b);
+    const loId = sorted2.length >= 2 ? sorted2[0] : null;
+    const hiId = sorted2.length >= 2 ? sorted2[1] : null;
+    const firstId = slots[0]?.id ?? null;
+    const isInWindow = loId !== null && hiId !== null && n.id > loId && n.id < hiId;
+    const isVariant  = activeSlot === 1 && slots[1] === null && firstId !== null && n.kind === 'prefix' && n.id < firstId;
+    const isUndesired = placedIds.length >= 2 && loId !== null && hiId !== null && (n.id <= loId || n.id >= hiId);
+    const labels: string[] = [];
+    if (isInWindow && n.kind === 'prefix') labels.push('optimal');
+    if (isVariant) labels.push('2-notable variant');
+    if (isUndesired) labels.push('undesired');
+    return labels;
+}
+
 function buildMatcher(query: string): ((n: Notable) => boolean) | null {
     const q = query.trim();
     if (!q) return null; // no filter
@@ -243,13 +260,30 @@ function buildMatcher(query: string): ((n: Notable) => boolean) | null {
     }
 
     return (n: Notable): boolean => {
+        const info = getNotableInfo(n.name);
+        const implicitTags = info ? info.implicit_tags : [];
+        const clusterPretty = prettyKey(n.clusterKey);
+        const statusLabels = notableStatusLabels(n);
+
         if (re) {
             if (re.test(n.name)) return true;
-            return n.stats.some(s => re!.test(s));
+            if (n.stats.some(s => re!.test(s))) return true;
+            if (statusLabels.some(l => re!.test(l))) return true;
+            if (advancedMode) {
+                if (re.test(n.clusterKey) || re.test(clusterPretty)) return true;
+                if (implicitTags.some(t => re!.test(t))) return true;
+            }
+            return false;
         }
         const lower = q.toLowerCase();
         if (n.name.toLowerCase().includes(lower)) return true;
-        return n.stats.some(s => s.toLowerCase().includes(lower));
+        if (n.stats.some(s => s.toLowerCase().includes(lower))) return true;
+        if (statusLabels.some(l => l.toLowerCase().includes(lower))) return true;
+        if (advancedMode) {
+            if (n.clusterKey.toLowerCase().includes(lower) || clusterPretty.toLowerCase().includes(lower)) return true;
+            if (implicitTags.some(t => t.toLowerCase().includes(lower))) return true;
+        }
+        return false;
     };
 }
 
@@ -607,7 +641,7 @@ function renderNotablePane(kind: 'prefix' | 'suffix'): void {
         if (tagDimmed)        cls += ' tag-dimmed';
 
         const statusTags = isLarge
-            ? (!isThisSlot && !isOtherSlot && inWindow  ? '<span class="desired-tag">desired</span>'   : '') +
+            ? (!isThisSlot && !isOtherSlot && inWindow  ? '<span class="desired-tag">optimal</span>'   : '') +
             (!isThisSlot && !isOtherSlot && isVariant ? '<span class="variant-tag">2-notable variant</span>' : '') +
             (!isThisSlot && !isOtherSlot && undesired ? '<span class="undesired-tag">undesired</span>' : '')
             : '';
