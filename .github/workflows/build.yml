@@ -55,17 +55,17 @@ jobs:
         working-directory: ${{ github.workspace }}
         run: |
           javac -cp org.json.jar \
-            automation/AtlasBuilder.java \
-            automation/ClusterParser.java \
-            automation/ModLoader.java \
-            automation/Exporter.java \
-            -d automation/out
+            java/AtlasBuilder.java \
+            java/ClusterParser.java \
+            java/ModLoader.java \
+            java/Exporter.java \
+            -d java/out
 
       - name: Run Exporter
         working-directory: ${{ github.workspace }}
         run: |
-          cp automation/ClusterJewels.lua .
-          java -cp automation/out:org.json.jar com.hawolt.Exporter
+          cp java/ClusterJewels.lua .
+          java -cp java/out:org.json.jar com.hawolt.Exporter
 
       - name: Commit and push all artifacts
         working-directory: ${{ github.workspace }}
